@@ -606,15 +606,14 @@ position: absolute;
   margin-bottom: .25rem;
 }
 .testimonial__description{
-  max-block-size: 2.5rem; 
-  min-block-size: 3.5rem;
   font-size: var(--small-font-size);
   letter-spacing : .05rem;
   white-space: nowrap;
   overflow:hidden;
   text-overflow: ellipsis;
   /*
-
+  max-block-size: 2.5rem; 
+  min-block-size: 3.5rem;
   */
 }
 
