@@ -611,7 +611,7 @@ position: absolute;
   font-size: var(--small-font-size);
   letter-spacing : .05rem;
   white-space: wrap;
-  overflow:scroll;
+  overflow:hidden;
   text-overflow: ellipsis;
   /*
 
