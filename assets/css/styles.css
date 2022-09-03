@@ -610,7 +610,7 @@ position: absolute;
   min-block-size: 3.5rem;
   font-size: var(--small-font-size);
   letter-spacing : .05rem;
-  white-space: wrap;
+  white-space: nowrap;
   overflow:hidden;
   text-overflow: ellipsis;
   /*
