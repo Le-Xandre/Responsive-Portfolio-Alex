@@ -355,7 +355,9 @@ position: absolute;
 }
 .about__img{
   width: 220px;
-  border-radius: 1.5rem;
+  border-radius: 20px 50%;
+  border: 0.5rem double var(--first-color); 
+  box-shadow: 0px 0px 10px 5px var(--first-color-alt);
   justify-self: center;
 }
 .about__data{
@@ -596,8 +598,10 @@ position: absolute;
 }
 
 .testimonial__img{
-  width: 80px;
-  border-radius: 3rem;
+  width: 100px;
+  border-radius: 4rem;
+  border: 0.5rem double var(--first-color); 
+  box-shadow: 0px 0px 10px 5px var(--first-color-alt);
   margin-bottom: 1rem;
 }
 .testimonial__name{
