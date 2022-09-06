@@ -260,17 +260,17 @@ font-weight: var(--font-medium);
   width: 200px;
 }
 .home__handle{
-  justify-self: center;
+  display: flex;
   width: 200px;
   height:100%;
+  align-items: flex-end;
+  justify-content: center;  
+  justify-self: center;
+  border-radius: 10rem 10rem 1rem 1rem;
   background: linear-gradient(180deg,
   hsla(var(--first-hue), var(--sat), var(--lig),1),
   hsla(var(--first-hue), var(--sat), var(--lig),.2));
-  border-radius: 10rem 10rem 1rem 1rem;
   box-shadow: 0px 0px 10px 4px var(--first-color-alt);
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
   overflow: hidden;
 }
 .home__buttons{
@@ -318,16 +318,18 @@ position: absolute;
     display: grid;
     row-gap: 3.5rem;
     justify-items: center;
+
   }
   .home__scroll-icon {
-    font-size:1.5rem;
-
+    font-size:1.75rem;
+    transition: .4s;
+    animation: animateBgColor 4s linear infinite;
   }
   .home__scroll-name {
     font-size:var(--small-font-size);
     transform: rotate(-90deg);
   }
-
+  
 /*=============== BUTTONS ===============*/
 
 .button{
@@ -338,11 +340,13 @@ position: absolute;
   border-radius: .5rem;
   font-weight: var(--font-medium);
   transition: .4s;
+  animation: animateBgColor 4s linear infinite;
 }
 
 .button:hover{
   background-color: var(--first-color-alt);
-  color: var(--body-color);
+  color: var(--body-color);  
+
 }
 .button__ghost{
   background-color: transparent;
@@ -353,15 +357,18 @@ position: absolute;
 /*=============== ABOUT ===============*/
 
 .about__container{
-  row-gap: 2.5rem;
+  row-gap: 2rem;
 }
 .about__img{
-  width: 220px;
-  border-radius: 20px 50%;
-  border: 0.5rem double var(--first-color); 
-  box-shadow: 0px 0px 10px 5px var(--first-color-alt);
+  width: 200px;
+  border-radius: 100%;
+  background-color: var(--body-color);
+  border: .5rem double var(--first-color); 
+  box-shadow: 0px 0px 25px 2px var(--first-color-alt);
   justify-self: center;
+  animation: animateBgColor 4s linear infinite;  
 }
+
 .about__data{
   text-align: center;
 }
@@ -543,7 +550,9 @@ position: absolute;
   align-items: center;
   column-gap:  .75rem;
   margin-bottom: 2rem;
+  animation: animateBgColor 4s linear infinite;
 }
+
 .work__item{
   cursor: pointer;
   color:var(--title-color);
@@ -558,7 +567,8 @@ position: absolute;
 }
 .work__img{
   border-radius: 1rem;
-  margin-bottom: .75rem;
+  margin-bottom: .75rem;  
+  border: .15rem dashed var(--first-color-alt);
 }
 .work__title{
   font-size: var(--normal-font-size);
@@ -596,12 +606,13 @@ position: absolute;
   border-radius: 1.5rem;
   text-align: center;
   margin-bottom: 3rem;  
-  margin-left: auto;  
+  margin-left: auto;
 }
 
 .testimonial__img{
   width: 100px;
   border-radius: 4rem;
+  image-rendering:auto;
   border: 0.5rem double var(--first-color); 
   box-shadow: 0px 0px 10px 5px var(--first-color-alt);
   margin-bottom: 1rem;
@@ -615,25 +626,22 @@ position: absolute;
   max-block-size: 3.5rem;
   font-size: var(--small-font-size);
   letter-spacing : .05rem;
-  white-space: wrap, pre-line;  
+  white-space: wrap;  
   overflow:scroll;
   text-overflow: ellipsis;
-  /*  */
+  animation: animateBgColor 4s linear infinite;
 }
-.testimonial__description .p{
-  min-block-size: 1rem;
-  text-overflow: ellipsis;
-}
+
 .testimonial__description::first-letter{
   font-size: var(--biggest-font-size);
   font-weight: var(--font-medium);
-  color: var(--first-color);
+  color: var(--first-color);  
 }
 
 
 /* Swiper class */
 .swiper-pagination-bullet{
-  background-color: var(--text-color-light);
+  background-color: var(--text-color-light);  
 }
 .swiper-pagination-bullet-active{
   background-color: var(--first-color);
@@ -676,15 +684,26 @@ position: absolute;
 /* -------------------------------- flip-box --------------------------------------- */
 
 .flip-box {
+  display: flex;
   background-color: transparent;
   width: 60vw;
-  /*  border: 1px solid black; */
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
   cursor: pointer;
   justify-self: center;
   align-items: center;
   justify-content: center;
+
+  /*  border: 1px solid black; */
+ /*   perspective: 1000px; Remove this if you don't want the 3D effect */
+}
+.flip-box h1{
+  position: absolute;
   display: flex;
+  padding-top: 30vh;
+  font-size: var(--h1-font-size);
+  color: rgba(245, 245, 245, 0.996);
+  text-shadow: 2px 4px 4px black;  
+  font-weight:var(--font-semibold);
+  z-index: 1;
 }
 
 /* This container is needed to position the front and back side */
@@ -694,8 +713,9 @@ position: absolute;
   height: 100%;
   padding-top: 52.65%;
   text-align: center;
+  text-shadow: 0px 0px 10px 5px var(--first-color);
   transition: transform 0.8s;
-  transform-style: preserve-3d;
+  transform-style: preserve-3d;  
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -712,7 +732,8 @@ position: absolute;
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;  border-radius: 22px;
+  backface-visibility: hidden;  
+  border-radius: 22px;
   border: 2rem ridge rgba(0, 0, 0, 0.985);
   border-width: 2px 4px 4px 2px;
 }
@@ -724,7 +745,6 @@ position: absolute;
   border-radius: 22px;
   border: 2rem ridge rgba(255, 254, 243, 0.924);
   border-width: 4px 2px 2px 4px;
-
 }
 
 /* Style the front side (fallback if image is missing) */
@@ -734,13 +754,19 @@ position: absolute;
 
 /* Style the back side */
 .flip-box-back {
-  background-color: #0f1754c8;
-  color: white;
-  transform: rotateY(180deg);
   display: grid;
   align-content: center;
+  background-color:var(--first-color);
+  color: var(--first-color-alt);
+  opacity: .8;
+  transform: rotateY(180deg);  
+  animation: animateBgColor 4s linear infinite;
 }
-
+.flip-box-back h2{  
+  font-size: var(--h2-font-size);  
+  color: rgba(245, 245, 245, 0.996);
+  text-shadow: 2px 4px 4px black;  
+}
 @media screen and (max-width: 600px) {
   .flip-box-inner {
     padding-top: 100%;
@@ -752,18 +778,13 @@ position: absolute;
 
 /* ...................... box double couleur  ............................. */
 
-
-
 .box{
   position: relative;
+  display: flex;
   max-width: 100%;
   height: auto;
-  background: rgba(57, 53, 53, 0);
-  border-radius: 10rem 10rem 1rem 1rem;
-  display: flex;
-  align-items: flex-end;
   justify-content: center;
-  align-items: center;
+  border-radius: 10rem 10rem 1rem 1rem;
   overflow: hidden;
 }
 
@@ -788,23 +809,10 @@ position: absolute;
   animation-delay: -2s;
 }
 
-@keyframes animate {
-  0% {
-      transform: rotate(0deg);
-  }
-  50% {
-      transform: rotate(180deg);
-  }
-  100% {
-      transform: rotate(360deg);
-  }
-}
-
 .box span {
   position: absolute;
   display: flex;
   inset: 4px;
-  /* border: 0.4rem outset var(--first-color-alt); */
   border-radius: 10rem 10rem 1rem 1rem;
   background: var(--first-color);
   z-index: 1;
@@ -817,4 +825,27 @@ position: absolute;
   border: 0.4rem double var(--body-color);     
   z-index: 2;
   border-radius: 10rem 10rem 1rem 1rem;
+}
+
+/* ...................... Keyframes double couleur  ............................. */
+
+@keyframes animate {
+  0% {
+      transform: rotate(0deg);
+  }
+  50% {
+      transform: rotate(180deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+@keyframes animateBgColor {
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    filter: hue-rotate(360deg);
+  }
 }
