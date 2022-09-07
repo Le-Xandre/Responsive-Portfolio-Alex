@@ -291,9 +291,10 @@ position: absolute;
   width: max-content;
   background-color: var(--container-color);
   color: var(--first-color);
-  padding: .5rem;
-  border-radius: .5rem;
+  padding: .15rem;
+  border-radius: .25rem;
   display: flex;
+  align-items:center;
   font-size: var(--special-font-size);
   transition: .4s;
   }
@@ -304,14 +305,14 @@ position: absolute;
     .home__social-link:after{
       content: '';
       width: 2rem;
-      height: auto;
+      height: 1.5px;
       background-color: var(--first-color);
       transform: rotate(90deg) translate(16px, 3px);
   }
 
   .home__scroll{
     color: var(--first-color);
-    right: -3.5rem;
+    right: -3rem;
     bottom: 6rem;
     display: grid;
     row-gap: 3.25rem;
