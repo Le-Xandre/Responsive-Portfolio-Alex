@@ -298,7 +298,7 @@ position: absolute;
   border-radius: .25rem;
   display: flex;
   align-items:center;
-  font-size: var(--smaller-font-size);
+  font-size: var(--biggest-font-size);
   transition: .4s;
 
   }
@@ -324,12 +324,12 @@ position: absolute;
     z-index: 3;
   }
   .home__scroll-icon {
-    font-size: var(--normal-font-size);
+    font-size: var(--special-font-size);
     transition: .4s;
     animation: animateBgColor 4s linear infinite;
   }
   .home__scroll-name {
-    font-size:var(--smaller-font-size);
+    font-size:var(--small-font-size);
     transform: rotate(-90deg);
   }
   
