@@ -70,6 +70,7 @@
 }
 
 html {
+  font-size: 123%;
   scroll-behavior:smooth;
 }
 
@@ -174,10 +175,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 /* position: fixed;
 min-width: 450px;  */ 
-
 }
 
 .nav__logo{
@@ -197,7 +196,7 @@ min-width: 450px;  */
   width: 90%;
   border-radius: 4rem;
   padding: 1rem 2.25rem;
-  -webkit-backdrop-filter: auto;
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
 
@@ -208,10 +207,10 @@ min-width: 450px;  */
 }
 
 .nav__link{
+  display: flex;
+  padding: .4rem;
   color: var(--text-color);
   font-size: 1.25rem;
-  padding: .4rem;
-  display: flex;
   border-radius: 5rem;
 }
 
@@ -226,7 +225,6 @@ min-width: 450px;  */
 /* Change background header */
 .scroll-header{
   box-shadow: 0 4px 4px hsla(0, 0%, 4%, .3);
-
 }
 
 /*=============== HOME ===============*/
@@ -294,7 +292,7 @@ position: absolute;
   background-color: var(--container-color);
   color: var(--first-color);
   padding: .25rem;
-  border-radius: 0.25rem;
+  border-radius: .25rem;
   display: flex;
   font-size: var(--special-font-size);
   transition: .5s;
@@ -305,7 +303,7 @@ position: absolute;
   }
     .home__social-link:after{
       content: '';
-      min-width: 2rem;
+      width: 2rem;
       height: 2px;
       background-color: var(--first-color);
       transform: rotate(90deg) translate(16px, 3px);
@@ -313,8 +311,8 @@ position: absolute;
 
   .home__scroll{
     color: var(--first-color);
-    right: -1.50rem;
-    bottom: 7rem;
+    right: -2rem;
+    bottom: 6.5rem;
     display: grid;
     row-gap: 3.5rem;
     justify-items: center;
@@ -342,30 +340,28 @@ position: absolute;
   transition: .4s;
   animation: animateBgColor 4s linear infinite;
 }
-
-.button:hover{
-  background-color: var(--first-color-alt);
-  color: var(--body-color);  
-
-}
-.button__ghost{
+.button--ghost{
   background-color: transparent;
   border: 2px solid var(--first-color);
   color: var(--first-color);
+}
+.button:hover{
+  background-color: var(--first-color-alt);
+  color: var(--body-color);  
 }
 
 /*=============== ABOUT ===============*/
 
 .about__container{
-  row-gap: 2rem;
+  row-gap: 2.25rem;
 }
 .about__img{
   width: 200px;
   border-radius: 100%;
+  justify-self: center;
   background-color: var(--body-color);
   border: .5rem double var(--first-color); 
   box-shadow: 0px 0px 25px 2px var(--first-color-alt);
-  justify-self: center;
   animation: animateBgColor 4s linear infinite;  
 }
 
@@ -479,11 +475,11 @@ position: absolute;
 .services__modal{
   position: fixed;
   display: grid;
-  padding: 2rem 1rem;
   inset: 0;
+  background-color: hsla(var(--second-hue), 28%, 16%, .7);
+  padding: 2rem 1rem;
   place-items: center;
   visibility: hidden;
-  background-color: hsla(var(--second-hue), 28%, 16%, .7);
   opacity: 0;
   transition:  .4s;
   z-index: var(--z-modal);
@@ -648,8 +644,90 @@ position: absolute;
 }
 
 /*=============== CONTACT ===============*/
-
-
+.contact__container{
+  row-gap: 3rem;
+  padding-bottom: 3rem;
+}
+.contact__title{
+  text-align: center;
+  font-size: var(--h3-font-size);
+  margin-bottom: 1.5rem;
+}
+.contact__info{
+  display: grid;
+  gap: 1rem;
+}
+.contact__card{
+  background-color: var(--container-color);
+  padding: 1rem;
+  border-radius: .75rem;
+  text-align: center;
+}
+.contact__card-icon{
+  font-size: 2rem;
+  color: var(--title-color);
+  margin-bottom: .25rem;
+}
+.contact__card-title, 
+.contact__card-data{
+  font-size: var(--small-font-size);
+}
+.contact__card-title{
+  font-size:  var(--h3-font-size);
+}
+.contact__card-data{
+  display: block;
+  margin-bottom: .75rem;
+}
+.contact__button{
+  color: var(--first-color);
+  font-size: var(--small-font-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: .25rem;
+}
+.contact__button:hover .contact__button-icon{
+  transform: translateX(.25rem);
+}
+.contact__button-icon{
+font-size: 1rem;
+transition: .4s;
+}
+.contact__form-div{
+  position: relative;
+  margin-bottom: 2rem;
+  height: 4rem;
+}
+.contact__form-input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--text-color-light);
+  background: none;
+  color: var(--text-color);
+  outline: none;
+  padding: 1.5rem;
+  border-radius: .75rem;
+  z-index: 1;
+}
+.contact__form-tag{
+  position: absolute;
+  top: -.75rem;
+  left: 1.25rem;
+  font-size: var(--smaller-font-size);
+  padding: .25rem;
+  background-color: var(--body-color);
+  z-index: 10;
+}
+.contact__form-area{
+  height: 11rem;
+}
+.contact__form-area textarea{
+  resize: none;
+}
 /*=============== FOOTER ===============*/
 
 
@@ -664,9 +742,9 @@ position: absolute;
   background-color: hsl(var(--second-hue), 8%, 26%);
   border-radius: .5rem;
 }
-/* ::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover{
   background-color: hsl(var(--second-hue), 8%, 20%);
-} */
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
