@@ -287,7 +287,7 @@ position: absolute;
   left: 0;
   display: grid;
   row-gap: .25rem;
-  z-index: 4;
+
 }
 .home__social-link{
   width: max-content;
@@ -297,7 +297,7 @@ position: absolute;
   border-radius: .25rem;
   display: flex;
   align-items:center;
-  font-size: var(--smaller-font-size);
+  font-size: var(--small-font-size);
   transition: .4s;
 
   }
@@ -310,7 +310,7 @@ position: absolute;
       width: auto;
       height: auto;
       background-color: var(--first-color);
-      transform: rotate(90deg) translateX(16px, 3px);
+      transform: rotate(90deg) translateX(16px, 3px);  z-index: 10;
   }
 
   .home__scroll{
