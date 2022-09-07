@@ -59,6 +59,7 @@
     --normal-font-size: 1rem;
     --small-font-size: .875rem;
     --smaller-font-size: .813rem;
+    --tiny-font-size: .75rem;
   }
 }
 
@@ -297,7 +298,7 @@ position: absolute;
   align-items:center;
   font-size: var(--tiny-font-size);
   transition: .4s;
-  z-index: 2;
+  z-index: 3;
   }
   .home__social-link:hover{
   background-color: var(--first-color);
