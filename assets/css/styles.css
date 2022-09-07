@@ -295,7 +295,7 @@ position: absolute;
   border-radius: .25rem;
   display: flex;
   align-items:center;
-  font-size: var(--special-font-size);
+  font-size: var(--smaller-font-size);
   transition: .4s;
   }
   .home__social-link:hover{
@@ -307,7 +307,7 @@ position: absolute;
       width: auto;
       height: auto;
       background-color: var(--first-color);
-      transform: rotate(90deg) translate(16px, 3px);
+      transform: rotate(90deg) translateX(16px, 3px);
   }
 
   .home__scroll{
