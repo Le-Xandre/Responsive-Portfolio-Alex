@@ -70,7 +70,7 @@
 }
 
 html {
-  font-size: 123%;
+  font-size: 100%;
   scroll-behavior:smooth;
 }
 
@@ -303,7 +303,7 @@ position: absolute;
   }
     .home__social-link:after{
       content: '';
-      width: 2rem;
+      width: 1.5rem;
       height: 2px;
       background-color: var(--first-color);
       transform: rotate(90deg) translate(16px, 3px);
@@ -311,15 +311,15 @@ position: absolute;
 
   .home__scroll{
     color: var(--first-color);
-    right: -2rem;
-    bottom: 6.5rem;
+    right: -1.5rem;
+    bottom: 6rem;
     display: grid;
-    row-gap: 3.5rem;
+    row-gap: 3rem;
     justify-items: center;
 
   }
   .home__scroll-icon {
-    font-size:1.75rem;
+    font-size: 1.5rem;
     transition: .4s;
     animation: animateBgColor 4s linear infinite;
   }
