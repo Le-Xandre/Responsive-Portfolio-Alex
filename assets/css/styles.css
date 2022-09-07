@@ -317,9 +317,9 @@ position: absolute;
   .home__scroll{
     color: var(--first-color);
     left: -3.5rem;
-    bottom: 8rem;
+    bottom: 7rem;
     display: grid;
-    row-gap: 3rem;
+    row-gap: 4rem;
     justify-items: center;
     z-index: 3;
   }
@@ -329,7 +329,7 @@ position: absolute;
     animation: animateBgColor 4s linear infinite;
   }
   .home__scroll-name {
-    font-size:var(--small-font-size);
+    font-size:var(--smaller-font-size);
     transform: rotate(-90deg);
   }
   
