@@ -291,8 +291,8 @@ position: absolute;
   width: max-content;
   background-color: var(--container-color);
   color: var(--first-color);
-  padding: .25rem;
-  border-radius: .25rem;
+  padding: .5rem;
+  border-radius: .5rem;
   display: flex;
   font-size: var(--special-font-size);
   transition: .4s;
@@ -304,22 +304,22 @@ position: absolute;
     .home__social-link:after{
       content: '';
       width: 2rem;
-      height: 2px;
+      height: auto;
       background-color: var(--first-color);
       transform: rotate(90deg) translate(16px, 3px);
   }
 
   .home__scroll{
     color: var(--first-color);
-    right: -1.5rem;
+    right: -3.5rem;
     bottom: 6rem;
     display: grid;
-    row-gap: 3rem;
+    row-gap: 3.25rem;
     justify-items: center;
 
   }
   .home__scroll-icon {
-    font-size: 1.75rem;
+    font-size: 2rem;
     transition: .4s;
     animation: animateBgColor 4s linear infinite;
   }
