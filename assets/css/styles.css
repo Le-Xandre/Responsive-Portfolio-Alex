@@ -294,7 +294,7 @@ position: absolute;
   width: max-content;
   background-color: var(--container-color);
   color: var(--first-color);
-  padding: .25rem;
+  padding: .1rem;
   border-radius: .25rem;
   display: flex;
   align-items:center;
@@ -316,8 +316,8 @@ position: absolute;
 
   .home__scroll{
     color: var(--first-color);
-    left: -3rem;
-    bottom: 5rem;
+    left: -3.5rem;
+    bottom: 8.5rem;
     display: grid;
     row-gap: 3.5rem;
     justify-items: center;
