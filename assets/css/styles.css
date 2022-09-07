@@ -295,8 +295,9 @@ position: absolute;
   border-radius: .25rem;
   display: flex;
   align-items:center;
-  font-size: var(--smaller-font-size);
+  font-size: var(--tiny-font-size);
   transition: .4s;
+  z-index: 2;
   }
   .home__social-link:hover{
   background-color: var(--first-color);
