@@ -317,7 +317,7 @@ position: absolute;
   .home__scroll{
     color: var(--first-color);
     left: -3.5rem;
-    bottom: 6.5rem;
+    bottom: 7rem;
     display: grid;
     row-gap: 3.75rem;
     justify-items: center;
