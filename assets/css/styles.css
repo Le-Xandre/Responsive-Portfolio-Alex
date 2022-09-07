@@ -298,8 +298,8 @@ position: absolute;
   border-radius: .25rem;
   display: flex;
   align-items:center;
-  font-size: var(--biggest-font-size);
-  transition: .4s;
+  font-size: var(--special-font-size);
+  transition: .5s;
 
   }
   .home__social-link:hover{
