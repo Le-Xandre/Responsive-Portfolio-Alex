@@ -291,8 +291,8 @@ position: absolute;
   width: max-content;
   background-color: var(--container-color);
   color: var(--first-color);
-  padding: .15rem;
-  border-radius: .25rem;
+  padding: .25rem;
+  border-radius: .5rem;
   display: flex;
   align-items:center;
   font-size: var(--special-font-size);
@@ -305,14 +305,14 @@ position: absolute;
     .home__social-link:after{
       content: '';
       width: 2rem;
-      height: 1.5px;
+      height: 2.5px;
       background-color: var(--first-color);
       transform: rotate(90deg) translate(16px, 3px);
   }
 
   .home__scroll{
     color: var(--first-color);
-    right: -3rem;
+    right: -1.75rem;
     bottom: 6rem;
     display: grid;
     row-gap: 3.25rem;
@@ -320,7 +320,7 @@ position: absolute;
 
   }
   .home__scroll-icon {
-    font-size: 2rem;
+    font-size: 1.75rem;
     transition: .4s;
     animation: animateBgColor 4s linear infinite;
   }
