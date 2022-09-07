@@ -284,7 +284,7 @@ font-weight: var(--font-medium);
 position: absolute;
 }
 .home__social{
-  bottom: 5rem;
+  bottom: 4.5rem;
   right: 0;
   display: grid;
   row-gap: .5rem;
@@ -319,7 +319,7 @@ position: absolute;
     left: -3.5rem;
     bottom: 6.5rem;
     display: grid;
-    row-gap: 3.5rem;
+    row-gap: 3.75rem;
     justify-items: center;
     z-index: 3;
   }
