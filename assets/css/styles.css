@@ -316,8 +316,8 @@ position: absolute;
 
   .home__scroll{
     color: var(--first-color);
-    left: -2.5rem;
-    bottom: 6.5rem;
+    left: -3rem;
+    bottom: 5rem;
     display: grid;
     row-gap: 3.5rem;
     justify-items: center;
