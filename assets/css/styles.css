@@ -284,7 +284,7 @@ font-weight: var(--font-medium);
 position: absolute;
 }
 .home__social{
-  bottom: 5rem;
+  bottom: 4.5rem;
   right: 0;
   display: grid;
   row-gap: .5rem;
@@ -317,9 +317,9 @@ position: absolute;
   .home__scroll{
     color: var(--first-color);
     left: -3.5rem;
-    bottom: 8.5rem;
+    bottom: 8rem;
     display: grid;
-    row-gap: 3.5rem;
+    row-gap: 3rem;
     justify-items: center;
     z-index: 3;
   }
