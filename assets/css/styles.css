@@ -1077,6 +1077,106 @@ transform: rotate(90deg) translate(16px, 0);
 }
 }
 
+
+
+
+
+
+/* -------------------------------- flip-box --------------------------------------- */
+
+.flip-box {
+  display: flex;
+  background-color: transparent;
+  width: 60vw;
+  cursor: pointer;
+  justify-self: center;
+  align-items: center;
+  justify-content: center;
+
+  /*  border: 1px solid black; */
+ /*   perspective: 1000px; Remove this if you don't want the 3D effect */
+}
+.flip-box h1{
+  position: absolute;
+  display: flex;
+  padding-top: 30vh;
+  font-size: var(--h1-font-size);
+  color: rgba(245, 245, 245, 0.996);
+  text-shadow: 2px 4px 4px black;  
+  font-weight:var(--font-semibold);
+  z-index: 1;
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 52.65%;
+  text-align: center;
+  text-shadow: 0px 0px 10px 5px var(--first-color);
+  transition: transform 0.8s;
+  transform-style: preserve-3d;  
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;  
+  border-radius: 22px;
+  border: 2rem ridge rgba(0, 0, 0, 0.985);
+  border-width: 2px 4px 4px 2px;
+}
+
+.random__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
+  border-radius: 22px;
+  border: 2rem ridge rgba(255, 254, 243, 0.924);
+  border-width: 4px 2px 2px 4px;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  display: grid;
+  align-content: center;
+  background-color:var(--first-color);
+  color: var(--first-color-alt);
+  opacity: .8;
+  transform: rotateY(180deg);  
+  animation: animateBgColor 4s linear infinite;
+}
+.flip-box-back h2{  
+  font-size: var(--h2-font-size);  
+  color: rgba(245, 245, 245, 0.996);
+  text-shadow: 2px 4px 4px black;  
+}
+@media screen and (max-width: 600px) {
+  .flip-box-inner {
+    padding-top: 100%;
+  }
+  .flip-box {
+    width: 90vw;
+  }
+}
+
 /* ...................... box double couleur  ............................. */
 
 .box{
@@ -1126,7 +1226,7 @@ transform: rotate(90deg) translate(16px, 0);
   border: 0.4rem double var(--body-color);     
   z-index: 2;
   border-radius: 10rem 10rem 1rem 1rem;
-}*/
+}
 
 /* ...................... Keyframes double couleur  ............................. */
 
