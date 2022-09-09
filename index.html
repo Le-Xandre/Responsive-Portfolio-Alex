@@ -29,50 +29,48 @@
                 <div class="nav__menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#home_app_logo" class="nav__link active-link">
-                                <!-- <i class='bx bx-home-heart'></i> -->
-                                <span class="material-symbols-rounded">
-                                    home_app_logo
-                                    </span>
-                            </a>
+                            <a href="#home" class="nav__link active-link" title="home">
+                                <i class='bx bx-home-heart'></i>
+                            </a><h3 class="nav__item-title">Menu</h3>
+                            
                         </li>
                         <li class="nav_item">
-                            <a href="#person" class="nav__link">
-                                  <span class="material-symbols-rounded">
-                                    person
-                                    </span>
-                            </a>
+                            <a href="#about" class="nav__link" title="about">
+                                <i class="bx bx-user"></i>
+                            </a><h3 class="nav__item-title">A propos</h3>
                         </li>
                         <li class="nav__item">
-                            <a href="#menu_book" class="nav__link">
-                                <span class="material-symbols-rounded">
-                                    menu_book
-                                    </span>
-                            </a>
+                            <a href="#skills" class="nav__link" title="skills">
+                                <i class="bx bx-book-open"></i>
+                            </a><h3 class="nav__item-title">Skills</h3>
                         </li>
+                        <!-- <li class="nav__item">
+                            <a href="#services" class="nav__link" title="services">
+                                <i class="bx bx-briefcase"></i>
+                            </a><h3 class="nav__item-title">Services</h3>
+                        </li> -->
                         <li class="nav__item">
-                            <a href="#work" class="nav__link">
-                                <span class="material-symbols-rounded">
-                                    work
-                                    </span>
-                            </a>
+                            <a href="#work" class="nav__link" title="work">
+                                <i class="bx bx-briefcase-alt"></i>
+                            </a><h3 class="nav__item-title">Portfolio</h3>
                         </li>
+                        <!-- <li class="nav__item">
+                            <a href="#testimonial" class="nav__link" title="testimonial" alt="Témoignages">
+                                <i class='bx bx-male-female'></i>
+                            </a><h3 class="nav__item-title">Témoignages</h3>
+                        </li> -->
                         <li class="nav__item">
-                            <a href="#contact_mail" class="nav__link">
-                                <span class="material-symbols-rounded">
-                                    contact_mail
-                                    </span>
-                            </a>
+                            <a href="#contact" class="nav__link" title="contact">
+                                <i class="bx bx-message-square-detail"></i>
+                            </a><h3 class="nav__item-title">Contacts</h3>
                         </li>
                     </ul>
                 </div>
 
                 <!-- theme change -->
-                <a href="#brightness_4" class="nav__link">
-                <i class="material-symbols-rounded change-theme" id="theme-button">
-                    brightness_4
-                </i>
-                </a>
+                
+                <i class="bx bx-moon change-theme" id="theme-button"></i>
+                
             </nav>
         </header>
 
@@ -103,17 +101,17 @@
 
                     <div class="home__social">
                         
-                        <a href="https://www.flickr.com/people/lexandre/" alt="flickr" class="home__social-link">
+                        <a href="https://www.flickr.com/people/lexandre/" rel="noopener" title="flickr" target="_blank" class="home__social-link">
                             <i class='bx bxl-flickr-square'></i> 
                         </a>
 
-                        <a href="https://www.youtube.com/channel/UCHkCQ8im4WViaWclX4OaBqQ" alt="youtube" class="home__social-link">
+                        <a href="https://www.youtube.com/channel/UCHkCQ8im4WViaWclX4OaBqQ" rel="noopener" title="youtube" target="_blank" class="home__social-link">
                             <i class='bx bxl-youtube'></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/alexandre-c-217803151" alt="linkedin" class="home__social-link">
+                        <a href="https://www.linkedin.com/in/alexandre-c-217803151" rel="noopener" title="linkedin" target="_blank" class="home__social-link">
                             <i class='bx bxl-linkedin-square'></i>
                         </a>
-                        <a href="https://www.facebook.com/LeXXandre" alt="facebook" class="home__social-link">
+                        <a href="https://www.facebook.com/LeXXandre" rel="noopener" title="facebook" target="_blank" class="home__social-link">
                             <i class='bx bxl-facebook-square'></i>
                         </a>
                     </div>
@@ -316,7 +314,7 @@
             </section>
 
             <!--=============== SERVICES ===============-->
-            <section class="services section">
+            <section class="services section" >
                 <span class="section__subtitle">Mes services</span>
                 <h2 class="section__title">Ce que je propose</h2>
 
@@ -534,7 +532,7 @@
             </section>
 
             <!--=============== TESTIMONIALS ===============-->
-        <section class="testimonial section">
+        <section class="testimonial section" >
                 <span class="section__subtitle">Avis Clients</span>
                 <h2 class="section__title">Témoignages</h2>
 
@@ -644,8 +642,9 @@
                         <label for="" class="contact__form-tag">Votre projet</label>
                         <textarea name="" id="" cols="30" rows="10" placeholder="..." class="contact__form-input"></textarea>
                     </div>
-                        <button class="button">Envoyez</button>
+                        
                 </form>
+                <button class="button">Envoyez</button>
                     </div>
                 </div>
             </section>
@@ -653,7 +652,38 @@
 
         <!--=============== FOOTER ===============-->
         <footer class="footer">
-            
+        <div class="footer__container container">
+            <h1 class="footer__title">Alex</h1>
+            <ul class="footer__list">
+                <li>
+                    <a href="#about" class="footer__link">A propos</a>
+                </li>
+                <li>
+                    <a href="#work" class="footer__link">Projets</a>
+                </li>
+                <li>
+                    <a href="#testimonial" class="footer__link">Avis clients</a>
+                </li>
+            </ul>
+
+            <ul class="footer__social">
+                <li>
+                <a href="https://www.facebook.com" rel="noopener" title="facebook" target="__blank" class="footer__social-link">
+                    <i class="bx bxl-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com" rel="noopener" title="instagram" target="__blank" class="footer__social-link">
+                    <i class="bx bxl-instagram"></i>
+                </a>
+                <a href="https://www.twitter.com" rel="noopener" title="twitter" target="_blank" class="footer__social-link">
+                    <i class="bx bxl-twitter"></i>
+                </a>
+            </ul>
+        </li>
+            <span class="footer__copy">
+                &#169; Alex. all rigths reserved. 
+                <br>Inspirations by Bedimcode & Online Tutorials
+            </span>
+        </div>
         </footer>
 
         <!--=============== SCROLLREVEAL ===============-->
