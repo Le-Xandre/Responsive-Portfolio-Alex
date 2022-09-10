@@ -33,6 +33,7 @@
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
+  --h4-font-size: .5rem;
   --special-font-size: 1.5rem;
   --normal-font-size: .938rem;
   --small-font-size: .813rem;
@@ -314,8 +315,8 @@ min-width: 450px;  */
 
 .home__container{
   position: relative;
-  row-gap: 4.5rem;
-  padding-top: 2rem;
+  row-gap: 3.5rem;
+  padding-top: 1.5rem;
 }
 .home__data{
   text-align: center;
@@ -359,7 +360,7 @@ font-weight: var(--font-medium);
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.5rem; 
+  gap: 1.25rem; 
 }
 .home__social,
 .home__scroll{
@@ -408,8 +409,8 @@ position: absolute;
   }
   .home__scroll-icon {
     font-size: var(--special-font-size);
-    transition: .4s;
-    animation: animateBgColor 4s linear infinite;
+    transition: .5s;
+    animation: animateBgColor 5s linear infinite;
     align-items: center;
   }
   .home__scroll-name {
@@ -866,7 +867,7 @@ color: var(--body-color);
   }
 .footer__copy{
   display: block;
-  margin-top: 4.5rem;
+  margin-top: 1.5rem;
   color: var(--container-color);
   font-size: var(--smaller-font-size);
   text-align: center;
@@ -874,7 +875,7 @@ color: var(--body-color);
 /*=============== SCROLL BAR ===============*/
 
 ::-webkit-scrollbar{
-  width: .6rem;
+  width: .75rem;
   border-radius: .5rem;
   background-color: hsl(var(--second-hue), 8%, 38%);
 }
@@ -890,25 +891,40 @@ color: var(--body-color);
 /* For small devices */
 @media screen and (max-width:320px){
   .nav__menu{
-    padding: 1rem 1.5rem;
+    padding: 1.5rem 1.5rem;
+  }
+  .home{
+    position: relative;
+    row-gap: 1.45rem;
+    padding-top: 1.25rem;
   }
   .home__container{
     position: relative;
     row-gap: 1.75rem;
-    padding-top: 1.75rem;
+    padding-top: 1.5rem;
   }
   .home__buttons{
     flex-direction: column;
   }
   .home__handle{
-    width: 145px;
+    width: 125px;
     height: auto;
   }
   .home__img{
-    width: 145px;
+    width: 125px;
   }
   .about__info{
     grid-template-columns: repeat(2, 1fr);
+  }
+  .about__button{
+    display: inline-block;
+    background-color: var(--first-color);
+    color: var(--body-color);
+    padding: .75rem .75rem;
+    border-radius: .5rem;
+    font-weight: var(--font-medium);
+    transition: .5s;
+    animation: animateBgColor 60s linear infinite;
   }
   .skills__box{
     column-gap: 1rem;
@@ -917,7 +933,7 @@ color: var(--body-color);
     font-size: var(--small-font-size);
   }
   .services__container{
-    grid-template-columns: 145px;
+    grid-template-columns: 135px;
     justify-content: center;
   }
   .work__item{
@@ -930,8 +946,8 @@ color: var(--body-color);
     display:flex;
     justify-content: center;
     font-size: var(--small-font-size);
-    column-gap: .75rem;
-    margin-bottom: 2rem;
+    column-gap: .5rem;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -956,7 +972,7 @@ color: var(--body-color);
     justify-content: center;
   }
   .skills__content{
-    padding: 2rem 4rem;
+    padding: 2rem 3.5rem;
   }
   .services__container{
     grid-template-columns: repeat(2, 160px);
