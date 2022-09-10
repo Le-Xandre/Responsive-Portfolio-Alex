@@ -892,6 +892,11 @@ color: var(--body-color);
   .nav__menu{
     padding: 1rem 1.5rem;
   }
+  .home__container{
+    position: relative;
+    row-gap: 1.75rem;
+    padding-top: 1.75rem;
+  }
   .home__buttons{
     flex-direction: column;
   }
