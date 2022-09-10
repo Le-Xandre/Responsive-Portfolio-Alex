@@ -398,9 +398,9 @@ position: absolute;
   .home__scroll{
     color: var(--first-color);
     left: -3rem;
-    bottom: 7rem;
+    bottom: 6.80rem;
     display: grid;
-    row-gap: 4rem;
+    row-gap: 3.80rem;
     justify-items: center;
     z-index: 3;
   }
