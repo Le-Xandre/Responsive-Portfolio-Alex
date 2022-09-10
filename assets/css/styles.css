@@ -365,7 +365,7 @@ font-weight: var(--font-medium);
 position: absolute;
 }
 .home__social{
-  bottom: 4rem;
+  bottom: 3.80rem;
   right: 0;
   display: grid;
   row-gap: .5rem;
