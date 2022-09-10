@@ -397,10 +397,10 @@ position: absolute;
 
   .home__scroll{
     color: var(--first-color);
-    left: -3.5rem;
-    bottom: 7rem;
+    left: -2.5rem;
+    bottom: 6.5rem;
     display: grid;
-    row-gap: 4rem;
+    row-gap: 3rem;
     justify-items: center;
     z-index: 3;
   }
