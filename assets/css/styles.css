@@ -1119,7 +1119,7 @@ transform: rotate(90deg) translate(16px, 0);
 .flip-box {
   display: flex;
   background-color: transparent;
-  width: 60vw;
+  width: 21vw;
   cursor: pointer;
   justify-self: center;
   align-items: center;
@@ -1138,7 +1138,16 @@ transform: rotate(90deg) translate(16px, 0);
   font-weight:var(--font-semibold);
   z-index: 1;
 }
-
+.flip-box h1 {
+  position: absolute;
+  display: flex;
+  padding-top: 21vh;
+  font-size: var(--h1-font-size);
+  color: rgba(245, 245, 245, 0.996);
+  text-shadow: 2px 4px 4px black;
+  font-weight: var(--font-semibold);
+  z-index: 1;
+}
 /* This container is needed to position the front and back side */
 .flip-box-inner {
   position: relative;
@@ -1169,6 +1178,21 @@ transform: rotate(90deg) translate(16px, 0);
   border-radius: 22px;
   border: 2rem ridge rgba(0, 0, 0, 0.985);
   border-width: 2px 4px 4px 2px;
+  position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+border-radius: 22px;
+border: 2rem ridge rgba(0, 0, 0, 0.985);
+  border-top-width: 2rem;
+  border-right-width: 2rem;
+  border-bottom-width: 2rem;
+  border-left-width: 2rem;
+border-width: 2px 4px 4px 2px;
+z-index: -5;
 }
 
 .random__img {
@@ -1178,6 +1202,19 @@ transform: rotate(90deg) translate(16px, 0);
   border-radius: 22px;
   border: 2rem ridge rgba(255, 254, 243, 0.924);
   border-width: 4px 2px 2px 4px;
+  width: 100%;
+height: 100%;
+object-fit: contain;
+border-radius: 22px;
+border: 1rem ridge rgba(255, 254, 243, 0.924);
+  border-top-width: 1rem;
+  border-right-width: 1rem;
+  border-bottom-width: 1rem;
+  border-left-width: 1rem;
+border-width: .4px .2px .2px .4px;
+z-index: -30;
+display: flex;
+position: absolute;
 }
 
 /* Style the front side (fallback if image is missing) */
