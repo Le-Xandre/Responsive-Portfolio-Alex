@@ -110,8 +110,10 @@ button {
 }
 
 img {
-  max-width: 100%;
+  max-width: 99%;
   height: auto;
+  max-height:256px;
+  font-size:.25em;
 }
 
 /*=============== THEME ===============*/
