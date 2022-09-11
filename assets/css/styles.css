@@ -427,15 +427,18 @@ position: absolute;
   padding: .75rem 1rem;
   border-radius: .5rem;
   font-weight: var(--font-medium);
+  z-index:2,
   transition: .4s;
   animation: animateBgColor 120s linear infinite;
 }
 .button--ghost{
+    z-index:2,
   background-color: transparent;
   border: 2px solid var(--first-color);
   color: var(--first-color);
 }
 .button:hover{
+    z-index:2,
   background-color: var(--first-color-alt);
   color: var(--body-color);  
 }
@@ -1136,7 +1139,7 @@ transform: rotate(90deg) translate(16px, 0);
   color: rgba(245, 245, 245, 0.996);
   text-shadow: 2px 4px 4px black;  
   font-weight:var(--font-semibold);
-  z-index: 1;
+  z-index: -1;
 }
 .flip-box h1 {
   position: absolute;
@@ -1146,7 +1149,7 @@ transform: rotate(90deg) translate(16px, 0);
   color: rgba(245, 245, 245, 0.996);
   text-shadow: 2px 4px 4px black;
   font-weight: var(--font-semibold);
-  z-index: 1;
+  z-index: -1;
 }
 /* This container is needed to position the front and back side */
 .flip-box-inner {
@@ -1245,10 +1248,9 @@ position: absolute;
     padding-top: 100%;
   }
   .flip-box {
-    width: 70vw;z-index: -15;
+    width: 60vw;z-index: -30;
 display: flex;
-position: absolute;
-  }
+position: absolute;    }
 }
 
 /* ...................... box double couleur  ............................. */
@@ -1299,7 +1301,7 @@ position: absolute;
   color: rgb(255, 255, 255);
   font-size: 10em;    
   border: 0.4rem double var(--body-color);     
-  z-index: 2;
+  z-index: -2;
   border-radius: 10rem 10rem 1rem 1rem;
 }
 
