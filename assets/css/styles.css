@@ -1131,7 +1131,7 @@ transform: rotate(90deg) translate(16px, 0);
 .flip-box h1{
   position: absolute;
   display: flex;
-  padding-top: 30vh;
+  padding-top: 25vh;
   font-size: var(--h1-font-size);
   color: rgba(245, 245, 245, 0.996);
   text-shadow: 2px 4px 4px black;  
@@ -1212,7 +1212,7 @@ border: 1rem ridge rgba(255, 254, 243, 0.924);
   border-bottom-width: 1rem;
   border-left-width: 1rem;
 border-width: .4px .2px .2px .4px;
-z-index: -30;
+z-index: -15;
 display: flex;
 position: absolute;
 }
@@ -1225,6 +1225,9 @@ position: absolute;
 /* Style the back side */
 .flip-box-back {
   display: grid;
+  z-index: -15;
+display: flex;
+position: absolute;
   align-content: center;
   background-color:var(--first-color);
   color: var(--first-color-alt);
@@ -1242,7 +1245,9 @@ position: absolute;
     padding-top: 100%;
   }
   .flip-box {
-    width: 90vw;
+    width: 70vw;z-index: -15;
+display: flex;
+position: absolute;
   }
 }
 
