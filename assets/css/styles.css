@@ -1341,15 +1341,34 @@ height: auto;
 }
 .icon h3 {
   position: relative;
+  font-size: 2.5rem;
+  color: #fff;
+  display: inline-block;
+  text-shadow: 0 15px 15px #000;
+  box-shadow: 10px 0 0 #fff;
+  overflow: hidden;
+  animation: textTyping 25s steps(60) infinite;
+}
+.icon h2 {
+  position: relative;
   font-size: 1.25rem;
   color: #fff;
   display: inline-block;
   text-shadow: 0 15px 15px #000;
   box-shadow: 10px 0 0 #fff;
   overflow: hidden;
-  animation: textTyping 15s steps(25) infinite;
+  animation: textTyping 25s steps(60) infinite;
 }
-
+.icon h4 {
+  position: relative;
+  font-size: .25rem;
+  color: #fff;
+  display: inline-block;
+  text-shadow: 0 15px 15px #000;
+  box-shadow: 10px 0 0 #fff;
+  overflow: hidden;
+  animation: textTyping 25s steps(60) infinite;
+}
 @keyframes textTyping {
   0%,90%,100%{
     width: 1px;
