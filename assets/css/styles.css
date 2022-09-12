@@ -110,12 +110,12 @@ a {
 button {
   cursor: pointer;
   border: none;
-  outline: none;
+  outline: none;  box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, .1);
 }
 
 img {
   max-width: 100%;
-  height: auto;
+  height: auto;  box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, .1);
 }
 
 /*=============== THEME ===============*/
@@ -130,9 +130,9 @@ img {
 /*========== Variables Dark theme ==========*/
 body.light-theme{
   --title-color: hsla(var(--second-hue), 15%, 15%);
-  --text-color: hsla(var(--second-hue), 8%, 35%);
-  --body-color: hsla(var(--second-hue), 100%, 99%);
-  --container-color: #fff;
+  --text-color: hsla(var(--second-hue), 10%, 25%);
+  --body-color: hsla(var(--second-hue), 15%, 80%);
+  --container-color: rgba(240, 236, 236, 0.822);
 }
 
 /*========== 
@@ -202,7 +202,7 @@ body.light-theme{
 }
 
 .section {
-  padding: 4.5rem 0 1rem;
+  padding: 3.5rem 0 1rem;
   align-items: center;
 }
 
@@ -457,7 +457,7 @@ position: absolute;
   row-gap: 2.25rem;
 }
 .about__img{
-  width: 200px;
+  width: 150px;
   border-radius: 100%;
   justify-self: center;
   background-color: var(--body-color);
@@ -1002,7 +1002,7 @@ color: var(--body-color);
     justify-content: center;
   }
   .work__img{
-    width: 295px;
+    width: 200px;
   }
 
   .contact__info{
@@ -1033,7 +1033,7 @@ color: var(--body-color);
   margin-right: auto;
 }
 .section{
-  padding: 6.5rem 0 1rem;
+  padding: 5.5rem 0 1rem;
 }
 .section__title{
   margin-bottom: 3.5rem;
@@ -1120,17 +1120,12 @@ transform: rotate(90deg) translate(16px, 0);
 }
 }
 
-
-
-
-
-
 /* -------------------------------- flip-box --------------------------------------- */
 
 .flip-box {
   display: flex;
   background-color: transparent;
-  width: 60vw;
+  width: 1vw;
   cursor: pointer;
   justify-self: center;
   align-items: center;
@@ -1142,7 +1137,7 @@ transform: rotate(90deg) translate(16px, 0);
 .flip-box h1{
   position: absolute;
   display: flex;
-  padding-top: 30vh;
+  padding-top: 15vh;
   font-size: var(--h1-font-size);
   color: rgba(245, 245, 245, 0.996);
   text-shadow: 2px 4px 4px black;  
@@ -1185,7 +1180,7 @@ transform: rotate(90deg) translate(16px, 0);
 .random__img {
   width: 100%;
   height: 100%;
-  object-fit: cover;  
+  object-fit:unset;  
   border-radius: 22px;
   border: 2rem ridge rgba(255, 254, 243, 0.924);
   border-width: 4px 2px 2px 4px;
@@ -1295,6 +1290,29 @@ transform: rotate(90deg) translate(16px, 0);
   }
 }
 
+.icon {
+  position: relative;
+width: 250px;
+height: auto;
+  z-index: 1;
+  text-align: center;
+}
+.icon svg path {
+  stroke: #fff;
+  stroke-width: 9px;
+  fill: transparent;
+  filter: drop-shadow(0 20px 10px #000) blur(2px);
+}
+.icon h3 {
+  position: relative;
+  font-size: 1.25rem;
+  color: #fff;
+  display: inline-block;
+  text-shadow: 0 15px 15px #000;
+  box-shadow: 10px 0 0 #fff;
+  overflow: hidden;
+  animation: textTyping 15s steps(25) infinite;
+}
 
 
 
