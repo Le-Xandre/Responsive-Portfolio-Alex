@@ -704,7 +704,8 @@ border-radius: 55%;
   border: .1rem dashed var(--first-color-alt);
   object-fit:cover;    
   width: 250px;
-}.work2__img{
+}
+.work2__img{
   border-radius: 1rem;
   margin-bottom: .75rem;    
   background-color: var(--body-color);
