@@ -473,11 +473,11 @@ position: absolute;
 /*=============== ABOUT ===============*/
 
 .about__container{
-  row-gap: 2.25rem;
+  row-gap: 2.25rem;  
 }
 .about__img{
   width: 150px;
-  border-radius: 100%;
+border-radius: 55%;
   justify-self: center;
   background-color: var(--body-color);
   border: .5rem double var(--first-color); 
@@ -1286,6 +1286,14 @@ transform: rotate(90deg) translate(16px, 0);
   border-radius: 10rem 10rem 1rem 1rem;
 }
 
+
+
+
+
+
+
+
+
 /* ...................... Keyframes double couleur  ............................. */
 
 @keyframes animate {
@@ -1304,6 +1312,9 @@ transform: rotate(90deg) translate(16px, 0);
   0%{
     filter: hue-rotate(0deg);
   }
+  50% {
+    transform: hue-rotate(180deg);
+}
   100%{
     filter: hue-rotate(360deg);
   }
@@ -1311,16 +1322,20 @@ transform: rotate(90deg) translate(16px, 0);
 
 .icon {
   position: relative;
-width: 250px;
+max-width: 250px;
 height: auto;
-  z-index: 1;
-  text-align: center;
+  width: 125px;
+  height: auto;
+    z-index: 0;
+    text-align: center;
+    display: grid;
 }
+
 .icon svg path {
   stroke: #fff;
-  stroke-width: 9px;
+  stroke-width: 4.8px;
   fill: transparent;
-  filter: drop-shadow(0 20px 10px #000) blur(2px);
+  filter: drop-shadow(0 10px 10px #000) blur(2px);
 }
 .icon h3 {
   position: relative;
@@ -1333,50 +1348,6 @@ height: auto;
   animation: textTyping 15s steps(25) infinite;
 }
 
-
-
-
-
-
-
-
-
-/* ...................... Keyframes double couleur  ............................. */
-
-@keyframes animate {
-  0% {
-      transform: rotate(0deg);
-  }
-  50% {
-      transform: rotate(180deg);
-  }
-  100% {
-      transform: rotate(360deg);
-  }
-}
-
-@keyframes animateBgColor {
-  0%{
-    filter: hue-rotate(0deg);
-  }
-  100%{
-    filter: hue-rotate(360deg);
-  }
-}
-.icon {
-  position: relative;
-width: 125px;
-height: auto;
-  z-index: 0;
-  text-align: center;
-  display: grid;
-}
-.icon svg path {
-  stroke: #fff;
-  stroke-width: 4.8px;
-  fill: transparent;
-  filter: drop-shadow(0 10px 10px #000) blur(2px);
-}
 .icon h4 {
   position: relative;
   font-size: .25rem;
