@@ -251,6 +251,9 @@ body.light-theme{
   -webkit-backdrop-filter: blur(.1em); 
   backdrop-filter: blur(.5em);
   transition: .5s; /* pour l'animation du dark theme */
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
 }
 .nav{
   height: var(--header-height);
@@ -684,11 +687,14 @@ border-radius: 55%;
 }
 .work__img{
   border-radius: 1rem;
-  margin-bottom: .75rem;    background-color: var(--body-color);
-  border: .25rem double var(--first-color); 
+  margin-bottom: .75rem;    
+  background-color: var(--body-color);
+  border: .1rem double var(--first-color); 
   box-shadow: 0px 0px 25px 2px var(--first-color-alt);
   animation: animateBgColor 4s linear infinite;
-  border: .15rem dashed var(--first-color-alt);
+  border: .1rem dashed var(--first-color-alt);
+  object-fit:cover;    
+  width: 300px;
 }
 .work__title{
   font-size: var(--normal-font-size);
@@ -1025,7 +1031,7 @@ color: var(--body-color);
     justify-content: center;
   }
   .work__img{
-    width: 200px;
+    width: 250px;
   }
 
   .contact__info{
@@ -1324,7 +1330,7 @@ height: auto;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;  
   border-radius: 22px;
-  border: 2rem ridge rgba(0, 0, 0, 0.985);
+  border: 1.5rem ridge rgba(0, 0, 0, 0.985);
   border-width: 2px 4px 4px 2px;
 }
 
@@ -1333,7 +1339,7 @@ height: auto;
   height: 100%;
   object-fit:cover;  
   border-radius: 22px;
-  border: 2rem ridge rgba(255, 254, 243, 0.924);
+  border: 1.5rem ridge rgba(255, 254, 243, 0.924);
   border-width: 4px 2px 2px 4px;
   background-image: cover;
 }
