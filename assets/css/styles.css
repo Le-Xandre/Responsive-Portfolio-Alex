@@ -322,6 +322,12 @@ body.light-theme{
   display: block;
   font-size: .5rem;  
   text-align: center;
+  box-shadow: 0 0 14px hsla(var(--first-hue), var(--sat),var(--lig), 2);
+  color: var(--title-color);
+  border-radius: 22px;
+  margin: auto;
+  padding:auto;  
+  animation: animateBgColor 20s linear infinite;
 }
 
 /* Active link */
