@@ -647,9 +647,9 @@ border-radius: 55%;
 }
 .services__modal-close{
   position: absolute;
-  bottom: .5rem;
-  left: 8rem;
-  font-size: 1.5rem;
+  top: 3rem;
+  right: auto;
+  font-size: 1rem;
   color: var(--first-color);
   cursor: pointer;
 }
