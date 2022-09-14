@@ -113,7 +113,6 @@ img {
   max-width: 100%;
   height: auto;  
   box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, .1);
-
 }
 
 /*=============== THEME ===============*/
@@ -238,6 +237,9 @@ body.light-theme{
   display: flex;
   /* padding: 0;
   margin: 0; */
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
   justify-self: center;
   background-image: cover;
   image-rendering:optimizeSpeed;
@@ -246,22 +248,19 @@ body.light-theme{
   box-shadow: 0px 0px 25px 2px var(--first-color-alt);
   animation: animateBgColor 4s linear infinite;
   opacity: 65%;
-  z-index:-2;
   border-radius: 22px;
   -webkit-backdrop-filter: blur(.1em); 
   backdrop-filter: blur(.5em);
   transition: .5s; /* pour l'animation du dark theme */
-  width: 100%;
-  height: 100%;
-  object-fit:cover;
+  z-index:-2;
 }
 .nav{
+  /*position: fixed;
+  min-width: 450px;*/ 
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
-/* position: fixed;
-min-width: 450px;  */ 
 }
 
 .nav__logo{
@@ -274,13 +273,14 @@ min-width: 450px;  */
   color: var(--first-color-alt);
 }
 
-@supports ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))) {
-  .backdrop-blur {
+@supports ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))) 
+{  .backdrop-blur {
     background-color: rgba(255, 255, 255, .5);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
   }
 }
+
 .nav__menu{
   position: fixed;
   bottom: 1rem;
@@ -314,6 +314,8 @@ min-width: 450px;  */
   align-items: center;
   justify-content: center;
   margin:.3rem;
+  transition: .4s;
+  animation: animateBgColor 10s linear infinite;
 }
 
 .nav__item-title{  
@@ -383,9 +385,9 @@ text-shadow: 5px 5px 5px var(--first-color-alt);
   background: linear-gradient(180deg,
   hsla(var(--first-hue), var(--sat), var(--lig),1),
   hsla(var(--first-hue), var(--sat), var(--lig),.2));
-  box-shadow: 0px 0px 10px 4px var(--first-color-alt); 
-  overflow: hidden;  text-shadow: 5px 4px 4px var(--container-color);
-
+  box-shadow: 0px 0px 10px 4px var(--first-color-alt);
+  text-shadow: 5px 4px 4px var(--container-color);
+  overflow: hidden;
 }
 .home__buttons{
   display: flex;
@@ -416,7 +418,6 @@ position: absolute;
   align-items:center;
   font-size: var(--special-font-size);
   transition: .5s;
-
   }
   .home__social-link:hover{
   background-color: var(--first-color);
@@ -462,7 +463,7 @@ position: absolute;
   border-radius: .5rem;
   font-weight: var(--font-medium);
   transition: .4s;
-  animation: animateBgColor 120s linear infinite;
+  animation: animateBgColor 60s linear infinite;
 }
 .button--ghost{
   background-color: transparent;
@@ -486,7 +487,7 @@ border-radius: 55%;
   background-color: var(--body-color);
   border: .5rem double var(--first-color); 
   box-shadow: 0px 0px 25px 2px var(--first-color-alt);
-  animation: animateBgColor 4s linear infinite;  
+  animation: animateBgColor 10s linear infinite;  
 }
 
 .about__data{
@@ -670,7 +671,7 @@ border-radius: 55%;
   align-items: center;
   column-gap:  .75rem;
   margin-bottom: 2rem;
-  animation: animateBgColor 4s linear infinite;
+  animation: animateBgColor 5s linear infinite;
 }
 
 .work__item{
@@ -691,7 +692,7 @@ border-radius: 55%;
   background-color: var(--body-color);
   border: .1rem double var(--first-color); 
   box-shadow: 0px 0px 25px 2px var(--first-color-alt);
-  animation: animateBgColor 4s linear infinite;
+  animation: animateBgColor 5s linear infinite;
   border: .1rem dashed var(--first-color-alt);
   object-fit:cover;    
   width: 300px;
@@ -755,7 +756,7 @@ border-radius: 55%;
   white-space: wrap;  
   overflow:scroll;
   text-overflow: ellipsis;
-  animation: animateBgColor 4s linear infinite;
+  animation: animateBgColor 5s linear infinite;
 }
 
 .testimonial__description::first-letter{
@@ -1188,9 +1189,8 @@ transform: rotate(90deg) translate(16px, 0);
   inset: 4px;
   border-radius: 10rem 10rem 1rem 1rem;
   background: var(--first-color);
-  z-index: 1;  
   animation: animateBgColor 30s linear infinite;
-
+  z-index: 1;
 }
 .box img {
   position: relative;
@@ -1287,10 +1287,10 @@ height: auto;
   justify-self: center;
   align-items: center;
   justify-content: center;
-
   /*  border: 1px solid black; */
  /*   perspective: 1000px; Remove this if you don't want the 3D effect */
 }
+
 .flip-box h1{
   position: absolute;
   display: flex;
