@@ -246,7 +246,7 @@ body.light-theme{
   border: .25rem double var(--first-color); 
   box-shadow: 0px 0px 25px 2px var(--first-color-alt);
   animation: animateBgColor 4s linear infinite;
-  opacity: 62%;
+  opacity: 65%;
   z-index:-2;
   border-radius: 22px;
   -webkit-backdrop-filter: blur(.1em); 
@@ -684,7 +684,10 @@ border-radius: 55%;
 }
 .work__img{
   border-radius: 1rem;
-  margin-bottom: .75rem;  
+  margin-bottom: .75rem;    background-color: var(--body-color);
+  border: .25rem double var(--first-color); 
+  box-shadow: 0px 0px 25px 2px var(--first-color-alt);
+  animation: animateBgColor 4s linear infinite;
   border: .15rem dashed var(--first-color-alt);
 }
 .work__title{
