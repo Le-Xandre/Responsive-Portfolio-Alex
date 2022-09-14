@@ -683,7 +683,7 @@ border-radius: 55%;
 }
 .work__card{
   background-color: var(--container-color);
-  padding: 1rem;
+  padding: .2rem;
   border-radius: 1rem;
 }
 .work__img{
