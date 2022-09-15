@@ -3,7 +3,7 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 3rem;
+  --header-height: 2.5rem;
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
@@ -249,6 +249,7 @@ body.light-theme{
   animation: animateBgColor 4s linear infinite;
   border-radius: 22px;
   -webkit-backdrop-filter: blur(.1em); 
+  -moz-backdrop-filter: blur(.1em); 
   backdrop-filter: blur(.5em);
   transition: .5s; /* pour l'animation du dark theme */
   object-fit:cover;
@@ -267,7 +268,7 @@ body.light-theme{
 .nav__logo{
   color: var(--first-color);
   font-weight: var(--font-medium);
-  transition: .4s;  animation: animateBgColor 60s linear infinite; 
+  transition: .5s;  animation: animateBgColor 60s linear infinite; 
 }
 
 .nav__logo:hover{
@@ -283,18 +284,18 @@ body.light-theme{
 }
 .nav__menu{
   position: fixed;
-  bottom: 1rem;
+  top: 1rem;
   background-color: hsla(var(--second-hue), 32%, 16%, .8);
-  width: 90%;
+  width: 92%;
   height: auto;
-  border: 0.5px solid rgba(255,255,255,0.2);
-  border-radius: 3rem;
-  padding: .25rem 1.25rem;
-  margin:.2em;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4rem;
+  padding: .5rem 1.5rem;
   /* suivant le navigateur */
   -webkit-backdrop-filter: blur(5px); 
   backdrop-filter: blur(5px);
   transition: .5s; /* pour l'animation du dark theme */
+
 }
 .nav__list{
   display: flex;
@@ -330,7 +331,16 @@ body.light-theme{
   padding:auto;  
   animation: animateBgColor 20s linear infinite;
 }
-
+.nav__menu-img{
+  align-items: center;
+  justify-content: center;
+  margin:.5rem;  
+  transition: .5s;
+  opacity: 90%;
+  border-radius: 22px;
+  width: 95%;
+  animation: animateBgColor 10s linear infinite;
+}
 /* Active link */
 .active-link{
   background: linear-gradient(180deg,
@@ -714,7 +724,21 @@ border-radius: 55%;
   box-shadow: 0px 0px 25px 2px var(--first-color-alt);
   border: .1rem dashed var(--first-color-alt);
   object-fit:cover;    
-  width: 125px;
+  width: 120px; 
+  display: grid;
+  justify-content: space-evenly;
+}
+.videobox{
+  border-radius: 1rem;
+  margin-bottom: .5rem;    
+  background-color: var(--body-color);
+  border: .1rem double var(--first-color); 
+  box-shadow: 0px 0px 25px 2px var(--first-color-alt);
+  border: .1rem dashed var(--first-color-alt);
+border-radius: 22px;
+padding: 1.5rem;
+  display: grid;
+  justify-content: space-evenly;
 }
 .work__title{
   font-size: var(--normal-font-size);
@@ -951,18 +975,17 @@ color: var(--body-color);
 /* For small devices */
 @media screen and (max-width:320px){
   .nav__menu{
-    padding: 1.15rem 1.15rem;
-    margin: .2rem .2rem
+    padding: 1.5rem 1.5rem;
   }
   .home{
     position: relative;
-    row-gap: 1.25rem;
+    row-gap: 1.45rem;
     padding-top: 1.25rem;
   }
   .home__container{
     position: relative;
-    row-gap: 1.5rem;
-    padding-top: 1.25rem;
+    row-gap: 1.75rem;
+    padding-top: 1.5rem;
   }
   .home__buttons{
     flex-direction: column;
@@ -1015,7 +1038,7 @@ color: var(--body-color);
 /* For medium devices */
 @media screen and (min-width:576px){
   .nav__menu{
-    width: 300px;
+    width: 328px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -1054,9 +1077,7 @@ color: var(--body-color);
   .work__img{
     width: 250px;
   }
-  .work2__img{
-    width: 250px;
-  }
+
   .contact__info{
     grid-template-columns: 300px;
     justify-content: center;
@@ -1085,13 +1106,13 @@ color: var(--body-color);
   margin-right: auto;
 }
 .section{
-  padding: 5.5rem 0 1rem;
+  padding: 5.25rem 0 1rem;
 }
 .section__title{
-  margin-bottom: 3.5rem;
+  margin-bottom: 3.25rem;
 }
 .nav{
-  height: calc(var(--header-height) + 1rem);
+  height: calc(var(--header-height) + .5rem);
 }
 .home__handle{
   width: 220px;
@@ -1152,9 +1173,6 @@ transform: rotate(90deg) translate(16px, 0);
 .work__img{
   margin-bottom: 1rem;
 }
-.work2__img{
-  margin-bottom: .5rem;
-  }
 .work__title{
   margin-bottom: .5rem;
 }
