@@ -951,17 +951,18 @@ color: var(--body-color);
 /* For small devices */
 @media screen and (max-width:320px){
   .nav__menu{
-    padding: 1.5rem 1.5rem;
+    padding: 1.25rem 1.25rem;
+    margin: .2rem .2rem
   }
   .home{
     position: relative;
-    row-gap: 1.45rem;
+    row-gap: 1.25rem;
     padding-top: 1.25rem;
   }
   .home__container{
     position: relative;
-    row-gap: 1.75rem;
-    padding-top: 1.5rem;
+    row-gap: 1.5rem;
+    padding-top: 1.25rem;
   }
   .home__buttons{
     flex-direction: column;
