@@ -295,7 +295,7 @@ body.light-theme{
   -webkit-backdrop-filter: blur(5px); 
   backdrop-filter: blur(5px);
   transition: .5s; /* pour l'animation du dark theme */
-
+z-index: 1000;
 }
 .nav__list{
   display: flex;
@@ -338,7 +338,7 @@ body.light-theme{
   transition: .5s;
   opacity: 90%;
   border-radius: 22px;
-  width: 95%;
+  width: 90%;
   animation: animateBgColor 10s linear infinite;
 }
 /* Active link */
