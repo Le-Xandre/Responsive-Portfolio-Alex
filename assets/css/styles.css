@@ -125,6 +125,15 @@ img {
 .change-theme:hover{
   color: var(--first-color-alt);
 }
+/*=============== THEME 2 ===============*/
+.change-theme2{
+  font-size: 1.75rem;
+  cursor: auto;
+  transition: .3s;
+}
+.change-theme2:hover{
+  color: var(--first-color);
+}
 /*========== Variables Dark theme ==========*/
 body.light-theme{
   --title-color: hsla(var(--second-hue), 15%, 15%);
