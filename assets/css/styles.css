@@ -988,7 +988,7 @@ color: var(--body-color);
 /* For small devices */
 @media screen and (max-width:320px){
   .nav__menu{
-    padding: 1.65rem 1.65rem;
+    padding: 1.25rem 1.25rem;
   }
   .nav__menu-img{
     align-items: center;
@@ -997,11 +997,11 @@ color: var(--body-color);
     transition: .25s;
     opacity: 65%;
     border-radius: 22px;
-    width: 95%;
+
     animation: animateBgColor 15s linear infinite;
     display: flex;
     position: relative;
-    z-index: 1;
+    z-index: 4;
   }
   .home{
     position: relative;
