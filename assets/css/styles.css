@@ -75,7 +75,6 @@
 html {
   font-size: 100%;
   -webkit-scroll-behavior:smooth;
-  moz-webkit-scroll-behavior:smooth;
   scroll-behavior:smooth;
 }
 
@@ -195,7 +194,7 @@ body.light-theme{
 }
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  max-width: 60.5rem;
+  max-width: auto;
   margin-left: 1rem;
   margin-right: 1rem;
 }
@@ -302,8 +301,9 @@ body.light-theme{
   border-radius: 4rem;
   padding: .5rem 1.5rem;
   /* suivant le navigateur */
-  -webkit-backdrop-filter: blur(5px); 
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(.5px); 
+  -moz-backdrop-filter: blur(.5em);
+  backdrop-filter: blur(.5px);
   transition: .5s; /* pour l'animation du dark theme */
 z-index: 1000;
 }
@@ -350,6 +350,8 @@ z-index: 1000;
   border-radius: 22px;
   width: 90%;
   animation: animateBgColor 10s linear infinite;
+  display: flex;
+  z-index: 22;
 }
 /* Active link */
 .active-link{
@@ -507,7 +509,7 @@ position: absolute;
 /*=============== ABOUT ===============*/
 
 .about__container{
-  row-gap: 2.25rem;  
+  row-gap: 2.25rem;    
 }
 .about__img{
   width: 150px;
@@ -536,7 +538,7 @@ border-radius: 55%;
 .about__icon{
   font-size: 1.5rem;
   color: var(--first-color);
-  margin-bottom: .5rem;
+  margin-bottom: .5rem;animation: textTyping 15s steps(250) infinite;
 }
 .about__title{
   font-size: var(--small-font-size);
@@ -764,11 +766,12 @@ padding: 1.5rem;
   column-gap: .25rem;
 }
 .work__button:hover .work__icon{
-  transform: translateX(.25rem);
+  transform: translateX(.5rem);
+
 }
 .work__icon{
-  font-size: 1rem;
-  transition: .4s;
+  font-size: 1.5rem;
+  transition: .5s;
 }
 /* Active item work*/
 .active-work{
@@ -792,7 +795,7 @@ padding: 1.5rem;
 .testimonial__img{
   width: 100px;
   border-radius: 4rem;
-  image-rendering:auto;
+  image-rendering:optimizeSpeed;
   border: 0.5rem double var(--first-color); 
   box-shadow: 0px 0px 10px 5px var(--first-color-alt);
   margin-bottom: 1rem;
@@ -844,7 +847,7 @@ padding: 1.5rem;
 .contact__card{
   background-color: var(--container-color);
   padding: 1rem;
-  border-radius: .75rem;
+  border-radius: .5rem;
   text-align: center;
 }
 .contact__card-icon{
@@ -861,7 +864,7 @@ padding: 1.5rem;
 }
 .contact__card-data{
   display: block;
-  margin-bottom: .75rem;
+  margin-bottom: .5rem;
 }
 .contact__button{
   color: var(--first-color);
@@ -869,7 +872,7 @@ padding: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  column-gap: .20rem;
+  column-gap: .15rem;
 }
 .contact__button:hover .contact__button-icon{
   transform: translateX(.25rem);
@@ -985,23 +988,37 @@ color: var(--body-color);
 /* For small devices */
 @media screen and (max-width:320px){
   .nav__menu{
-    padding: 1.5rem 1.5rem;
+    padding: 1.65rem 1.65rem;
+  }
+  .nav__menu-img{
+    align-items: center;
+    justify-content: center;
+    margin:.25rem;  
+    transition: .25s;
+    opacity: 65%;
+    border-radius: 22px;
+    width: 95%;
+    animation: animateBgColor 15s linear infinite;
+    display: flex;
+    position: relative;
+    z-index: 1;
   }
   .home{
     position: relative;
-    row-gap: 1.45rem;
+    row-gap: 1.35rem;
     padding-top: 1.25rem;
   }
   .home__container{
     position: relative;
-    row-gap: 1.75rem;
-    padding-top: 1.5rem;
+    row-gap: 1.55rem;
+    padding-top: 1.25rem;
   }
   .home__buttons{
     flex-direction: column;
+    display: flex;
   }
   .home__handle{
-    width: 125px;
+    width: 75px;
     height: auto;
   }
   .home__img{
@@ -1027,15 +1044,26 @@ color: var(--body-color);
     font-size: var(--small-font-size);
   }
   .services__container{
-    grid-template-columns: 135px;
+    grid-template-columns: 75px;
     justify-content: center;
   }
   .work__item{
     font-size: var(--small-font-size);
   }
   .work__filters{
-    column-gap: .25rem;
+    column-gap: .15rem;
   }
+  
+  .work__container{
+    justify-content: left;
+  }
+  .work__img{
+    width: 125px;
+  }
+  .work__card{
+    display: flex;
+  }
+
   .footer__list{
     display:flex;
     justify-content: center;
@@ -1101,10 +1129,11 @@ color: var(--body-color);
 @media screen and (min-width:767px){
   .work__container{
     grid-template-columns: repeat(2, max-content);
+    justify-content: center;
   }
   .contact__container{
     grid-template-columns: repeat(2, max-content);
-    justify-content: center;
+    justify-content: flex-start;
     column-gap: 3rem;
   }
 }
@@ -1361,7 +1390,7 @@ height: auto;
   position: relative;
   width: 100%;
   height: 100%;
-  padding-top: 52.65%;
+  padding-top: 5%;
   text-align: center;
   text-shadow: 0px 0px 10px 5px var(--first-color);
   transition: transform 0.8s;
