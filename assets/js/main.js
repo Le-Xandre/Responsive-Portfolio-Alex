@@ -236,3 +236,17 @@ const sr = ScrollReveal({
 sr.reveal('.home__data')
 sr.reveal('.home__handle', {delay:700})
 sr.reveal('.home__social, .home__scroll',{delay:900,origin:'bottom'})
+
+
+
+
+
+
+// change theme
+
+const setTheme = theme => document.documentElement.className = theme;
+
+document.getElementById('theme-select').addEventListener('change', function() {
+  setTheme(this.value);
+});
+
