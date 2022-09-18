@@ -1,6 +1,40 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+:root, :root.light {
+  --bg-color: #fff;
+  --text-color: #123;
+}
+
+:root.dark {
+  --bg-color: #121212;
+  --text-color: #696d7d;
+}
+
+:root.blue {
+  --bg-color: #05396B;
+  --text-color: #E7F1FE;
+}
+
+:root.pink {
+  --bg-color: #ffcad4;
+  --text-color: #e75480;
+}
+
+:root.space {
+  --bg-color: #000;
+  --text-color: #f2bd16;
+  --bg-url: url("https://www.spacejam.com/1996/img/bg_stars.gif");
+  --font-family: 'Press Start 2P', cursive;
+}
+
+:root.nyan {
+  --bg-color: #013367;
+  --text-color: #fff;
+  --bg-url: url("https://static.wixstatic.com/media/4cbe8d_f1ed2800a49649848102c68fc5a66e53~mv2.gif");
+  --font-family: 'Comic Neue', cursive;
+}
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 2.5rem;
@@ -80,13 +114,16 @@ html {
 
 body,button,input,textarea {
   font-family: var(--body-font);
-  font-size: var(--normal-font-size);
+  font-size: var(--normal-font-size);  
 }
 
 body {
   background-color: var(--body-color);
   color: var(--text-color);
   transition: .5s; /* pour l'animation du dark theme */
+  margin: 0;
+background-image: var(--bg-url);
+  font-family: var(--font-family, "Inter", sans-serif);
 }
 
 h1, h2, h3 {
@@ -110,7 +147,7 @@ button {
 }
 
 img {
-  max-width: 100%;
+  max-width: 99%;
   height: auto;  
   box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, .1);
 
@@ -127,9 +164,9 @@ img {
 }
 /*=============== THEME 2 ===============*/
 .change-theme2{
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   cursor: auto;
-  transition: .3s;
+  transition: .4s;
 }
 .change-theme2:hover{
   color: var(--first-color);
@@ -139,7 +176,7 @@ body.light-theme{
   --title-color: hsla(var(--second-hue), 15%, 15%);
   --text-color: hsla(var(--second-hue), 10%, 25%);
   --body-color: hsla(var(--second-hue), 15%, 80%);
-  --container-color: rgba(240, 236, 236, 0.822);
+  --container-color: rgba(240, 238, 236, 0.822);
 }
 
 /*========== 
@@ -209,7 +246,7 @@ body.light-theme{
 }
 
 .section {
-  padding: 3.5rem 0 1rem;
+  padding: 3rem 0 1rem;
   align-items: center;
 }
 
@@ -247,8 +284,8 @@ body.light-theme{
   display: flex;
   width: 100%;
   height: 100%;
-  /* padding: 0;
-  margin: 0; */
+  padding: 0;
+  margin: 0;
   justify-self: center;
   background-image: cover;
   image-rendering:optimizeSpeed;
@@ -267,8 +304,8 @@ body.light-theme{
 }
 .nav{
   display: flex;
-  /* position: fixed;
-  min-width: 450px;  */ 
+  position: fixed;
+  min-width: 450px;  
   height: var(--header-height);
   justify-content: space-evenly;
   align-items: center;
@@ -279,9 +316,13 @@ body.light-theme{
   font-weight: var(--font-medium);
   transition: .5s;  animation: animateBgColor 60s linear infinite; 
 }
-
-.nav__logo:hover{
+.nav__container{
   color: var(--first-color-alt);
+  font-weight: var(--font-medium);
+  transition: .5s;  animation: animateBgColor 120s linear infinite; 
+}
+.nav__logo:hover{
+  color: var(--first-color-alt);  animation: animateBgColor 1s linear infinite;
 }
 
 @supports ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))) {
@@ -293,13 +334,13 @@ body.light-theme{
 }
 .nav__menu{
   position: fixed;
-  top: 1rem;
+  top: 1.65rem;
   background-color: hsla(var(--second-hue), 32%, 16%, .8);
   width: 92%;
   height: auto;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 4rem;
-  padding: .5rem 1.5rem;
+  padding: .25rem 1.25rem;
   /* suivant le navigateur */
   -webkit-backdrop-filter: blur(.5px); 
   -moz-backdrop-filter: blur(.5em);
@@ -351,7 +392,7 @@ z-index: 1000;
   width: 90%;
   animation: animateBgColor 10s linear infinite;
   display: flex;
-  z-index: 22;
+  z-index: -10;
 }
 /* Active link */
 .active-link{
@@ -360,6 +401,7 @@ z-index: 1000;
   hsla(var(--first-hue), var(--sat),var(--lig), .2));
   box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat),var(--lig), 2);
   color: var(--title-color);
+  z-index: -4;
 }
 
 /* Change background header */
@@ -988,24 +1030,47 @@ color: var(--body-color);
 /* For small devices */
 @media screen and (max-width:320px){
   .nav__menu{
-    padding: 1.25rem 1.25rem;
+    display:block;
+    padding: .25rem .25rem;
+    position: fixed;
+    top: 1rem;
+    background-color: hsla(var(--second-hue), 32%, 16%, .8);
+    width: 92%;
+    height: auto;
+    border: .1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4rem;
+    padding: .25rem .25rem;
+    /* suivant le navigateur */
+    -webkit-backdrop-filter: blur(.5px); 
+    -moz-backdrop-filter: blur(.5em);
+    backdrop-filter: blur(.5px);
+    transition: .5s; /* pour l'animation du dark theme */
+
   }
+  .nav__item-title{  
+    display: block;
+    font-size: .5rem;  
+    text-align: center; 
+    box-shadow: 0 0 7px hsla(var(--first-hue), var(--sat),var(--lig), 2);
+    color: var(--title-color);
+    border-radius: 22px;
+    animation: animateBgColor 25s linear infinite;
+  }
+
   .nav__menu-img{
     align-items: center;
     justify-content: center;
     margin:.25rem;  
     transition: .25s;
-    opacity: 65%;
+    opacity: 55%;
     border-radius: 22px;
-
     animation: animateBgColor 15s linear infinite;
-    display: flex;
-    position: relative;
-    z-index: 4;
+    display: block;
+    z-index: -10;
   }
   .home{
     position: relative;
-    row-gap: 1.35rem;
+    row-gap: 1.25rem;
     padding-top: 1.25rem;
   }
   .home__container{
@@ -1031,7 +1096,7 @@ color: var(--body-color);
     display: inline-block;
     background-color: var(--first-color);
     color: var(--body-color);
-    padding: .75rem .75rem;
+    padding: .5rem .5rem;
     border-radius: .5rem;
     font-weight: var(--font-medium);
     transition: .5s;
@@ -1044,14 +1109,14 @@ color: var(--body-color);
     font-size: var(--small-font-size);
   }
   .services__container{
-    grid-template-columns: 75px;
+    grid-template-columns: 85px;
     justify-content: center;
   }
   .work__item{
     font-size: var(--small-font-size);
   }
   .work__filters{
-    column-gap: .15rem;
+    column-gap: .2rem;
   }
   
   .work__container{
@@ -1231,6 +1296,32 @@ transform: rotate(90deg) translate(16px, 0);
   border-radius: .5rem;
 }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+select {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  font-family: inherit;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border-radius: 0.25rem;
+}
+
+
 
 /* ...................... box double couleur  ............................. */
 
@@ -1493,3 +1584,9 @@ height: auto;
     text-align: center;
   }
 }
+
+
+
+
+
+
