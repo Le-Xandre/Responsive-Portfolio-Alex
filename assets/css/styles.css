@@ -50,39 +50,7 @@
   --z-fixed: 100;
   --z-modal: 1000;
 }
-:root, :root.light {
-  --bg-color: #fff;
-  --text-color: #123;
-}
 
-:root.dark {
-  --bg-color: #121212;
-  --text-color: #d0d1d7;
-}
-
-:root.blue {
-  --bg-color: #084e91;
-  --text-color: #E7F1FE;
-}
-
-:root.pink {
-  --bg-color: #ffcad4;
-  --text-color: #e75480;
-}
-
-:root.space {
-  --bg-color: #000;
-  --text-color: #f2bd16;
-  --bg-url: url("https://www.spacejam.com/1996/img/bg_stars.gif");
-  --font-family: 'Press Start 2P', cursive;
-}
-
-:root.nyan {
-  --bg-color: #013367;
-  --text-color: #fff;
-  --bg-url: url("https://static.wixstatic.com/media/4cbe8d_f1ed2800a49649848102c68fc5a66e53~mv2.gif");
-  --font-family: 'Comic Neue', cursive;
-}
 /* Responsive typography */
 @media screen and (min-width: 60.5rem) {
   :root {
@@ -98,6 +66,47 @@
   }
 }
 
+   /*========== color theme ==========*/
+  
+   :root.blue {
+    --bg-color: #014b90;
+    --text-color: #E7F1FE;
+  }
+  :root.dark {
+    --bg-color: #121212;
+    --text-color: #999caa;
+  }
+  :root, :root.light {
+    --bg-color: #fff;
+    --text-color: #123;
+  }
+  
+  
+  :root.pink {
+    --bg-color: #ffcad4;
+    --text-color: #e75480;
+  }
+  
+  :root.space {
+    --bg-color: #000;
+    --text-color: #f2bd16;
+    --bg-url: url("https://www.spacejam.com/1996/img/bg_stars.gif");
+    --background:cover;
+    --font-family: 'Press Start 2P', cursive;
+  }
+  
+  :root.nyan {
+    --bg-color: #004691;
+    --text-color: #fff;
+    --bg-url: url("https://static.wixstatic.com/media/4cbe8d_f1ed2800a49649848102c68fc5a66e53~mv2.gif");
+    --font-family: 'Comic Neue', cursive;
+  } 
+  :root.nyan {
+    --bg-color: #910038;
+    --text-color: #fff;
+    --bg-url: url("https://static.wixstatic.com/media/4cbe8d_f1ed2800a49649848102c68fc5a66e53~mv2.gif");
+    --font-family: 'Comic Neue', cursive;
+  } 
 /*=============== BASE ===============*/
 *, ::before, ::after {
   box-sizing: border-box;
@@ -117,9 +126,11 @@ body,button,input,textarea {
 }
 
 body {
-  background-color: var(--body-color);
+  background-color: var(--bg-color);
   color: var(--text-color);
   transition: .5s; /* pour l'animation du dark theme */
+  background-image: var(--bg-url);
+  font-family: var(--font-family);
 }
 
 h1, h2, h3 {
@@ -151,23 +162,17 @@ img {
 
 select {
   padding: 0.25rem 0.75rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-family: inherit;
-  background-color: var(--background-color);
+  background-color: var(--bg-url);
   color: var(--text-color);
   border-radius: 0.5rem;
 }
-.selects {
-  padding: 0.25rem 0.75rem;
-  font-size: 1rem;
-  font-family: inherit;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  border-radius: 0.5rem;
-}
+
 theme-select{
   position: relative;
   font-family: Arial;
+  font-size: 1.5rem;
 }
 .select-items div:hover, .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1);
@@ -248,6 +253,7 @@ body.light-theme{
 .light-theme::-webkit-scrollbar-thumb:hover{
   background-color: hsl(var(--second-hue), 8%, 44%);
 }
+
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 60.5rem;
@@ -324,7 +330,7 @@ body.light-theme{
 .nav{
   display: flex;
   /* position: fixed;
-  min-width: 450px;  */ 
+  min-width: 450px;  */
   height: var(--header-height);
   justify-content: space-evenly;
   align-items: center;
@@ -351,7 +357,7 @@ body.light-theme{
   position: fixed;
   top: 1.25rem;
   background-color: hsla(var(--second-hue), 32%, 16%, .8);
-  width: 90%;
+  width: 95%;
   height: auto;
   border: .5px solid rgba(255, 255, 255, 0.2);
   border-radius: 4rem;
@@ -374,7 +380,7 @@ z-index: 1000;
 
 .nav__link{
   display: flex;
-  padding: .2rem;
+  padding: .22rem;
   color: var(--text-color);
   font-size: 1.25rem;
   border-radius: 100%;
@@ -387,6 +393,7 @@ z-index: 1000;
 
 .nav__item-title{  
   display: block;
+  padding: .5px;
   font-size: .5rem;  
   text-align: center; 
   box-shadow: 0 0 8px hsla(var(--first-hue), var(--sat),var(--lig), 2);
@@ -1521,5 +1528,4 @@ align-items: center;
     text-align: center;
   }
 }
-
 
