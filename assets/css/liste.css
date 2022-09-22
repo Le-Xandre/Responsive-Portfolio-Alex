@@ -83,12 +83,12 @@
   
   
   :root.pink {
-    --bg-color: #ffcad4;
+    --bg-color: #51494a;
     --text-color: #e75480;
   }
   
   :root.space {
-    --bg-color: #000;
+    --bg-color: rgb(143, 142, 145);
     --text-color: #f2bd16;
     --bg-url: url("https://www.spacejam.com/1996/img/bg_stars.gif");
     --background:cover;
@@ -399,7 +399,6 @@ z-index: 1000;
   box-shadow: 0 0 8px hsla(var(--first-hue), var(--sat),var(--lig), 2);
   color: var(--title-color);
   border-radius: 22px;
-  margin: auto;
   padding:auto;  
   animation: animateBgColor 20s linear infinite;
 }
