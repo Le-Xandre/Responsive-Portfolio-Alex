@@ -783,6 +783,7 @@ border-radius: 55%;
   background-color: var(--container-color);
   padding: 1rem;
   border-radius: 1rem;
+  position: relative;
 }
 .work__img{
   border-radius: 1rem;
@@ -1160,14 +1161,22 @@ color: var(--body-color);
   .services__modal-description{
     padding: 0 3.5rem;
   }
-
+  .work__card{
+    padding: 1rem;
+    margin: .5rem;
+  }
   .work__container{
     justify-content: center;
   }
   .work__img{
     width: 250px;
   }
-
+  .work__item{
+    font-size: var(--small-font-size);
+  }
+  .work__filters{
+    column-gap: .15rem;
+  }
   .contact__info{
     grid-template-columns: 300px;
     justify-content: center;
