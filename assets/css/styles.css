@@ -69,8 +69,9 @@
    /*========== color theme ==========*/
   
    :root.blue {
-    --bg-color: #4fa4c37c;
-    --text-color: #e3ebf7;
+    --bg-color:#31adda7c;
+    --text-color: #164386;
+    --font-family: 'Poppins';
   }
   :root.dark {
     --bg-color: #3a3d41;
@@ -78,31 +79,31 @@
   }
   :root, :root.light {
     --bg-color: rgba(207, 201, 175, 0.835);
-    --text-color: rgba(242, 215, 187, 0.856);
+    --text-color:var(--title-color);
   }
   
   
   :root.pink {
-    --bg-color: #a19c9d;
+    --bg-color: #caabb1;
     --text-color: #c55170d7;
   }
   
   :root.space {
-    --bg-color: rgb(226, 229, 238);
+    --bg-color: rgb(243, 245, 251);
     --text-color: #f2bd16;
     --bg-url: url("https://www.spacejam.com/1996/img/bg_stars.gif");
     --background:cover;
     --font-family: 'Press Start 2P', cursive;
   }
   :root.space.light {
-    --bg-color: rgba(241, 229, 229, 0.935);
-    --text-color: #3db42a;
+    --bg-color: rgba(241, 229, 229, 0.977);
+    --text-color: #82e972;
     --bg-url: url("https://www.spacejam.com/1996/img/bg_stars2.gif");
     --background:cover;
     --font-family: 'Press Start 2P', cursive;
   }
   :root.nyan {
-    --bg-color: #021326;
+    --bg-color: #1d138b;
     --text-color: #fff;
     --bg-url: url("https://static.wixstatic.com/media/4cbe8d_f1ed2800a49649848102c68fc5a66e53~mv2.gif");
     --font-family: 'Comic Neue', cursive;
@@ -110,9 +111,9 @@
   :root.test {
     --bg-color: #910038;
     --text-color: #fff;
-    --bg-url: url(../assets/img/brightHope.gif);
-    --font-family: 'Comic Neue', cursive;
-  } 
+    --bg-url: url("../img/brightHope.gif");
+    --font-family: 'poppins', cursive;
+  }
 /*=============== BASE ===============*/
 *, ::before, ::after {
   box-sizing: border-box;
@@ -386,7 +387,7 @@ z-index: 1000;
 }
 
 .nav__link{
-  display: block;
+  display: flex;
   padding: .22rem;
   color: var(--text-color);
   font-size: 1.25rem;
@@ -400,9 +401,8 @@ z-index: 1000;
 }
 
 .nav__item-title{  
-  display: block;
-  padding: .5px;
-  font-size: .58em;  
+  display: grid;
+  font-size: .48em;  
   text-align: center; 
   box-shadow: 0 0 8px hsla(var(--first-hue), var(--sat),var(--lig), 2);
   color: var(--title-color);
