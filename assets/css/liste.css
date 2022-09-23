@@ -101,12 +101,12 @@
     --bg-url: url("https://static.wixstatic.com/media/4cbe8d_f1ed2800a49649848102c68fc5a66e53~mv2.gif");
     --font-family: 'Comic Neue', cursive;
   } 
-  :root.nyan {
+  :root.test {
     --bg-color: #910038;
     --text-color: #fff;
-    --bg-url: url("https://static.wixstatic.com/media/4cbe8d_f1ed2800a49649848102c68fc5a66e53~mv2.gif");
-    --font-family: 'Comic Neue', cursive;
-  } 
+    --bg-url: url("../img/brightHope.gif");
+    --font-family: 'poppins', cursive;
+  }
 /*=============== BASE ===============*/
 *, ::before, ::after {
   box-sizing: border-box;
