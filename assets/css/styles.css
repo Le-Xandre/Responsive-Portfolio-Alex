@@ -144,7 +144,7 @@ html {
 body,button,input,textarea {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-
+  box-shadow: 0 2px 4px hsla(0, 0%, 4%, .3);
 }
 
 body {
@@ -804,11 +804,12 @@ text-shadow: var(--first-color);
 
 /*=============== WORK ===============*/
 .work__container{
-  padding-top: 1rem;
+  padding-top: .5rem;
 }
 .work__filters{
+  position: relative;
   display: flex;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
   column-gap:  .75rem;
   margin-bottom: 2rem;
@@ -837,36 +838,26 @@ text-shadow: var(--first-color);
   animation: animateBgColor 4s linear infinite;
   border: .1rem dashed var(--first-color-alt);
   object-fit:cover;    
-  width: 250px;
+  justify-content: space-evenly;
+  max-width: 120px;
 }
 .work2__img{
   border-radius: 1rem;
   margin-bottom: .75rem;    
   background-color: var(--body-color);
   border: .1rem double var(--first-color); 
-  box-shadow: 0px 0px 25px 2px var(--first-color-alt);
   border: .1rem dashed var(--first-color-alt);
+  box-shadow: 0px 0px 25px 2px var(--first-color-alt);
   object-fit:cover;    
-  width: 120px; 
-  display: grid;
   justify-content: space-evenly;
+  max-width: 120px;
+  display: flex;
 }
-.videobox{
-  border-radius: 1rem;
-  margin-bottom: .5rem;    
-  background-color: var(--body-color);
-  border: .1rem double var(--first-color); 
-  box-shadow: 0px 0px 25px 2px var(--first-color-alt);
-  border: .1rem dashed var(--first-color-alt);
-border-radius: 22px;
-padding: 1.5rem;
-  display: grid;
-  justify-content: space-evenly;
-}
+
 .work__title{
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
-  margin-bottom: .25rem;
+  margin-bottom: .25rem;  text-shadow: 0px 0px 25px 2px var(--first-color-alt);
 }
 .work__button{
   width: max-content;
@@ -889,7 +880,18 @@ padding: 1.5rem;
   color: var(--body-color);  
 }
 
-
+.videobox{
+  border-radius: 1rem;
+  margin-bottom: .5rem;    
+  background-color: var(--body-color);
+  border: .1rem double var(--first-color); 
+  box-shadow: 0px 0px 25px 2px var(--first-color-alt);
+  border: .1rem dashed var(--first-color-alt);
+border-radius: 22px;
+padding: 1.5rem;
+  display: grid;
+  justify-content: space-evenly;
+}
 /*=============== TESTIMONIAL ===============*/
 
 .testimonial__card{
@@ -1212,7 +1214,7 @@ color: var(--body-color);
     justify-content: center;
   }
   .work__img{
-    width: 250px;
+    width: 120px;
   }
   .work__item{
     font-size: var(--small-font-size);
