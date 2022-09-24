@@ -69,51 +69,65 @@
    /*========== color theme ==========*/
   
    :root.blue {
-    --bg-color:#31adda7c;
-    --text-color: #164386;
+    --bg-color:#207c9e7c;
+    --text-color: #dde1e6;
     --font-family: 'Poppins';
   }
   :root.dark {
-    --bg-color: #3a3d41;
-    --text-color: #ccd0de;
+    --bg-color: #29272b;
+    --text-color: #e5e5e7;
   }
   :root, :root.light {
-    --bg-color: rgba(207, 201, 175, 0.835);
+    --bg-color: rgba(186, 174, 120, 0.835);
     --text-color:var(--title-color);
   }
   
-  
   :root.pink {
-    --bg-color: #caabb1;
-    --text-color: #c55170d7;
+    --bg-color: #e81856ea;
+    --text-color: #feadd0f1;
   }
   
   :root.space {
-    --bg-color: rgb(243, 245, 251);
-    --text-color: #f2bd16;
+    --bg-color: rgb(230, 231, 235);
+    --text-color: #ffd752;
     --bg-url: url("https://www.spacejam.com/1996/img/bg_stars.gif");
     --background:cover;
     --font-family: 'Press Start 2P', cursive;
   }
   :root.space.light {
     --bg-color: rgba(241, 229, 229, 0.977);
-    --text-color: #82e972;
+    --text-color: #4f8c46c1;
     --bg-url: url("https://www.spacejam.com/1996/img/bg_stars2.gif");
     --background:cover;
-    --font-family: 'Press Start 2P', cursive;
+    --font-family: 'Press Start 2P';
   }
   :root.nyan {
-    --bg-color: #1d138b;
-    --text-color: #fff;
+    --bg-color: #0f085895;
+    --text-color: rgb(239, 228, 228);
     --bg-url: url("https://static.wixstatic.com/media/4cbe8d_f1ed2800a49649848102c68fc5a66e53~mv2.gif");
     --font-family: 'Comic Neue', cursive;
   } 
   :root.test {
     --bg-color: #910038;
-    --text-color: #fff;
+    --text-color: var(--text-color-light);
     --bg-url: url("../img/brightHope.gif");
     --font-family: 'poppins', cursive;
   }
+  :root.load {
+    --bg-color: #edf9a1d5;
+    --text-color:var(--text-color-light);
+    --bg-url: url("../img/loading\ \(2\).gif");
+    --font-family: 'poppins';
+
+  }
+  :root.load2 {
+    --bg-color: #022922ea;
+    --text-color:var(--text-color-light);
+    --bg-url: url("../img/flechesvertical.gif");
+    --font-family: 'poppins', cursive;
+
+  }
+
 /*=============== BASE ===============*/
 *, ::before, ::after {
   box-sizing: border-box;
@@ -130,6 +144,7 @@ html {
 body,button,input,textarea {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
+
 }
 
 body {
@@ -143,21 +158,27 @@ body {
 h1, h2, h3 {
   color: var(--title-color);
   font-weight: var(--font-semibold);
-  font-size: clamp(2rem,1rem + 10vw,5rem);
+  font-size: clamp(2rem,1rem + 10vw,5rem);    
+  border-radius: 18px; 
+
 }
 
 ul {
-  list-style: none;
+  list-style: none;  border-radius: 22px; 
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none; 
+  border-radius: 22px; 
+
 }
 
 button {
   cursor: pointer;
   border: none;
-  outline: none;  
+  outline: none;    
+  text-shadow: 0px 0px 25px 12px #000;
+  box-shadow: 0px 0px 25px 2px var(--text-color);
   box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, .1);
 }
 
@@ -173,7 +194,7 @@ select {
   font-family: inherit;
   background-color: var(--bg-url);
   color: var(--text-color);
-  border-radius: 0.5rem;
+  border-radius: 0.5rem; 
 }
 
 theme-select{
@@ -184,6 +205,7 @@ theme-select{
 .select-items div:hover, .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1);
 }
+
 /*=============== THEME ===============*/
 .change-theme{
   font-size: 1.25rem;
@@ -193,6 +215,7 @@ theme-select{
 .change-theme:hover{
   color: var(--first-color-alt);
 }
+
 /*=============== THEME 2 ===============*/
 .change-theme2{
   font-size: 1.75rem;
@@ -284,7 +307,7 @@ body.light-theme{
 
 .section__title, 
 .section__subtitle {
-  text-align: center;
+  text-align: center; 
 }
 
 .section__title {
@@ -346,11 +369,13 @@ body.light-theme{
 .nav__logo{
   color: var(--first-color);
   font-weight: var(--font-medium);
-  transition: .5s;  animation: animateBgColor 60s linear infinite; 
+  transition: .5s;  
+  animation: animateBgColor 15s linear infinite;  
 }
 
 .nav__logo:hover{
   color: var(--first-color-alt);
+
 }
 
 @supports ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))) {
@@ -561,7 +586,7 @@ position: absolute;
   border-radius: .5rem;
   font-weight: var(--font-medium);
   transition: .4s;
-  animation: animateBgColor 120s linear infinite;
+  animation: animateBgColor 80s linear infinite;
 }
 .button--ghost{
   background-color: transparent;
@@ -570,51 +595,68 @@ position: absolute;
 }
 .button:hover{
   background-color: var(--first-color-alt);
-  color: var(--body-color);  
+  color: var(--body-color);   
+  box-shadow: 0px 0px 2px 2px var(--first-color-alt);
 }
 
 /*=============== ABOUT ===============*/
 
 .about__container{
-  row-gap: 2.25rem;  
+  row-gap: 2.5rem;  
 }
 .about__img{
-  width: 150px;
-border-radius: 55%;
+  display: flex;
+  max-width: 65%;
+border-radius: 100%;
   justify-self: center;
+  justify-content: center;
   background-color: var(--body-color);
   border: .5rem double var(--first-color); 
   box-shadow: 0px 0px 25px 2px var(--first-color-alt);
-  animation: animateBgColor 4s linear infinite;  
+  animation: animateBgColor 5s linear infinite; 
 }
-
+.about2__img{
+  display: flex;
+  max-width: 65%;
+border-radius: 100%;
+  justify-self: center;
+  justify-content: center;
+  background-color: var(--body-color);
+  border: .5rem double var(--first-color); 
+  box-shadow: 0px 0px 12px 2px var(--first-color-alt);
+  animation: animateBgColor 2s linear infinite, animate 4s infinite,textTyping 30s steps(360) infinite; 
+}
 .about__data{
-  text-align: center;
+  text-align: center; 
 }
 .about__info{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: .5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2rem;  
 }
 .about__box{
   background-color: var(--container-color);
   border-radius: .75rem;
   padding: .75rem .5rem;
+  box-shadow: 2px 2px 2px 2px var(--first-color-alt);
 }
 .about__icon{
   font-size: 1.5rem;
   color: var(--first-color);
   margin-bottom: .5rem;
+box-shadow: 0px 0px 25px 2px var(--first-color-alt);  
+text-shadow: var(--first-color);
 }
 .about__title{
   font-size: var(--small-font-size);
+  text-shadow:  0px 0px 25px 2px var(--first-color-alt);
 }
 .about__subtitle{
   font-size: var(--tiny-font-size);
 }
 .about__description{
-  margin-bottom: 2rem;
+  margin-bottom: 2rem;  
 }
 
 /*=============== SKILLS ===============*/
@@ -633,7 +675,8 @@ border-radius: 55%;
   font-weight: var(--font-medium);
   color: var(--first-color);
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;  
+  text-shadow: var(--first-color-alt);
 }
 .skills__box{
   display: flex;
@@ -997,7 +1040,7 @@ color: var(--body-color);
 .footer__title{
   text-align: center;
   margin-bottom: 2rem;
-  font-size: var(--h1-font-size);
+  font-size: var(--h1-font-size); 
 }
 .footer__list{
   display: flex;
