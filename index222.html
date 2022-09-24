@@ -10,9 +10,8 @@
     <title>C°77-222</title>
     <link rel="shortcut icon" href="assets/img/crossArcane.png" type="image/x-icon"> 
     <link rel="stylesheet" href="index.html">
-        
-    <link rel="stylesheet" href="style22.css" alt="css">
-
+    <link rel="stylesheet" href="style22.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     
     
 <!--=============== SWIPER CSS ===============-->
@@ -24,23 +23,35 @@
         <!--=============== HEADER ===============-->
         <header class="header">
             <nav class="nav container">
-        
+
         
                 
          <img src="assets/img/-C77_EN-David-Cam2.png" class="nav__menu-img" alt=""> 
-                <div class="nav__menu">
+                                <h4>Themes</h4>
+                <select class="work__button" id="theme-select">
+                    <option class="button--ghost" value="light">Light</option>
+                    <option class="work__img" value="dark">Dark</option>
+                    <option class="button--ghost" value="blue">Blue</option>
+                    <option class="work__img" value="pink">Pink</option>
+                    <option class="button--ghost" value="space">Space</option>
+                    <option class="work__img" value="nyan">Nyan</option>
+                    <option class="button--ghost" value="test">Bright</option>
+                    <option class="button--ghost" value="load">Loading</option>
+                    <option class="button--ghost" value="load2">load2</option>
+                  </select><div class="nav__menu">
                     <ul class="nav__list">
-        <li class="nav__item"><i class="bx bx-moon change-theme" id="theme-button"></i>
+        <li class="nav__item">
+            <i class="bx bx-moon change-theme" id="theme-button"></i>
             <a href="#" class="nav__logo">ALX</a></li>
-                        <li class="nav_item">
-                            <a href="#home" class="nav__link active-link"  id="01" title="home">
+                        <li class="nav_item" id="01">
+                            <a href="#home" class="nav__link active-link"  title="home">
                                 <i class='bx bx-home-heart'></i>
                             </a>
                             <h3 class="nav__item-title">Menu</h3>
                         </li>
         
                         <li class="nav_item">
-                            <a href="#about" class="nav__link" id="05" title="about">
+                            <a href="#about" class="nav__link" title="about">
                                 <i class="bx bx-user"></i>
                             </a>
                             <h3 class="nav__item-title">.</h3>
@@ -68,15 +79,15 @@
                             <h3 class="nav__item-title">fr</h3>
                         </li>
         
-                        <li class="nav__item">
-                            <a href="#contact"  id="06" class="nav__link" title="contact">
+                        <li class="nav__item" id="06">
+                            <a href="#contact"  class="nav__link" title="contact">
                                 <i class="bx bx-message-square-detail"></i>
                             </a>
                             <h3 class="nav__item-title">vostfr</h3>
                         </li>
         
                         <li class="nav__item">
-                            <a href="#work" class="nav__link" title="work">
+                            <a href="#work" class="nav__link" title="testimonial">
                                 <i class="bx bx-briefcase-alt"></i>
                             </a>
                             <h3 class="nav__item-title">..Fin de pages ..</h3>
@@ -93,45 +104,31 @@
         </header>
         
                 <!--================= MAIN ===============-->
-<main class="main">
+<main class="main" id="home" title="home">
     
-    <section class="services section" id="work2__img">
+    <section class="services section" id="about" title="about">
 
 
-        <div class="work__filters">
+        <div class="work__filters" id="skills" title="skills">
+
+            
+
             <span class="work__item active-work" data-filter='all'>Hall</span>
             <span class="work__item" data-filter='.web'>Web</span>
             <span class="work__item" data-filter='.mobile'>Mobile</span>
             <span class="work__item" data-filter='.design'>Design</span>
-
-            <select class="work__button" id="theme-select">
-                <option class="button--ghost" value="light">Light</option>
-                <option class="work__img" value="dark">Dark</option>
-                <option class="button--ghost" value="blue">Blue</option>
-                <option class="work__img" value="pink">Pink</option>
-                <option class="button--ghost" value="space">Space</option>
-                <option class="work__img" value="nyan">Nyan</option>
-                <option class="button--ghost" value="test">Bright</option>
-              </select><h4>Themes</h4> 
-              </div>
+</div>
         
-<div class="work__container container grid">
+<div class="work__container container grid"  id="services" title="services">
 
-    <div class="work__card mix all">
+    <div class="work__card mix all"  id="work" title="work">
                         <h3 class="work__title">Hall Design</h3>
-                        <img src="assets/img/Fichier 3@3x.png" alt="" class="work2__img">
-                        
-                    <img src="assets/img/92027.png" alt=""  class="about__img" id="work2__img" title="footer">
-            <a href="index.html" class="work__button">
-                        Reset vers 1ère page
-                        <i class='bx bxs-face work__icon'>
-                            <a href="#" class="work__button">
-    <i class="bx bx-top-arrow-circle work__icon">•vers le haut</i>
-    • ^ </a></i><i class="bx bx-right-arrow-circle work__icon"></i>
-                    </a>
-            
-            <i class='bx bxs-face work__icon'>•</i>
-            <i class="bx bx-right-arrow-circle work__icon">.^</i>
+                        <img src="assets/img/crossArcane.png" alt="" class="about__img">
+                        <a href="index222.html" class="work__button"><img src="assets/img/-C77-Capture d’écran (9).png" alt="" class="work__img">
+                <i class="bx bx-right-arrow-circle work__icon">Reset Page C°77</i>
+            </a><br>
+                    <img src="assets/img/92027.png" class="work__img" id="all" title="home" alt="">
+
     </div>
 
     <div class="work__card card--with-media mix design">
@@ -141,12 +138,10 @@
     
         <img  width="350px" height="350px" src="assets/img/Fichier Home (4).png" alt="" class="work__img">
         <img src="assets/img/Maquette test2.png" alt="" class="work__img">
-<a href="index222.html" class="work__button">
-                <i class="bx bx-right-arrow-circle work__icon">Reset vers C°77</i><img src="assets/img/-C77-Capture d’écran (9).png" alt="" class="work__img">
-            </a>
+
     </div> 
     
-    <div class="work__card card--with-media mix design">
+    <div class="work__card card--with-media mix design" >
                 <div class="image-gallery">
                    <img class="image-gallery" src="assets/img/-C77-Capture d’écran (17).png" alt="">             
                     <img src="assets/img/-C77-Capture d’écran (11).png" class="nav__menu-img"  alt="">
@@ -270,7 +265,7 @@
         </div> -->
 
 </div> 
-<div class="work__card card--with-media mix mobile">
+<div class="work__card card--with-media mix mobile"id="contact" title="contact">
     <div class="image-gallery" id="image-gallery">
         <img src="assets/img/-C77-Capture d’écran (4).png" alt="">
         
@@ -297,22 +292,22 @@
 
 </div>
 </div>
+</div>
 </section>
 
 </main>
 
 <!--=============== FOOTER ===============-->
 
-        <footer class="footer" id="work"  title="contact">
-
-            <section  class="footer" id="footer" title="contact">
+        <footer class="footer" id="testimonial" title="testimonial">
+            <a href="liste.html" class="work__button">liste fr</a>
+            <section  class="footer" id="footer" title="footer">
                     <div  class="work__container container">
-                        <a href="index.html" class="work__button">Reset<i class="bx bx-right-arrow-circle work__icon">
-                        </i>° 01-Page</i>
-                        
-            </a>
-                        
-            </div>  
+                        <a href="index.html" class="work__button">
+                        Retour vers
+                        <i class="bx bx-right-arrow-circle work__icon">°</i>
+                         01-Page CV</a>
+                    </div>  
                 
                 <div class="footer__container container">
                     <h1 class="footer__title">Alex.</h1>
