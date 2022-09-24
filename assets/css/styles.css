@@ -839,7 +839,7 @@ text-shadow: var(--first-color);
   border: .1rem dashed var(--first-color-alt);
   object-fit:cover;    
   justify-content: space-evenly;
-  max-width: 120px;
+  max-width: 220px;
 }
 .work2__img{
   border-radius: 1rem;
@@ -850,14 +850,15 @@ text-shadow: var(--first-color);
   box-shadow: 0px 0px 25px 2px var(--first-color-alt);
   object-fit:cover;    
   justify-content: space-evenly;
-  max-width: 120px;
+  max-width: 220px;
   display: flex;
 }
 
 .work__title{
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
-  margin-bottom: .25rem;  text-shadow: 0px 0px 25px 2px var(--first-color-alt);
+  margin-bottom: .25rem;  
+  text-shadow: 0px 0px 25px 2px var(--first-color-alt);
 }
 .work__button{
   width: max-content;
