@@ -111,26 +111,26 @@
   :root.test {
     --bg-color: #910038;
     --text-color: var(--text-color-light);
-    --bg-url: url("../img/brightHope.gif");
+    --bg-url: url("../assets/img/brightHope.gif");
     --font-family: 'poppins', cursive;
   }
   :root.load {
     --bg-color: #edf9a1d5;
     --text-color:var(--text-color-light);
-    --bg-url: url("../img/gif/loading\ \(2\).gif");
+    --bg-url: url("../assets/img/loading\ \(2\).gif");
     --font-family: 'Bungee Spice', cursive;
     
   }
   :root.load2 {
     --bg-color: rgba(25, 46, 10, 0.977);
     --text-color: #43fcedc9;
-    --bg-url: url("../img/gif/0\ C-cPP9D2MIyeexAT.gif");
+    --bg-url: url("../assets/img/0\ C-cPP9D2MIyeexAT.gif");
     --font-family: 'Dancing Script', cursive;
   }
   :root.load3 {
     --bg-color: rgba(96, 50, 70, 0.977);
     --text-color: #f0d41ec9;
-    --bg-url: url("../img/gif/ouahou3Dgif.gif");
+    --bg-url: url("../assets/img/ouahou3Dgif.gif");
     --font-family: 'Dancing Script';
   }
 /*=============== BASE ===============*/
