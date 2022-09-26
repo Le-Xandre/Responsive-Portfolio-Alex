@@ -859,8 +859,10 @@ text-shadow: var(--first-color);
   border: .1rem dashed var(--first-color-alt);
   box-shadow: 0px 0px 25px 2px var(--first-color-alt);
   animation: animateBgColor 5s linear infinite;
+  display: grid;
 }
 .work2__img{
+  display: grid;
   object-fit:cover;    
   justify-content: space-evenly;
   width: 120px;
@@ -1101,6 +1103,14 @@ color: var(--body-color);
   color: var(--container-color);
   font-size: var(--smaller-font-size);
   text-align: center;
+}
+.footer__buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;   
+  /* box-shadow:  0px 0px 10px 4px var(--container-color);   */
+  text-shadow: 5px 4px 4px var(--first-color);
 }
 /*=============== SCROLL BAR ===============*/
 
