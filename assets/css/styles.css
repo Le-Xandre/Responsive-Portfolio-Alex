@@ -342,7 +342,7 @@ body.light-theme{
   display: flex;
   width: 100%;
   height: 100%;
-   padding: 0;
+  padding: 0;
   margin: 0;
   justify-self: center;
   background-image: cover;
@@ -357,7 +357,7 @@ body.light-theme{
   backdrop-filter: blur(.2em);
   transition: .5s; /* pour l'animation du dark theme */
   object-fit:cover;
-  opacity: 75%;
+  opacity: 15%;
   z-index:-2;
 }
 .nav{
@@ -440,14 +440,16 @@ z-index: 1000;
   animation: animateBgColor 20s linear infinite;
 }
 .nav__menu-img{
-  display: flex;
+  position: relative;
+  display: block;
+  width: 50%;
   align-items: center;
   justify-content: center;
   margin:.25rem;  
   transition: .5s;
-  opacity: 50%;
+  opacity: 10%;
   border-radius: 22px;
-  width: 85%;
+  width: 55%;
   animation: animateBgColor 10s linear infinite;
 }
 /* Active link */
@@ -810,6 +812,7 @@ text-shadow: var(--first-color);
 .work__container{  
   position: relative;
   display: grid;
+  justify-content: center;
   padding-top: .25rem;
 }
 .work__filters{
@@ -1599,7 +1602,7 @@ align-items: center;
   }
 
   .about__info{
-    grid-template-columns: repeat(3, 140px);
+    grid-template-columns: repeat(2, 140px);
     justify-content: center;
   }
   .about__description{
@@ -1627,6 +1630,7 @@ align-items: center;
 
   .work__container{
     justify-content: center;
+    padding-top: .15rem;
   }
   .work__img{
     width: 250px;
@@ -1644,7 +1648,8 @@ align-items: center;
 
 @media screen and (min-width:767px){
   .work__container{
-    grid-template-columns: repeat(3, max-content);
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
     padding-top: .5rem;
   }
   .contact__container{
@@ -1656,10 +1661,10 @@ align-items: center;
 
 @media screen and (min-width:767px){
   .work__container{
-    grid-template-columns: repeat(3, max-content);
+    grid-template-columns: repeat(2, max-content);
   }
   .contact__container{
-    grid-template-columns: repeat(3, max-content);
+    grid-template-columns: repeat(2, max-content);
     justify-content: center;
     column-gap: 3rem;
   }
@@ -1728,7 +1733,7 @@ transform: rotate(90deg) translate(16px, 0);
   column-gap: 3rem;
 }
 .services__container{
-  grid-template-columns: repeat(3, 192px);
+  grid-template-columns: repeat(2, 192px);
   column-gap: 3rem;
 }
 .services__card{
@@ -1817,11 +1822,11 @@ transform: rotate(90deg) translate(16px, 0);
   margin-bottom: 2.5rem;
 }
 .skills__container{
-  grid-template-columns: repeat(3, 350px);
+  grid-template-columns: repeat(2, 300px);
   column-gap: 3rem;
 }
 .services__container{
-  grid-template-columns: repeat(3, 192px);
+  grid-template-columns: repeat(2, 192px);
   column-gap: 3rem;
 }
 .services__card{
@@ -1898,3 +1903,4 @@ transform: rotate(90deg) translate(16px, 0);
     text-align: center;
   }
 }
+
