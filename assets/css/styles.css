@@ -21,12 +21,12 @@
   --second-hue: 245;
 
   --first-color: hsla(var(--first-hue), var(--sat), var(--lig));
-  --first-color-alt: hsla(var(--second-hue), var(--sat), 55%); /* -4% */
-  --title-color: hsla(var(--first-hue), 15%, 35%);
-  --text-color: hsla(var(--first-hue), 8%, 45%);
-  --text-color-light: hsla(var(--second-hue), 4%, 85%);
-  --body-color: hsla(var(--second-hue), 48%, 8%);
-  --container-color: hsla(var(--second-hue), 32%, 12%);
+  --first-color-alt: hsla(var(--second-hue), var(--sat), 95%); /* -4% */
+  --title-color: hsla(var(--first-hue), 25%, 95%);
+  --text-color: hsla(var(--first-hue), 10%, 25%);
+  --text-color-light: hsla(var(--first-hue), 4%, 85%);
+  --body-color: hsla(var(--second-hue), 50%, 8%);
+  --container-color: hsla(var(--second-hue), 35%, 14%);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -70,13 +70,13 @@
    /*========== color theme ==========*/
   
    :root.blue {
-    --bg-color:#125c777c;
-    --text-color: #f4f6f8;
+    --bg-color:#125c77f9;
+    --text-color: #aad5e3;
     --font-family: 'Poppins';
   }
   :root.dark {
-    --bg-color: #030303;
-    --text-color: #e5e5e7;
+    --bg-color: #0d0c0ce3;
+    --text-color:var(--first-color-alt);
   }
   :root, :root.light {
     --bg-color: rgba(186, 174, 120, 0.835);
@@ -109,29 +109,31 @@
     --font-family: 'Comic Neue', cursive;
   } 
   :root.test {
-    --bg-color: #910038;
+    --bg-color: #5c0526d2;
     --text-color: var(--text-color-light);
     --bg-url: url("../img/brightHope.gif");
     --font-family: 'poppins', cursive;
   }
   :root.load {
-    --bg-color: #77832cd5;
+    --bg-color: #e0e8acd5;
     --text-color:var(--text-color-light);
     --bg-url: url("../img/gif/loading\ \(2\).gif");
     --font-family: 'Bungee Spice', cursive;
     
   }
   :root.load2 {
-    --bg-color: rgba(25, 46, 10, 0.977);
-    --text-color: #ccdedcf3;
+    --bg-color: rgba(11, 20, 4, 0.977);
+    --text-color: #dae0dfd6;
     --bg-url: url("../img/gif/0\ C-cPP9D2MIyeexAT.gif");
     --font-family: 'Dancing Script', cursive;
+    font-size : var(--normal-font-size);
   }
   :root.load3 {
-    --bg-color: rgba(228, 218, 223, 0.977);
-    --text-color: #f0d41ec9;
+    --bg-color: rgba(71, 47, 59, 0.711);
+    --text-color: #fffbdfc9;
     --bg-url: url("../img/gif/ouahou3Dgif.gif");
     --font-family: 'Dancing Script';
+    font-size : var(--small-font-size);
   }
   :root.load4 {
     --bg-color: rgba(26, 2, 134, 0.669);
@@ -139,10 +141,10 @@
     hsla(var(--first-hue), var(--sat),var(--lig), 1),
     hsla(var(--second-hue), var(--sat),var(--lig), .2));
     --text-color: hsla(var(--second-hue), 8%, 75%);
-    --text-color: #b67b0ff9;
+
     --bg-url: url("../img/gif/ouahou3Dgif.gif");
     --font-family: 'Bungee Spice';
-    font-size : var(--smaller-font-size);
+    font-size : var(--tiny-font-size);
   }
 /*=============== BASE ===============*/
 *, ::before, ::after {
@@ -159,8 +161,9 @@ html {
 
 body,button,input,textarea {
   font-family: var(--body-font);
-  font-size: var(--normal-font-size);
+  font-size: var(--special-font-size);
   box-shadow: 0 2px 4px rgba(255, 255, 255, 0.957);
+  color: var(--text-color-alt);
 }
 
 body {
@@ -176,7 +179,7 @@ h1, h2, h3 {
   font-weight: var(--font-semibold);
   font-size: clamp(2rem,1rem + 10vw,5rem);    
   border-radius: 18px; 
-
+  font-family: var(--font-family);
 }
 
 ul {
@@ -244,7 +247,7 @@ body.light-theme{
   --title-color: hsla(var(--second-hue), 15%, 15%);
   --text-color: hsla(var(--second-hue), 10%, 25%);
   --body-color: hsla(var(--second-hue), 15%, 80%);
-  --container-color: rgba(240, 236, 236, 0.822);
+  --container-color: rgba(240, 236, 236, 0.964);
 }
 
 /*========== 
@@ -278,7 +281,7 @@ body.light-theme{
   color: var(--title-color);
 }
 .light-theme .about__box{
-  box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, .1);
+  box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 18%, .2);
 }
 .light-theme .skills__content, 
 .light-theme .services__card,
@@ -474,7 +477,7 @@ z-index: 1000;
 
 /* Change background header */
 .scroll-header{
-  box-shadow: 0 4px 4px hsla(0, 0%, 4%, .3);
+  box-shadow: 0 2px 2px hsla(0, 0%, 4%, .3);
 }
 
 /*=============== HOME ===============*/
