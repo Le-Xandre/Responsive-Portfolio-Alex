@@ -15,17 +15,15 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
         <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
         <!--=============== CSS ===============-->
-       
-        <link rel="stylesheet" href="assets/css/styles.css"> 
-
-
+        <link rel="stylesheet" href="assets/css/styles.css">
         <title>  Portfolio Alex. - Responsive website  </title>
     </head>
+
     <body>
         <!--=============== HEADER ===============-->
         <header class="header">
-            
-                                             <select class="work__button" id="theme-select">
+
+                <select class="nav__item-title" id="theme-select">
                     <option class="button--ghost" value="light">Light</option>
                     <option class="work__img" value="dark">Dark</option>
                     <option class="button--ghost" value="blue">Blue</option>
@@ -37,27 +35,21 @@
                     <option class="button--ghost" value="load2">Load2</option>
                     <option class="button--ghost" value="load3">Load3</option>
                     <option class="button--ghost" value="load4">Load4</option>
-                  </select><nav class="nav container">
-                 
+                </select>
+
+            <nav class="nav container">
                 <div class="nav__menu">
- <ul class="nav__list">
+                <ul class="nav__list">
+                        <a href="#" class="nav__logo">
+                            <i class='bx bxs-up-arrow-circle'></i>
+                        </a>
+                <i class="bx bx-moon change-theme" class="home__img" id="theme-button" title="#"></i>
+
                             <!-- theme change -->
                         <img class="random__img" src="assets/img/-C77_EN-David-Cam2.png" id="random__img" alt="">
-                            <a href="#" class="nav__logo">Alex.</a>
-
-                                <li class="_item">
-                        <i class="bx bx-moon change-theme" id="theme-button" title="#"></i>
-                        </li>
 
                         <li class="nav_item">
-                            <!-- futur toggle-en-burger-tout -->
-                            <a href="#home" class="nav__link active-link" title="#">
-                            <i class='bx bx-dialpad-alt'></i>
-                            </a><h3 class="nav__item-title">Pad</h3>
-                        </li>
-                        
-                        <li class="nav_item">
-                            <a href="#home" class="nav__link" title="home">
+                            <a href="#home" class="nav__link active-link" title="home">
                                 <i class='bx bx-home-heart'></i>
                             </a><h3 class="nav__item-title">Menu</h3>
                         </li>
@@ -95,11 +87,15 @@
                                 <i class="bx bx-message-square-detail"></i>
                             </a><h3 class="nav__item-title">Contact</h3>
                         </li>
-                        
-
-                    </ul>                     
+                        <li class="nav_item">
+                            <a href="#footer" class="nav__link active-link" title="footer">
+                                <!-- futur toggle-en-burger-tout -->
+                            <i class='bx bx-dialpad-alt'></i>
+                            </a><h3 class="nav__item-title">Pad</h3>
+                        </li>
+                </ul>                     
                 </div>
-       
+                
             </nav>
 
             </header>
@@ -108,7 +104,6 @@
         <main class="main">
             <!--=============== HOME ===============-->
             <section class="home section" id="home">
-
 
                 <div class="home__container container grid">
                     <img src="https://picsum.photos/800" class="flip-box-front" alt="">
@@ -540,7 +535,7 @@
             <article class="work__img">                        
                 <a href="#" class="work__button">
                     <img src="assets/img/Wave-PNG-HD0000.png" alt="" class="work2__img">
-                    <i class="bx bx-right-arrow-circle work2__icon">°<br></i>
+                    <i class="bx bx-right-arrow-circle work__icon">°<br></i>
                     Retour Haut
                     
                     </a>
@@ -778,6 +773,7 @@
                     </div>
                 </div>
             </section>
+
         </main>
 
         <!--=============== FOOTER ===============-->
@@ -834,5 +830,6 @@
 
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
+        
     </body>
 </html>
