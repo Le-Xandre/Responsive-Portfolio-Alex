@@ -23,29 +23,21 @@
         <!--=============== HEADER ===============-->
         <header class="header">
 
-                <select class="nav__item-title" id="theme-select">
-                    <option class="button--ghost" value="light">Light</option>
-                    <option class="work__img" value="dark">Dark</option>
-                    <option class="button--ghost" value="blue">Blue</option>
-                    <option class="work__img" value="pink">Pink</option>
-                    <option class="button--ghost" value="space">Space</option>
-                    <option class="work__img" value="nyan">Nyan</option>
-                    <option class="button--ghost" value="test">Bright</option>
-                    <option class="work__img" value="load">Loading</option>
-                    <option class="button--ghost" value="load2">Load2</option>
-                    <option class="button--ghost" value="load3">Load3</option>
-                    <option class="button--ghost" value="load4">Load4</option>
-                </select>
+
 
             <nav class="nav container">
                 <div class="nav__menu">
+                    
                 <ul class="nav__list">
+
+
                         <a href="#" class="nav__logo">
                             <i class='bx bxs-up-arrow-circle'></i>
                         </a>
-                <i class="bx bx-moon change-theme" class="home__img" id="theme-button" title="#"></i>
+<!-- theme change -->
+                <i class="bx bx-moon change-theme--ghost" id="theme-button" title="#"></i>
 
-                            <!-- theme change -->
+                            
                         <img class="random__img" src="assets/img/-C77_EN-David-Cam2.png" id="random__img" alt="">
 
                         <li class="nav_item">
@@ -57,19 +49,19 @@
                         <li class="nav_item">
                             <a href="#about" class="nav__link" title="about">
                                 <i class="bx bx-user"></i>
-                            </a><h3 class="nav__item-title">A propos</h3>
+                            </a><h3 class="nav__item-title">A Propos</h3>
                         </li>
 
                         <li class="nav__item">
                             <a href="#skills" class="nav__link" title="skills">
                                 <i class="bx bx-book-open"></i>
-                            </a><h3 class="nav__item-title">Skill</h3>
+                            </a><h3 class="nav__item-title">Skills</h3>
                         </li>
 
                         <li class="nav__item">
                             <a href="#services" class="nav__link" title="services">
                                 <i class="bx bx-briefcase"></i>
-                            </a><h3 class="nav__item-title">Service</h3>
+                            </a><h3 class="nav__item-title">Services</h3>
                         </li>
 
                         <li class="nav__item">
@@ -88,16 +80,37 @@
                             </a><h3 class="nav__item-title">Contact</h3>
                         </li>
                         <li class="nav_item">
-                            <a href="#footer" class="nav__link active-link" title="footer">
-                                <!-- futur toggle-en-burger-tout -->
-                            <i class='bx bx-dialpad-alt'></i>
-                            </a><h3 class="nav__item-title">Pad</h3>
-                        </li>
-                </ul>                     
-                </div>
-                
-            </nav>
+                            <a href="#footer" class="nav__link" title="footer">
 
+                            <i class='bx bx-dialpad-alt'></i>
+                            </a>
+                            <h3 class="nav__item-title">bas</h3>
+                        </li>
+                        <div class="nav__toggle active-link">
+                    <li class="nav_item"><a href="#" class="nav__link" title="#">
+                                <!-- futur toggle-en-burger-2 -->
+                            <!-- id="add-outline" -->
+                            <i class='bx bx-dialpad-alt'></i>
+                            </a>
+                            <h3 class="nav__item-title">Pad</h3></li>
+                        </div>   
+                </ul>                  
+                                </div>
+
+            </nav>
+<select class="about2__img" id="theme-select">
+                    <option class="button--ghost" value="light">Light</option>
+                    <option class="work__img" value="dark">Dark</option>
+                    <option class="button--ghost" value="blue">Blue</option>
+                    <option class="work__img" value="pink">Pink</option>
+                    <option class="button--ghost" value="space">Space</option>
+                    <option class="work__img" value="nyan">Nyan</option>
+                    <option class="button--ghost" value="test">Bright</option>
+                    <option class="work__img" value="load">Loading</option>
+                    <option class="button--ghost" value="load2">Load2</option>
+                    <option class="button--ghost" value="load3">Load3</option>
+                    <option class="button--ghost" value="load4">Load4</option>
+                </select>
             </header>
         
         <!--=============== MAIN ===============-->
@@ -803,8 +816,9 @@
                 <a href="https://www.twitter.com" rel="noopener" title="twitter" target="_blank" class="footer__social-link">
                     <i class="bx bxl-twitter"></i>
                 </a>
+            </li>
             </ul>
-        </li>
+        
         
             <span class="footer__copy">
                 <h4>&#169; Alex. "All rights reserved"© .
@@ -817,7 +831,13 @@
         
 
         </footer>
+        <!--=============== Toggle avec Boxicon ===============-->
+        <script type="module" src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
+
+        <script nomodule src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+        
         <!--=============== SCROLLREVEAL ===============-->
         <script src="assets/js/scrollreveal.min.js"></script>
 
