@@ -118,21 +118,21 @@
   :root.load {
     --bg-color: #dcddd3d5;
     --text-color:var(--text-color-light);
-    --bg-url: url("../img/gif/loading\ \(2\).gif");
+    --bg-url: url("../img/loading\ \(2\).gif");
     --font-family: 'Bungee Spice', cursive;
     
   }
   :root.load2 {
     --bg-color: rgba(11, 20, 4, 0.977);
     --text-color: #dae0dfd6;
-    --bg-url: url("../img/gif/0\ C-cPP9D2MIyeexAT.gif");
+    --bg-url: url("../img/0\ C-cPP9D2MIyeexAT.gif");
     --font-family: 'Dancing Script', cursive;
     font-size : var(--normal-font-size);
   }
   :root.load3 {
     --bg-color: rgba(71, 47, 59, 0.711);
     --text-color: #fffbdfc9;
-    --bg-url: url("../img/gif/ouahou3Dgif.gif");
+    --bg-url: url("../img/ouahou3Dgif.gif");
     --font-family: 'Dancing Script';
     font-size : var(--small-font-size);
   }
@@ -143,7 +143,7 @@
     hsla(var(--second-hue), var(--sat),var(--lig), .2));
     --text-color: hsla(var(--second-hue), 8%, 75%);
 
-    --bg-url: url("../img/gif/ouahou3Dgif.gif");
+    --bg-url: url("../img/ouahou3Dgif.gif");
     --font-family: 'Bungee Spice';
     font-size : var(--tiny-font-size);
   }
