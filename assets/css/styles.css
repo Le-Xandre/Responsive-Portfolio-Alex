@@ -119,7 +119,7 @@
   :root.load {
     --bg-color: #dcddd3d5;
     --text-color:var(--text-color-light);
-    --bg-url: url("../img/gif/loading\ \(2\).gif");
+    --bg-url: url("../img/loading\ \(2\).gif");
     --font-family: 'Bungee Spice', cursive;
     
   }
@@ -133,13 +133,13 @@
   :root.load3 {
     --bg-color: rgba(71, 47, 59, 0.711);
     --text-color: #fffbdfc9;
-    --bg-url: url("../img/gif/ouahou3Dgif.gif");
+    --bg-url: url("../img/Icon-Legacy.gif");
     --font-family: 'Dancing Script';
     --font-size : var(--small-font-size);
   }
   :root.load4 {
     --bg-color: rgba(26, 2, 134, 0.669);
-    --bg-url: url("../img/gif/ouahou3Dgif.gif");
+    --bg-url: url("../img/ouahou3Dgif.gif");
     --background-color: linear-gradient(180deg,
     hsla(var(--first-hue), var(--sat),var(--lig), 1),
     hsla(var(--second-hue), var(--sat),var(--lig), .2));
