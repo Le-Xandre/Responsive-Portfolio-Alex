@@ -1,3 +1,21 @@
+// image
+
+document.querySelectorAll("img").forEach((item) => {
+    item.addEventListener("click", (event) => {
+      const image = event.target.getAttribute("data-src");
+      event.target.setAttribute("src", image);
+    });
+  });
+
+// change theme
+
+const setTheme = theme => document.documentElement.className = theme;
+
+document.getElementById('theme-select').addEventListener('change', function() {
+  setTheme(this.value);
+});
+
+
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
@@ -240,13 +258,4 @@ sr.reveal('.home__social, .home__scroll',{delay:900,origin:'bottom'})
 
 
 
-
-
-// change theme
-
-const setTheme = theme => document.documentElement.className = theme;
-
-document.getElementById('theme-select').addEventListener('change', function() {
-  setTheme(this.value);
-});
 
