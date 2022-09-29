@@ -124,7 +124,7 @@
     
   }
   :root.load2 {
-    --bg-url: url("../img/gif/0\ C-cPP9D2MIyeexAT.gif");
+    --bg-url: url("../img/0\ C-cPP9D2MIyeexAT.gif");
     --text-color: #dae0dfd6;
     --bg-color: var(--body-gradient);
     --font-family: 'Dancing Script', cursive;
@@ -358,14 +358,13 @@ body.light-theme{
 .card{
   display: grid;
   place-items:center;
-  background:var(--body-gradient);
-  padding-block: 2.5rem;
+  padding-block: 2.25rem;
 }
 .card--container{
-  margin-inline:1.5rem;
+  margin-inline:1.25rem;
 display:grid;
-grid-template-columns: 1fr;
-row-gap: 2rem;
+  background:var(--body-gradient);
+row-gap: .75rem;
 }
 
 .col3{
