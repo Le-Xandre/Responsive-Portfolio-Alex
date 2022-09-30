@@ -129,12 +129,12 @@
   :root.load {
     --bg-color: #dcddd3e9;
     --text-color:var(--text-color-light);
-    --bg-url: url("../img/gif/loading\ \(2\).gif");
+    --bg-url: url("../img/loading\ \(2\).gif");
     --font-family: 'Bungee Spice', cursive;
   }
   :root.load2 {
     --bg-color: var(--body-gradient);
-    --bg-url: url("../img/gif/0\ C-cPP9D2MIyeexAT.gif");
+    --bg-url: url("../img/0\ C-cPP9D2MIyeexAT.gif");
     --text-color: #dae0dff8;
     --font-family: 'Dancing Script', cursive;
     --font-size : var(--normal-font-size);
@@ -142,13 +142,13 @@
   :root.load3 {
     --bg-color: rgba(71, 47, 59, 0.711);
     --text-color: #fffbdff6;
-    --bg-url: url("../img/gif/Icon-Legacy.gif") ;
+    --bg-url: url("../img/Icon-Legacy.gif") ;
     --font-family: 'Dancing Script';
     --font-size : var(--small-font-size);
   }
   :root.load4 {
     --bg-color: rgba(26, 2, 134, 0.669);
-    --bg-url: url("../img/gif/1\ XmdQULLtkx_Ji4oyn1oG-w.gif");
+    --bg-url: url("../img/1\ XmdQULLtkx_Ji4oyn1oG-w.gif");
     --background-color: var(--shape-gradient);
     --text-color: hsla(var(--second-hue), 8%, 75%);
     --font-family: 'Bungee Spice';
@@ -156,7 +156,7 @@
   }
   :root.load5 {
     --bg-color: rgba(26, 2, 134, 0.669);
-    --bg-url: url("../img/gif/6B5X.gif");
+    --bg-url: url("../img/6B5X.gif");
     --background-color: var(--shape-gradient);
     --text-color: hsla(var(--second-hue), 8%, 75%);
     --font-family: 'Josefin Sans';
@@ -164,7 +164,7 @@
   }
   :root.load6 {
     --bg-color: rgba(43, 47, 51, 0.977);
-    --bg-url: url("../img/gif/ouahou3Dgif.gif");
+    --bg-url: url("../img/ouahou3Dgif.gif");
     --text-color: #e18d42f1;
     --font-family: 'Josefin Sans', sans-serif;
     --font-size : var(--font-medium);
