@@ -168,6 +168,13 @@
     --font-family: 'Josefin Sans', sans-serif;
     --font-size : var(--font-medium);
   }
+  :root.load7 {
+    --bg-color: rgb(29, 36, 28);
+    --bg-url: url("../img/photomode_03022021_205204.png");
+    --text-color: #46ac26fa;
+    --font-family: 'Josefin Sans', sans-serif;
+    --font-size : var(--font-family);
+  }
 /*=============== BASE ===============*/
 
 *, ::before, ::after {
