@@ -20,34 +20,21 @@
 </head>
 <body> 
         <!--=============== HEADER ===============-->
-<header class="header">
-    <select class="button--ghost" id="theme-select">
-        <option class="button--ghost" value="light">Light</option>
-        <option class="work__img" value="dark">Dark</option>
-        <option class="button--ghost" value="blue">Blue</option>
-        <option class="work__img" value="pink">Pink</option>
-        <option class="button--ghost" value="space">Space</option>
-        <option class="work__img" value="nyan">Nyan</option>
-        <option class="button--ghost" value="test">Bright</option>
-        <option class="work__img" value="load">Loading</option>
-        <option class="button--ghost" value="load2">Load2</option>
-        <option class="button--ghost" value="load3">Load3</option>
-        <option class="button--ghost" value="load4">Load4</option>
-    </select>
-    <nav class="nav container">
+<header class="header"> 
+    
 
-        <div class="nav__menu">
+    
+<nav class="nav container">    
+<div class="nav__menu">
+        
             <ul class="nav__list">
                                             <!-- theme change -->
                         
                                             <a href="#" class="nav__logo">
                                                 <i class='bx bxs-up-arrow-circle'></i>
                                             </a>
-                                    <i class="bx bx-moon change-theme" class="home__img" id="theme-button" title="#"></i>
-                    
-                                                <!-- theme change -->
-                                            <img class="random__img" src="assets/img/-C77_EN-David-Cam2.png" id="random__img" alt="">
-                <li class="nav_item">
+
+                <li class="nav__toggle">
                     <a href="#home" class="nav__link active-link"  id="01" title="home">
                         <i class='bx bx-home-heart'></i>
                     </a>
@@ -61,7 +48,7 @@
                     <h3 class="nav__item-title">.</h3>
                 </li>
                 
-                <li class="nav_item">
+                <li class="nav__toggle">
                     <a href="#skills" class="nav__link" title="skills">
                         <i class="bx bx-book-open"></i>
                     </a>
@@ -76,7 +63,7 @@
                 </li>
 
                 
-                <li class="nav__item">
+                <li class="nav__toggle">
                     <a href="#testimonial" class="nav__link" alt="Témoignages" title="testimonial">
                         <i class='bx bx-male-female'></i>
                     </a>
@@ -90,21 +77,41 @@
                     <h3 class="nav__item-title">....</h3>
                 </li>
 
-                <li class="nav__item">
+                <li class="nav__toggle">
                     <a href="#work" class="nav__link" title="work">
                         <i class="bx bx-briefcase-alt"></i>
                     </a>
                     <h3 class="nav__item-title">.Fin de pages.</h3>
                 </li>
-            </ul>                  
-        </div>
+                                                           
+            <i class="bx bx-moon change-theme" class="home__img" id="theme-button" title="#"></i>
+                            
+                                                        <!-- theme change -->
+                                                    
+            <select class="button--ghost" id="theme-select">
+                <option class="button--ghost" value="light">Light</option>
+                <option class="work__img" value="dark">Dark</option>
+                <option class="button--ghost" value="blue">Blue</option>
+                <option class="work__img" value="pink">Pink</option>
+                <option class="button--ghost" value="space">Space</option>
+                <option class="work__img" value="nyan">Nyan</option>
+                <option class="button--ghost" value="test">Bright</option>
+                <option class="work__img" value="load">Loading</option>
+                <option class="button--ghost" value="load2">Load2</option>
+                <option class="button--ghost" value="load3">Load3</option>
+                <option class="button--ghost" value="load4">Load4</option>
+                <option class="work__img" value="load5">Load5</option>
+                <option class="button--ghost" value="load6">Load6</option>
+                <option class="button--ghost" value="load7">Load7</option>
+            </select>
+        </ul>                  
 
+        </div>
+</nav><img class="work3__img" src="assets/img/-C77_EN-David-Cam2.png" id="random__img" alt="">
         <!-- <i class="bx bx-moon change-theme" id="theme-button"></i> -->
         <!-- theme change -->
 
                         
-</nav>           
-
 </header>
 
         <!--=============== MAIN ===============-->
@@ -381,57 +388,79 @@
 
 
 </section>
-
-</main>
-
-
-<div class="skills__container" id="skills">
-<section class="skills section" id="skills">
+<div class="work section" id="work">
+    <section class="work section" id="work">
     <span class="section__subtitle">Mon Portfolio</span>
     <h2 class="section__title">Mes récents travaux</h2>
     
-    <div class="work__filters">
+    <div class="work__filters" id="work" title="work">
         <span class="work__item active-work" data-filter='all'>Test</span>
         <span class="work__item" data-filter='.web'>Vf</span>
         <span class="work__item" data-filter='.mobile'>Vost-fr</span>
         <span class="work__item" data-filter='.design'>Design</span>
     </div>
 
-    <div class="work__container container grid">
+    <div class="work__container container grid" content-visibility='auto'>
     
-        <div class="work__card mix web">
+        <div class="work__card card--with-media mix all" >
         <h3 class="work__title">Hall Design</h3>
             <img src="assets/img/loading (2).gif" class="work__img"  id="work__img" title="work__img" alt="">
         <a href="#" class="work__button">
-            
+        <i class="bx bx-right-arrow-circle work__icon"></i>
         <img src="assets/img/-C77-Capture d’écran (9).png" class="work__img" id="skills" title="work2__img" alt="">
-        <i class="bx bx-right-arrow-circle work__icon"></i><img src="assets/img/gif/spinner (2).gif" class="about__img" alt="" id="work__img" title="work__img" >     
+        <img src="assets/img/gif/spinner (2).gif" class="about__img" alt="" id="work__img" title="work__img" >     
         <i class='bx bxs-face work__icon'>°</i>.^
-            </a>        
+        </a> 
+            <img src="assets/img/Capture Mia (2).png" alt="Mia Rodriguez" class="work__img">       
         </div>
     
     
     
-        <div class="work__card mix design">
+        <div class="work__card mix web">
     
             <h3 class="work__title">Brand Design</h3>
           
-            <i class='bx bxs-face work__icon'>
+            <i class='bx bxs-face work__icon'></i>
                 <a href="#" class="work__button">• ^
                 <i class="bx bx-right-arrow-circle work__icon">•</i>
                  
                 </a>
-            </i>
+            
             <img  width="650px" height="650px" src="assets/img/Fichier Home (4).png" alt="" class="work__img">
         <img src="assets/img/Maquette test2.png" alt="" class="work__img">
         </div>
 
-<img src="assets/img/Capture Mia (2).png" alt="Mia Rodriguez" class="work__img">
+        <div class="work__card mix design">
+                                
+            <h3 class="work__title">Overlay</h3>
+        <img width="20%" class="about2__img" src="assets/img/flechesvertical.gif" alt=""> 
+          
+            
+        <a href="index.html" class="work__button">
+                                                    <img src="assets/img/Wave-PNG-HD0000.png" alt="" class="work2__img">
+                                                    
+                                                    <i class="bx bx-right-arrow-circle work__icon">°</i>Reset 01-Page
+                                                    <img src="assets/img/Wave-PNG-HD000.png" alt="" class="work2__img">
+                                                </a>
+        <br>Overlay sur Vidéo-Clip ci-dessous  +                            
+        <button class="button"> 
+        
+        <a href="https://youtube.com/playlist?list=PLDisKgcnAC4SqX0mi1J5_gd7-hrIS5yJp" class="work__button">Playlist Music</a>
+        </button>                                
+        <br>
+        <iframe alt="Ending Theme" class="work__img" src="https://www.youtube.com/embed/BnnbP7pCIvQ" title="Cyberpunk: Edgerunners — Ending Theme | Let You Down by Dawid Podsiadło | Netflix" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" style="position:relative;top:0;left:0;width:60%;" allowfullscreen >
+        </iframe>
+        
+        </div>
 
 </div>
 </section>
 
 </div>
+</main>
+
+
+
 
         <!--=============== FOOTER ===============-->
 <footer class="footer" id="work" title="footer">
