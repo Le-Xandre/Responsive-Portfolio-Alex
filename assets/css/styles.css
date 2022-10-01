@@ -104,7 +104,7 @@
   :root.space {
     --bg-color: rgb(58, 61, 73);
     --text-color: #f7de8d;
-    --bg-url: url("../img/gif/SpaceTime3.gif");
+    --bg-url: url("../img/SpaceTime3.gif");
     --background:cover;
     --font-family: 'Press Start 2P', cursive;
   }
@@ -149,7 +149,7 @@
   }
   :root.load4 {
     --bg-color: rgba(26, 2, 134, 0.669);
-    --bg-url: url("../img/1\ XmdQULLtkx_Ji4oyn1oG-w.gif");
+    --bg-url: url("../img/mariobis.gif");
     --background-color: var(--shape-gradient);
     --text-color: hsla(var(--second-hue), 8%, 75%);
     --font-family: 'Bungee Spice', sans-serif;
