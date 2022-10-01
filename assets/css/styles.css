@@ -1490,18 +1490,18 @@ align-items: center;
 
 }
 .random2__img {
-  width: 10%;
-  height: 5%;
+  width: 100%;
+  height: auto;
   object-fit:cover;  
-  border-radius: 44px;
-  border: 1rem ridge rgba(255, 254, 243, 0.924);
-  border-width: 4px 2px 2px 4px;
+  border-radius: 22px;
+  border: 0.5rem dotted rgba(255, 254, 243, 0.924);
+  border-width: 1px 1px 3px 2px;
   background-image: cover;
   position: relative;  
-  opacity: 40%;
+  opacity: 90%;
   display: flex;
-
 }
+
 /* Style the front side (fallback if image is missing) */
 .flip-box-front {
   color: black;
