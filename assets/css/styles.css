@@ -104,7 +104,7 @@
   :root.space {
     --bg-color: rgb(58, 61, 73);
     --text-color: #f7de8d;
-    --bg-url: url("../img/gif/SpaceTime3.gif");
+    --bg-url: url("../img/SpaceTime3.gif");
     --background:cover;
     --font-family: 'Press Start 2P', cursive;
   }
@@ -130,13 +130,13 @@
   :root.load {
     --bg-color: #dcddd3e9;
     --text-color:var(--text-color-light);
-    --bg-url: url("../img/gif/loading\ \(2\).gif");
+    --bg-url: url("../img/loading\ \(2\).gif");
     --font-family: 'Bungee Spice';
     --font-size : var(--smaller-font-size);
   }
   :root.load2 {
     --bg-color: var(--body-gradient);
-    --bg-url: url("../img/gif/0\ C-cPP9D2MIyeexAT.gif");
+    --bg-url: url("../img//0\ C-cPP9D2MIyeexAT.gif");
     --text-color: #dae0dff8;
     --font-family: 'Dancing Script', cursive;
     --font-size : var(--small-font-size);
@@ -144,7 +144,7 @@
   :root.load3 {
     --bg-color: rgba(71, 47, 59, 0.711);
     --text-color: #fffbdff6;
-    --bg-url: url("../img/gif/Icon-Legacy.gif") ;
+    --bg-url: url("../img/Icon-Legacy.gif") ;
     --font-family: 'Dancing Script';
     --font-size : var(--small-font-size);
   }
@@ -158,7 +158,7 @@
   }
   :root.load5 {
     --bg-color: rgba(26, 2, 134, 0.669);
-    --bg-url: url("../img/gif/ob_183b56_burnout-1.gif");
+    --bg-url: url("../img/ob_183b56_burnout-1.gif");
     --background-color: var(--shape-gradient);
     --text-color: hsla(var(--second-hue), 8%, 75%);
     --font-family: 'Roboto Flex', sans-serif;
@@ -166,21 +166,21 @@
   }
   :root.load6 {
     --bg-color: rgba(43, 47, 51, 0.977);
-    --bg-url: url("../img/gif/ouahou3Dgif.gif");
+    --bg-url: url("../img/ouahou3Dgif.gif");
     --text-color: #e18d42f1;
     --font-family: 'Josefin Sans', cursive, sans-serif;
     --font-size : var(--font-medium);
   }
   :root.load7 {
     --bg-color: rgb(9, 13, 10);
-    --bg-url: url("../img/gif/Points&Vibes.gif");
+    --bg-url: url("../img/Points&Vibes.gif");
     --text-color: #e4f37ffa;
     --font-family: 'Roboto Flex', sans-serif;
     --font-size : var(--font-family);
   }
   :root.load8 {
     --bg-color: rgba(2, 20, 16, 0);
-    --bg-url: url("../img/gif/ej5ygz.gif");
+    --bg-url: url("../img/ej5ygz.gif");
     --text-color: #d6f78d;
     --font-family: 'Roboto Flex', sans-serif;
     --font-size : var(--font-family);
