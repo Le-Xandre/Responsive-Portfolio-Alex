@@ -1269,6 +1269,9 @@ transition: .4s;
 .footer__container{
   padding: 1.5rem 0 3rem;
   justify-content: center;
+  justify-content: center;
+align-content: center;
+display: grid;
 }
 .footer__title, .footer__link{
 color: var(--body-color);
@@ -2313,7 +2316,7 @@ grid-template-columns: repeat(1, 1fr);
   transform: scaleX(-1);
   border-radius: 50px;  
   image-rendering:optimizeSpeed;
-  background: url("../img/d4vaie2-2997c535-b103-4791-b2c3-df38d06a2b62.gif?tr=w-600,h-400") 0 no-repeat; 
+  background: url("../img/1uHZ.gif?tr=w-600,h-400") 0 no-repeat; 
   opacity: 98%;  
   animation: walk-cycle infinite steps(infinite) infinite;
   z-index: 4; 
