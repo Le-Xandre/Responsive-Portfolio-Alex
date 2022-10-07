@@ -219,7 +219,7 @@ body {
   background-size: 100% auto, contain;
   background-repeat: repeat-y;
   position: relative;
-  display: grid;
+  display: block;
   transition: .5s; /* pour l'animation du dark theme */
 }
 
@@ -390,6 +390,8 @@ body.light-theme{
   justify-content: center;
 align-items: center;
 justify-items: center;
+grid-auto-columns: auto;
+grid-auto-rows: minmax(280px);
 }
 
 .main {
@@ -423,7 +425,7 @@ justify-items: center;
 }
 
 .card{
-  display: flex;
+  display: block;
   place-items:center;
   background:var(--body-gradient);
   padding-block: 2.5rem;
@@ -434,8 +436,8 @@ justify-items: center;
 .card--container{
 margin-inline:1.5rem;
 display:grid;
-grid-template-columns: 1fr;
-row-gap: 1.5rem;  padding: 2.25rem;
+grid-template-columns: 3fr;
+row-gap: 1.5rem;  
 padding: 2.25rem;
 }
 
@@ -913,6 +915,10 @@ text-shadow: var(--first-color);
   background-color: var(--container-color);
   padding: 3rem 1.5rem 1.5rem;
   border-radius: 1rem;
+  width: 100%;
+align-items: center;
+justify-content: center;
+display: grid;
 }
 .services__title{
   font-size: var(--h3-font-size);
@@ -1001,12 +1007,13 @@ text-shadow: var(--first-color);
 
 /*=============== WORK ===============*/
 .work__container{  
-  position: relative;
   display: grid;
+  position: relative;
   justify-content: center;
   display: contents;
   padding-top: .25rem;
-  margin: 0.1rem;
+  margin: 0.1rem;  
+  grid-template: auto 2fr / auto 1fr auto;
 }
 .work__filters{
   position: relative;
@@ -1027,16 +1034,16 @@ text-shadow: var(--first-color);
 }
 
 .work__card{
+  display: grid;
   background-color: var(--container-color);
   padding: 1rem;
   border-radius: 1rem;
+  padding-block: 1.5rem;  
+  justify-content:center;
+  align-items: center;
   place-items:center;
   background:var(--body-gradient);
   image-rendering:optimizeSpeed;
-  padding-block: 1.5rem;  
-  display: block;
-  justify-content:center;
-  align-items: center;
 }
 
 .work__card--container{
@@ -1044,8 +1051,9 @@ text-shadow: var(--first-color);
   display: grid;
   justify-content:center;
   align-items: center;
-  grid-template-columns: 4fr;
+  grid-template-columns: 3fr;
   row-gap: 1.25rem;
+
 }
 
 .work__img{
@@ -1075,29 +1083,30 @@ text-shadow: var(--first-color);
   box-shadow: 0px 0px 25px 2px var(--first-color-alt);
 }
 .work3__img{
-  position: absolute;
-  display:inline-block;
+  object-fit:contain;    
+  justify-content: space-evenly;
+  display: block;
   justify-content: center;
-  top: -3rem;
+
   align-items: center;
   width:auto;
   height:25%; 
-  top: -10rem;
-  opacity: 30%;
-  border-radius: 6rem;
+
+  opacity: 75%;
+  border-radius: 100%;
   margin-bottom: .5rem;    
   background-color: var(--body-color);
   border: .1rem double var(--first-color); 
   box-shadow: 0px 0px 25px 2px var(--first-color);
   animation: animateBgColor 5s linear infinite;
   image-rendering:optimizeSpeed;
-  z-index: -11;
+
 }
 .work__title{
-  font-size: var(--h2-font-size);
+  font-size: var(--h4-font-size);
   font-weight: var(--font-medium);
   margin-bottom: .25rem;  
-  text-shadow: 0px 0px 25px 2px var(--first-color-alt);
+  text-shadow: 0px 0px 5px 2px var(--first-color);
 }
 .work__button{
   width: max-content;
@@ -1185,8 +1194,12 @@ text-shadow: var(--first-color);
 
 /*=============== CONTACT ===============*/
 .contact__container{
-  row-gap: 3rem;
-  padding-bottom: 3rem;
+  row-gap: 2.5rem;
+  padding-bottom: 2.5rem;
+  display: grid;
+align-items: center;
+justify-content: center;
+
 }
 .contact__title{
   text-align: center;
@@ -1194,8 +1207,10 @@ text-shadow: var(--first-color);
   margin-bottom: 1.5rem;
 }
 .contact__info{
-  display: grid;
+  display: grid;  
+  text-align: center;
   gap: 1rem;
+  grid-template-columns: repeat(3,1fr);
 }
 .contact__card{
   background-color: var(--container-color);
@@ -1210,14 +1225,14 @@ text-shadow: var(--first-color);
 }
 .contact__card-title, 
 .contact__card-data{
-  font-size: var(--small-font-size);
+  font-size: var(--small-font-size);  text-align: center;
 }
 .contact__card-title{
   font-size:  var(--h3-font-size);
 }
 .contact__card-data{
   display: block;
-  margin-bottom: .75rem;
+  margin-bottom: .75rem;  text-align: center;
 }
 .contact__button{
   color: var(--first-color);
@@ -1238,6 +1253,7 @@ transition: .4s;
   position: relative;
   margin-bottom: 2rem;
   height: 2.5rem;
+  display: flex;
 }
 .contact__form-input{
   position: absolute;
@@ -1265,10 +1281,10 @@ transition: .4s;
 }
 
 .contact__form-area{
-  height: 11rem;
+  height: 10rem;  text-align: center;
 }
 .contact__form-area textarea{
-  resize: none;
+  resize: none; 
 }
 /*=============== FOOTER ===============*/
 .footer{
@@ -1283,7 +1299,7 @@ transition: .4s;
   justify-content: center;
   justify-content: center;
 align-content: center;
-display: grid;
+display: block;
 }
 .footer__title, .footer__link{
 color: var(--body-color);
@@ -1596,9 +1612,14 @@ align-items: center;
 /*=============== BREAKPOINTS ===============*/
 
   /* For small devices 2*/
+
   @media screen and (max-width:320px){
   .nav__menu {
-    position: absolute;
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    padding: 2rem 1.5rem 4rem;
   justify-items: center;
   align-items: center;
   background-color: hsla(var(--second-hue), 32%, 16%, .8);
@@ -1608,11 +1629,13 @@ align-items: center;
   transition: .5s;
   z-index: 1000;
   }
-
+ 
   .nav__list{
     display: grid;
     justify-content:center;
     align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
     }
     .nav__item{
       width: 85%;
@@ -1858,14 +1881,14 @@ margin: 0.15rem;
     justify-content: center;
   }
   .work__container{
-    width: 65%;
+    width: 95%;
     height: auto;    
-    display: flex;
+    display: grid;
     justify-content:center;
     align-items: center;
     justify-content: center;
     padding-top: .25rem;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .work__img{
     width: 100px;
@@ -2065,7 +2088,7 @@ margin: 0.15rem;
     padding-top: .5rem;
   }
   .contact__container{
-    grid-template-columns: repeat(3, max-content);
+    grid-template-columns: repeat(2, max-content);
     justify-content: center;
     column-gap: 3rem;
   }
@@ -2073,7 +2096,7 @@ margin: 0.15rem;
 
 @media screen and (min-width:767px){
   .work__container{
-    grid-template-columns: repeat(3, max-content);
+    grid-template-columns: repeat(2, max-content);
   }
   .contact__container{
     grid-template-columns: repeat(2, max-content);
@@ -2166,6 +2189,10 @@ transform: rotate(90deg) translate(16px, 0);
 }
 .services__card{
   padding: 5rem 2rem 1.5rem;
+  width: 100%;
+align-items: center;
+justify-content: center;
+display: grid;
 }
 .work__container{
   gap: 3rem;
@@ -2271,16 +2298,20 @@ transform: rotate(90deg) translate(16px, 0);
 }
 .services__card{
   padding: 4.5rem 2rem 1.25rem;
+  width: 100%;
+align-items: center;
+justify-content: center;
+display: grid;
 }
 .work__container{
   gap: 2.5rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   display: grid;
 }
 .work__card{
 
   position: relative;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   padding: 0.75rem;
   padding: 0.75rem;
   display: block;
@@ -2330,13 +2361,11 @@ transform: rotate(90deg) translate(16px, 0);
   width: auto;  
   image-rendering:optimizeSpeed;
   height: 850px;
-  min-height: 140px;
+  max-height: 540px;max-width: 100%;
    border-radius: 50px;  
    opacity: 90%;
    z-index: -10;
 }
-
-
 
 .Shima {
 
@@ -2424,6 +2453,8 @@ transform: rotate(90deg) translate(16px, 0);
   animation: parallax_bg linear 40s infinite;
   animation: parallax_fg linear 60s infinite both;
 }
+
+
 .cat {
   background: linear-gradient(top, rgba(255, 255, 255, 0.891) 10%,rgba(255,255,255,0) 80%),
   #b5e6e6f5 url(http://stash.rachelnabors.com/24ways2012/background_clouds.png);
@@ -2545,5 +2576,3 @@ transform: rotate(90deg) translate(16px, 0);
     text-align: center;
   }
 }
-
-
