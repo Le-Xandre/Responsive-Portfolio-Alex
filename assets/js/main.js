@@ -3,17 +3,17 @@
 document.querySelectorAll("img").forEach((item) => {
     item.addEventListener("click", (event) => {
       const image = event.target.getAttribute("data-src");
-      event.target.setAttribute("src", image);
-    });
-  });
+      event.target.setAttribute("src", image)
+    })
+  })
 
 // change theme
 
 const setTheme = theme => document.documentElement.className = theme;
 
 document.getElementById('theme-select').addEventListener('change', function() {
-  setTheme(this.value);
-});
+  setTheme(this.value)
+})
 
 
 /*=============== SHOW MENU ===============*/
@@ -54,7 +54,7 @@ const scrollHeader = () =>{
     this.scrollY >= 50 ? header.classList.add('scroll-header') 
                        : header.classList.remove('scroll-header')
 }
-window.addEventListener('scroll', scrollHeader)
+window.addEventListener('header', scrollHeader)
 
 /*=============== SWIPER TESTIMONIAL ===============*/
 let swiperTestimonial = new Swiper(".testimonial__container", {
@@ -82,7 +82,7 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
         spaceBetween: 48,
         },
     },
-});
+})
 
 /*=============== TESTIMONIAL SWIPER ===============*/
 let testimonialSwiper = new Swiper(".testimonial-swiper", {
@@ -93,7 +93,7 @@ let testimonialSwiper = new Swiper(".testimonial-swiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-});
+})
 
 /*=============== NEW SWIPER ===============*/
 let newSwiper = new Swiper(".new-swiper", {
@@ -111,7 +111,7 @@ let newSwiper = new Swiper(".new-swiper", {
           slidesPerView: 4,
         },
     },
-});
+})
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll('section[id]')
@@ -146,7 +146,7 @@ const scrollUp = () =>{
 	this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
 						: scrollUp.classList.remove('show-scroll')
 }
-window.addEventListener('scroll', scrollUp)
+window.addEventListener('scroll-up', scrollUp)
 
 /*=============== SHOW CART ===============*/
 const cart = document.getElementById('cart'),
@@ -200,7 +200,7 @@ let mixerPortfolio = mixitup('.work__container', {
     animation: {
     duration: 300
     }
-});
+})
 
 /* Link active work */ 
 const linkWork = document.querySelectorAll('.work__item')
