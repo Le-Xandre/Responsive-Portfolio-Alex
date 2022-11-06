@@ -1,425 +1,574 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link rel="shortcut icon" href="assets/img/crossArcane.png" type="image/x-icon">  
+      
+   
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>C°77-222</title>
+<link rel="stylesheet" href="assets/css/styles.css">
+   <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/liste.css"><link rel="stylesheet" href="assets/css/ArchitectureStyleNeon.css">
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet' type="text/css">
-<title>C°77-222</title>
-<link rel="shortcut icon" href="assets/img/crossArcane.png" type="image/x-icon"> 
+<!--=============== SWIPER CSS ===============  
+  <link rel="stylesheet" href="assets/css/style (avancé).css">   <link rel="stylesheet" href="assets/css/style (avancé).css">
+     <link rel="stylesheet" href="index.html"> -->
 
-
-<link rel="stylesheet" href="assets/css/styles.css" type="text/css">
-
-
-<!--=============== SWIPER CSS ===============-->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" type="text/css"/>
-<link rel="stylesheet" href="assets/css/swiper-bundle.min.css" type="text/css">
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+ <link rel="stylesheet" href="assets/css/main.css">       
 </head>
 <body>
-<!--=============== HEADER ===============-->
-<header class="header">
-
-    
-    <a href="#" class="nav__link--ghost active-link">
-    <i class='bx bxs-up-arrow-circle'></i>
-    </a>
-                 <select class="button--ghost active-link" id="theme-select" title="">
-            <option class="button--ghost" value="light">Thème</option>
-            <option class="work__img" value="dark">Dark</option>
-            <option class="button--ghost" value="blue">Blue</option>
-            <option class="work__img" value="pink">Pink</option>
-            <option class="button--ghost" value="space">Space</option>
-            <option class="work__img" value="nyan">Nyan</option>
-            <option class="button--ghost" value="test">Bright</option>
-            <option class="work__img" value="load">Loading</option>
-            <option class="button--ghost" value="load2">Ouhouh</option>
-            <option class="work__img" value="load3">Home</option>
-            <option class="button--ghost" value="load4">S.Mario</option>
-            <option class="work__img" value="load5">Cartoon</option>
-            <option class="button--ghost" value="load6">Nebular</option>
-            <option class="work__img" value="load7">Points&Vibes</option>
-            <option class="work__img" value="load8">Vibes</option>
-            </select>               
-    <nav class="nav container">
-    
-    <div class="nav__menu">
-
- 
-    <ul class="nav__list">
-            
-    
-    <div class="nav__toggle active-link">
-        <li class="nav_item nav__link">
-        <!-- <li class="nav_item"> -->
-        <!-- theme change -->
-        <i class="bx bx-moon change-theme" id="theme-button" title="#">
-        </i>
-        </li>
-       <h3 class="nav__item-title">light</h3>
-
-        </div>
+        <!--=============== HEADER ===============-->
+        <header class="header">
 
 
+                
 
-    <li class="nav_item">
-    <a href="#" class="nav__link active-link" title="home">
-    <i class='bx bx-home-heart'></i>
-    </a><h3 class="nav__item-title">Home</h3>
-    </li>
-    
-    <li class="nav_item">
-    <a href="#about" class="nav__link" title="about">
-    <i class="bx bx-user"></i>
-    </a><h3 class="nav__item-title">...</h3>
-    </li>
-    
-    <li class="nav__item">
-    <a href="#skills" class="nav__link" title="skills">
-    <i class="bx bx-book-open"></i>
-    </a>
-    <h3 class="nav__item-title">...</h3>
-    </li>
-    
-    <li class="nav__item">
-    <a href="#services" class="nav__link" title="services">
-    <i class="bx bx-briefcase"></i>
-    </a>
-    <h3 class="nav__item-title">...</h3>
-    </li>
-    
-    <li class="nav__item">
-    <a href="#work" class="nav__link" title="work">
-    <i class="bx bx-briefcase-alt"></i>
-    </a>
-    <h3 class="nav__item-title">Portfolio</h3>
-    </li>
-    
-    <li class="nav__item">
-    <a href="#testimonial" class="nav__link" title="testimonial" alt="Témoignages">
-    <i class='bx bx-male-female'></i>
-    </a>
-    <h3 class="nav__item-title">...</h3>
-    </li>
-    
-    <li class="nav__item">
-    <a href="#contact" class="nav__link" title="contact">
-    <i class="bx bx-message-square-detail"></i>
-    </a>
-    <h3 class="nav__item-title">...</h3>
-    </li>
+            <nav class="nav container">
+                <div class="nav__menu">
+                                        
+<ul class="nav__list"> <a href="#" class="nav__logo">
+                            <i class='bx bxs-up-arrow-circle'></i>
+                        </a>  
+<i class="bx bx-moon change-theme--ghost" id="theme-button" title="#"></i>
+<img class="random__img" class="work2__img" src="assets/img/-C77_EN-David-Cam2.png" id="random__img" alt="">
+   
+<!-- theme change -->
+                
+                        <li class="nav_item">
+                            <a href="#home" class="nav__link active-link" title="home">
+                                <i class='bx bx-home-heart'></i>
+                            </a><h3 class="nav__item-title">Menu</h3>
+                        </li>
 
-    <div class="nav__toggle active-link">
-    <li class="nav_item">
+                        <li class="nav_item">
+                            <a href="#about" class="nav__link" title="about">
+                                <i class="bx bx-user"></i>
+                            </a><h3 class="nav__item-title">A Propos</h3>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link" title="skills">
+                                <i class="bx bx-book-open"></i>
+                            </a><h3 class="nav__item-title">Skills</h3>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#services" class="nav__link" title="services">
+                                <i class="bx bx-briefcase"></i>
+                            </a><h3 class="nav__item-title">Services</h3>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#work" class="nav__link" title="work">
+                                <i class="bx bx-briefcase-alt"></i>
+                            </a><h3 class="nav__item-title">Portfolio</h3>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#testimonial" class="nav__link" title="testimonial" alt="Témoignages">
+                                <i class='bx bx-male-female'></i>
+                            </a><h3 class="nav__item-title">Avis</h3></li>
+                            <li class="nav__item">
+                            <a href="#contact" class="nav__link" title="contact">
+                                <i class="bx bx-message-square-detail"></i>
+                            </a><h3 class="nav__item-title">Contact</h3>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#footer" class="nav__link" title="footer">
+
+                            <i class='bx bx-dialpad-alt'></i>
+                            </a>
+                            <h3 class="nav__item-title">bas</h3>
+                        </li>
+
+                    </ul>                  
+                                </div>
+  <select title="theme-select" class="nav__item-title" id="theme-select">
+        <option class="button--ghost" value="light">Light</option>
+        <option class="work__img" value="dark">Dark</option>
+        <option class="button--ghost" value="blue">Blue</option>
+        <option class="work__img" value="pink">Pink</option>
+        <option class="button--ghost" value="space">Space</option>
+        <option class="work__img" value="nyan">Nyan</option>
+        <option class="button--ghost" value="test">Brighthope</option>
+        <option class="work__img" value="load">Loading</option>
+        <option class="button--ghost" value="load2">Peel</option>
+        <option class="work__img" value="load3">Home Sweet home</option>
+        <option class="button--ghost" value="load4">Mario</option>
+        <option class="work__img" value="load5">Cartoon</option>
+        <option class="button--ghost" value="load6">NebulArt</option>
+        <option class="work__img" value="load7">R</option>
+        <option class="button--ghost" value="load8">Feng Shui</option>
+        <option class="work__img" value="load9">Catsecret</option>
+        <option class="button--ghost" value="load10">Winter is coming</option>
+                </select>
+            </nav>
+       
+
+            </header>
         
-    <a href="#footer" class="nav__link" title="footer">
-    <i class='bx bx-dialpad-alt'></i>
-    </a>
-    <h3 class="nav__item-title">v</h3>
-    </li>
-</div>
+                <!--================= MAIN ===============-->
 
-    <select class="button--ghost active-link" id="theme-select" title="">
-            <option class="button--ghost" value="light">Thème</option>
-            <option class="work__img" value="dark">Dark</option>
-            <option class="button--ghost" value="blue">Blue</option>
-            <option class="work__img" value="pink">Pink</option>
-            <option class="button--ghost" value="space">Space</option>
-            <option class="work__img" value="nyan">Nyan</option>
-            <option class="button--ghost" value="test">Bright</option>
-            <option class="work__img" value="load">Loading</option>
-            <option class="button--ghost" value="load2">Ouhouh</option>
-            <option class="work__img" value="load3">Home</option>
-            <option class="button--ghost" value="load4">S.Mario</option>
-            <option class="work__img" value="load5">Cartoon</option>
-            <option class="button--ghost" value="load6">Nebular</option>
-            <option class="work__img" value="load7">Points&Vibes</option>
-            <option class="work__img" value="load8">Vibes</option>
-            </select>
-        </ul>   
+<main>
+
+
+    <article class="container">
+
+<!--=============== ABOUT ===============-->
+
+<section class="about section" id="about">
+    <span class="section__subtitle">Présentation</span>
+    <h2 class="section__title">A propos de moi</h2>
+    
+    <div class="about__container container grid">
+    
+    <img class="about__img" class="work2__img" src="assets/img/perfil4.png" alt="">
+    
+    <div class="about__data">
+    <div class="about__info">
+    
+    <div class="about__box">
+    <i class='bx bxs-award'></i>
+    <h3 class="about__title">Expérience</h3>
+    <span class="about__subtitle">2 ans</span>
+    </div>
+    
+    <div class="about__box">
+    <i class='bx bx-briefcase-alt'></i>
+    <h3 class="about__title">Projets</h3>
+    <span class="about__subtitle">+</span>
+    </div>
+    
+    <div class="about__box">
+    <i class='bx bx-support'></i>
+    <h3 class="about__title">Support</h3>
+    <span class="about__subtitle">24 / 7</span>
+    </div>
     
     </div>
     
-    </nav>
-    <img class="nav__menu-img" src="assets/img/-C77_EN-David-Cam2.png" id="random2__img" alt="">
-    </header>
-<!--================= MAIN ===============-->                    
-                <!--=============== HOME ===============-->
+    <p class="about__description">
+    Développeur frontend, je crée des pages UI-UX.
+    <br>Pour une meilleure accessibilité, 
+    <br>des interfaces aux usagers.
+    </p>
+    
+    <a href="#contact" class="button">Me contacter</a>      
+    </div>    
+    
+    </div>
+    
+    </section>
+    
+    <!--=============== SKILLS ===============-->
+    
+    <section class="skills section" id="skills">
+    <span class="section__subtitle">Mes Compétences</span>
+    <h2 class="section__title">Mes expériences</h2>
+    
+    <div class="skills__container container grid">
+    
+    <div class="skills__content">
+    <h3 class="skills__title">Développeur Frontend</h3>
+    
+    <div class="skills__box">
+    <div class="skills__group">
+    <div class="skills__data">
+    <i class='bx bx-badge-check' ></i>
+    
+    <div>
+    <h3 class="skills__name">Html</h3>
+    <span class="skills__level">intermédiaire</span>
+    </div>
+    </div>
+    <div class="skills__data">
+    <i class='bx bx-badge-check' ></i>
+    
+    <div>
+    <h3 class="skills__name">Bootstrap</h3>
+    <span class="skills__level">basique</span>
+    </div>
+    </div>
+    <div class="skills__data">
+    <i class='bx bx-badge-check' ></i>
+    
+    <div>
+    <h3 class="skills__name">Javascript</h3>
+    <span class="skills__level">basique</span>
+    </div>
+    </div>
+    </div>
+    
+    <div class="skills__group">
+    <div class="skills__data">
+    <i class='bx bx-badge-check'></i>
+    
+    <div>
+    <h3 class="skills__name">Css</h3>
+    <span class="skills__level">avancé</span>
+    </div>
+    </div>
+    <div class="skills__data">
+    <i class='bx bx-badge-check'></i>
+    
+    <div>
+    <h3 class="skills__name">SCSS</h3>
+    <span class="skills__level">basique</span>
+    </div>
+    </div>
+
+    <div class="skills__data">
+    <i class='bx bx-badge-check'></i>
+    
+    <div>
+    <h3 class="skills__name"></h3>
+    <span class="skills__level"></span>
+    </div>
+    </div>
+    </div>
+     </div>
+    </div>
+    <!--=============== "" ===============-->
+    <div class="skills__content">
+    <h3 class="skills__title">Développeur Backend</h3>
+    
+    <div class="skills__box">
+    <div class="skills__group">
+    <div class="skills__data">
+    <i class='bx bx-badge-check'></i>
+    
+    <div>
+    <h3 class="skills__name">PHP</h3>
+    <span class="skills__level">intermédiaire</span>
+    </div>
+    </div>
+    <div class="skills__data">
+    <i class='bx bx-badge-check'></i>
+    
+    <div>
+    <h3 class="skills__name">Laravel</h3>
+    <span class="skills__level">basique</span>
+    </div>
+    </div>
+    <div class="skills__data">
+    <i class='bx bx-badge-check'></i>
+    
+    <div>
+    <h3 class="skills__name">Node Js</h3>
+    <span class="skills__level">basique</span>
+    </div>
+    </div>
+    </div>
+    
+    <div class="skills__group">
+    <div class="skills__data">
+    <i class='bx bx-badge-check'></i>
+    
+    <div>
+    <h3 class="skills__name">My SQL</h3>
+    <span class="skills__level">basique</span>
+    </div>
+    </div>
+    <div class="skills__data">
+    <i class='bx bx-badge-check'></i>
+    
+    <div>
+    <h3 class="skills__name">Prestashop</h3>
+    <span class="skills__level">basique</span>
+    </div>
+    </div>
+    <div class="skills__data">
+    <i class='bx bx-badge-check'></i>
+    
+    <div>
+    <h3 class="skills__name"></h3>
+    <span class="skills__level"></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</div>
+ </section>   
+    
+
+
+ <section class="work section" id="work">
+    <span class="section__subtitle">Mon Portfolio</span>
+        <h2 class="section__title">Mes récents travaux</h2>
+
+        <div class="work__filters">
+            <span class="work__item active-work" data-filter='all'>Hall</span>
+            <span class="work__item" data-filter='.web'>Web</span>
+            <span class="work__item" data-filter='.mobile'>Mobile</span>
+            <span class="work__item" data-filter='.design'>Design</span>
+        </div>
+            <div class="work__container container grid">
+
+            <div class="work__card mix all">
+                <h3 class="work__title">Hall Design</h3>
+                <img src="assets/img/triangle3D.gif" alt="" class="about2__img">
+                            
+                            
+                        
+        </div>      
+      
+                                  
+
+<div class="work__card mix design">
+            <div class="work__container">
+    
+                        <img class="work2__img" src="assets/img/-C77-Capture d’écran (9).png" class="skills__content" alt="">
+                        <img class="work2__img" src="assets/img/-C77-Capture d’écran (5).png" class="nav__menu-img2"  alt="">
                 
-            <section class="Home section" id="home">
+                        <img class="work2__img" src="assets/img/-C77-Capture d’écran (29).png" alt="">
+                        
+                        <img class="work2__img" src="assets/img/Wallpaperalex/photomode_19012021_124308.png" alt="">
+                        <img class="work2__img" src="assets/img/-C77-Capture d’écran (11).png"  class="nav__menu-img2" alt="">
+                        <img class="work2__img" src="assets/img/Capture d’écran (3).png" alt="">
+                        <img class="work2__img" src="assets/img/-C77-Capture d’écran (54).png" alt="">
+                        <img class="work2__img" src="assets/img/-C77-Capture d’écran (14).png" class="nav__menu-img2"  alt="">
+                <img class="work2__img" src="assets/img/-C77-Capture d’écran (19).png" alt="">
+                        <img class="work2__img" src="assets/img/-C77-Capture d’écran (26).png" class="work__container" alt="">             
+                        <img class="work2__img" src="assets/img/-C77-Capture d’écran (6).png"  class="nav__menu-img2" alt="">
+             <img class="work2__img" src="assets/img/-C77-Capture d’écran (16).png" alt="">           
+            </div>
+</div>
+    
+<div class="work__card mix mix web">
+<div class="work__container" id="skills-box" loading="lazy">
+            
+                <img class="work2__img" src="assets/img/-C77-Capture d’écran (15).png" alt="">
+                <img class="work2__img" src="assets/img/-C77-Capture d’écran (13).png" class="nav__menu-img2" alt="">
+                <img class="work2__img" src="assets/img/-C77-Capture d’écran (25).png" alt="">
+                <img class="work2__img" src="assets/img/-C77-Capture d’écran (21).png" alt="">
+                <img class="work2__img" src="assets/img/Wallpaperalex/photomode_25012021_194627.png" class="nav__menu-img2" alt="">
+                <img class="work2__img" src="assets/img/-C77-Capture d’écran (20).png" alt="">
+                <img class="work2__img" src="assets/img/Wallpaperalex/photomode_03012021_223447.png" alt="">
+                <img class="work2__img" src="assets/img/-C77-Capture d’écran (12).png" class="nav__menu-img2" alt="">
+        <img class="work2__img" src="assets/img/-C77-Capture d’écran (22).png" alt="">
+        <img class="work2__img" src="assets/img/-C77-Capture d’écran (53).png" alt="">
+        <img class="work2__img" src="assets/img/-C77-Capture d’écran (50).png" class="nav__menu-img2" alt="">
+        <img class="work2__img" src="assets/img/-C77-Capture d’écran (52).png" alt="">
+                <img class="work2__img" src="assets/img/-C77-Capture d’écran (27).png" alt="">
+        <img class="work2__img" src="assets/img/-C77-Capture d’écran (44).png" class="nav__menu-img2"  alt="">
+        <img class="work2__img" src="assets/img/Wallpaperalex/photomode_17012021_054822.png" alt="">          
+          <img class="work2__img" src="assets/img/-C77-Capture d’écran (35).png"  alt="">
+                <img class="work2__img" src="assets/img/-C77-Capture d’écran (60).png" class="nav__menu-img2"  alt="">
+                <img class="work2__img" src="assets/img/-C77-Capture d’écran (36).png" alt="">    
+</div>
+    
+</div> 
+    <div class="work__card mix mix web">
+<div class="work__container" id="skills-box" loading="lazy">
+        
+            <img class="work2__img" src="assets/img/-C77-Capture d’écran (15).png" alt="">
+            <img class="work2__img" src="assets/img/-C77-Capture d’écran (13).png" class="nav__menu-img2" alt="">
+            <img class="work2__img" src="assets/img/-C77-Capture d’écran (25).png" alt="">
+            <img class="work2__img" src="assets/img/-C77-Capture d’écran (21).png" alt="">
+            <img class="work2__img" src="assets/img/Wallpaperalex/photomode_25012021_194627.png" class="nav__menu-img2" alt="">
+            <img class="work2__img" src="assets/img/-C77-Capture d’écran (20).png" alt="">
+            <img class="work2__img" src="assets/img/Wallpaperalex/photomode_03012021_223447.png" alt="">
+            <img class="work2__img" src="assets/img/-C77-Capture d’écran (12).png" class="nav__menu-img2" alt="">
+    <img class="work2__img" src="assets/img/-C77-Capture d’écran (22).png" alt="">
+    <img class="work2__img" src="assets/img/-C77-Capture d’écran (53).png" alt="">
+    <img class="work2__img" src="assets/img/-C77-Capture d’écran (50).png" class="nav__menu-img2" alt="">
+    <img class="work2__img" src="assets/img/-C77-Capture d’écran (52).png" alt="">
+            <img class="work2__img" src="assets/img/-C77-Capture d’écran (27).png" alt="">
+    <img class="work2__img" src="assets/img/-C77-Capture d’écran (44).png" class="nav__menu-img2"  alt="">
+    <img class="work2__img" src="assets/img/Wallpaperalex/photomode_17012021_054822.png" alt="">          
+      <img class="work2__img" src="assets/img/-C77-Capture d’écran (35).png"  alt="">
+            <img class="work2__img" src="assets/img/-C77-Capture d’écran (60).png" class="nav__menu-img2"  alt="">
+            <img class="work2__img" src="assets/img/-C77-Capture d’écran (36).png" alt="">    
+</div>
+<div class="work__container" loading="lazy">
 
-                    <div class="home__container container grid">
+                    <img class="work2__img" src="assets/img/-C77-Capture d’écran (9).png" class="" alt="">
+                    <img class="work2__img" src="assets/img/-C77-Capture d’écran (5).png" class="nav__menu-img2"  alt="">
+            
+                    <img class="work2__img" src="assets/img/-C77-Capture d’écran (29).png" alt="">
                     
-                    <img src="https://picsum.photos/800" class="flip-box-front" alt="">
-                    
-                    <div class="home__data">                        
-                    <h1 class="home__name">Hello</h1>
-                    <span class="home__greeting"><h2>Portfolio 2</h2></span>
-                    <h3 class="home__education">Cyberpunk 2077 test</h3>
-                    <a href="index.html" class="button button--ghost">Retour °
-                    <img src="assets/img/Wave-PNG-HD0000.png" alt="" class="work2__img">
-                    </a>
-                    
-                    <a href="C77 Test.html" class="button">° C77 Test
-                    <img src="assets/img/Wave-PNG-HD000.png" alt="" class="work2__img">
-                    </a>
-                    <br>
-                    <img src="assets/img/18+.png" class="home__img" id="home__handle" title="home" alt="">
-                    </div>
-                    
-                    <div class="home__handle" id="home">
-                    
-                    <img src="https://picsum.photos/600" class="header__img" alt="">
-                    </div>
-                    
-                    </div> 
-                    
-            </section>
-            <main class="main">
-
-
-
-
-                <section class="skills section" id="skills">
-                <div class="cat"> 
-    <div class="midground"></div>
-    <div class="Shima"></div>            
-    <div class="foreground"></div>
-    <img src="assets/img/-C77-Capture d’écran (3).png" loading="lazy" alt="" class="work__img">
-    <div class="background"></div> 
-</div> <div class="boox">
-                <span style="--i:1;"><img src="assets/img/-C77-Capture d’écran (9).png" class="" alt=""></span> 
-                <span style="--i:2;"><img src="assets/img/-C77-Capture d’écran (5).png" class="nav__menu-img2"  alt=""></span> 
-                <span style="--i:3;"><img src="assets/img/-C77-Capture d’écran (29).png" alt=""></span> 
-                <span style="--i:4;"><img src="assets/img/photomode_19012021_124308.png" alt=""></span> 
-                <span style="--i:5;"><img src="assets/img/-C77-Capture d’écran (11).png"  class="nav__menu-img2" alt=""></span> 
-                <span style="--i:6;"><img src="assets/img/Capture d’écran (3).png" alt=""></span> 
-                <span style="--i:7;"><img src="assets/img/-C77-Capture d’écran (54).png" alt=""></span> 
-                <span style="--i:8;"><img src="assets/img/-C77-Capture d’écran (14).png" class="nav__menu-img2"  alt=""></span> 
-                </div>
-    <div id='stars'></div>
-    <div id='stars2'></div>
-    <div id='stars3'></div>
-</section>
-
-<section class="work section" id="work">
-<span class="section__subtitle">Mon Portfolio</span>
-<h2 class="section__title">Mes récents travaux</h2>
-
-<div class="work__filters" id="work" title="work">
-<span class="work__item active-work" data-filter='all'>Hall</span>
-<span class="work__item" data-filter='.web'>Web</span>
-<span class="work__item" data-filter='.mobile'>Mobile</span>
-<span class="work__item" data-filter='.design'>Design</span>
+                    <img class="work2__img" src="assets/img/Wallpaperalex/photomode_19012021_124308.png" alt="">
+                    <img class="work2__img" src="assets/img/-C77-Capture d’écran (11).png"  class="nav__menu-img2" alt="">
+                    <img class="work2__img" src="assets/img/Capture d’écran (3).png" alt="">
+                    <img class="work2__img" src="assets/img/-C77-Capture d’écran (54).png" alt="">
+                    <img class="work2__img" src="assets/img/-C77-Capture d’écran (14).png" class="nav__menu-img2"  alt="">
+            <img class="work2__img" src="assets/img/-C77-Capture d’écran (19).png" alt="">
+                    <img class="work2__img" src="assets/img/-C77-Capture d’écran (26).png" class="work__container" alt="">             
+                    <img class="work2__img" src="assets/img/-C77-Capture d’écran (6).png"  class="nav__menu-img2" alt="">
+         <img class="work2__img" src="assets/img/-C77-Capture d’écran (16).png" alt="">           
 </div>
 
 
-<div class="work__container container grid" loading="lazy" content-visibility='auto'>
-
-<div class="work__card mix all" >
-
-<h3 class="work__title">Hall Design</h3>
-
-<a href="index222.html" class="work__button">
-<img src="assets/img/-C77-Capture d’écran (9).png" loading="lazy" alt="" class="work__img">
-<img src="assets/img/crossArcane.png" loading="lazy" alt="" class="about2__img"> </a>
-
-</div>
-
-<!-- <div class="work__card mix web" loading="lazy">
-<div class="image-gallery" loading="lazy">
-<img src="assets/img/-C77-Capture d’écran (9).png" class="" alt="">
-<img src="assets/img/-C77-Capture d’écran (5).png" class="nav__menu-img2"  alt="">
-<img src="assets/img/-C77-Capture d’écran (29).png" alt="">
-<img src="assets/img/Wallpaperalex/photomode_19012021_124308.png" alt="">
-<img src="assets/img/-C77-Capture d’écran (11).png"  class="nav__menu-img2" alt="">
-<img src="assets/img/Capture d’écran (3).png" alt="">
-<img src="assets/img/-C77-Capture d’écran (54).png" alt="">
-<img src="assets/img/-C77-Capture d’écran (14).png" class="nav__menu-img2"  alt="">
-<img src="assets/img/-C77-Capture d’écran (19).png" alt="">
-<img src="assets/img/-C77-Capture d’écran (26).png" alt="">             
-<img src="assets/img/-C77-Capture d’écran (6).png"  class="nav__menu-img2" alt="">
-<img src="assets/img/-C77-Capture d’écran (16).png" alt="">           
-</div>
 </div>
 
 <div class="work__card mix mobile">
-<div class="image-gallery" id="image-gallery" loading="lazy">
+<div class="card-body" id="skills-box">
+        <img class="work2__img" src="assets/img/-C77-Capture d’écran (4).png" alt="">
+        <img class="work2__img" src="assets/img/subscription-banner.png"  class="nav__menu-img2"  alt="">
+        <img class="work2__img" src="assets/img/Wallpaperalex/photomode_19012021_015717.png" alt="">
+        <img class="work2__img" src="assets/img/-C77-Capture d’écran (38).png" alt="">
+        <img class="work2__img" src="assets/img/Cats (23).png" class="nav__menu-img2"  alt="">
+<img class="work2__img" src="assets/img/Wallpaperalex/photomode_25012021_193426.png" alt="">
+<img class="work2__img" src="assets/img/Wallpaperalex/photomode_03022021_030024.png" alt="">
+<img class="work2__img" src="assets/img/-C77-Capture d’écran (41).png" class="nav__menu-img2"  alt="">
+<img class="work2__img" src="assets/img/-C77-Capture d’écran (43).png" alt="">
 
-<img src="assets/img/-C77-Capture d’écran (15).png" alt="">
-<img src="assets/img/-C77-Capture d’écran (13).png" class="nav__menu-img2" alt="">
-<img src="assets/img/-C77-Capture d’écran (25).png" alt="">
-<img src="assets/img/-C77-Capture d’écran (21).png" alt="">
-<img src="assets/img/Wallpaperalex/photomode_25012021_194627.png" class="nav__menu-img2" alt="">
-<img src="assets/img/-C77-Capture d’écran (20).png" alt="">
-<img src="assets/img/Wallpaperalex/photomode_03012021_223447.png" alt="">
-<img src="assets/img/-C77-Capture d’écran (12).png" class="nav__menu-img2" alt="">
-<img src="assets/img/-C77-Capture d’écran (22).png" alt="">
-<img src="assets/img/-C77-Capture d’écran (53).png" alt="">
-<img src="assets/img/-C77-Capture d’écran (50).png" class="nav__menu-img2" alt="">
-<img src="assets/img/-C77-Capture d’écran (52).png" alt="">
-<img src="assets/img/-C77-Capture d’écran (27).png" alt="">
-<img src="assets/img/-C77-Capture d’écran (44).png" class="nav__menu-img2"  alt="">
-<img src="assets/img/Wallpaperalex/photomode_17012021_054822.png" alt="">          
-<img src="assets/img/-C77-Capture d’écran (35).png"  alt="">
-<img src="assets/img/-C77-Capture d’écran (60).png" class="nav__menu-img2"  alt="">
-<img src="assets/img/-C77-Capture d’écran (36).png" alt="">    
-</div>
+
+<img class="work2__img" src="assets/img/-C77-Capture d’écran (32).png" alt="">
+<img class="work2__img" src="assets/img/-C77-Capture d’écran (30).png" class="nav__menu-img2"  alt="">
+<img class="work2__img" src="assets/img/-C77-Capture d’écran (31).png" alt="">
+<img class="work2__img" src="assets/img/-C77-Capture d’écran (33).png" alt="">
+<img class="work2__img" src="assets/img/-C77-Capture d’écran (40).png"  class="nav__menu-img2" alt="">    
+<img class="work2__img" src="assets/img/Wallpaperalex/photomode_03022021_203215.png" alt="">
+<img class="work2__img" src="assets/img/-C77-Capture d’écran (18).png" alt="">
+<img class="work2__img" src="assets/img/-C77-Capture d’écran (10).png" class="nav__menu-img2" alt="">
+<img class="work2__img" src="assets/img/-C77-Capture d’écran (56).png" alt="">
 
 </div>
+<div  class="work__container" id="skills-box">
+            <img class="work2__img" src="assets/img/-C77-Capture d’écran (4).png" alt="">
+            <img class="work2__img" src="assets/img/subscription-banner.png"  class="nav__menu-img2"  alt="">
+            <img class="work2__img" src="assets/img/Wallpaperalex/photomode_19012021_015717.png" alt="">
+            <img class="work2__img" src="assets/img/-C77-Capture d’écran (38).png" alt="">
+            <img class="work2__img" src="assets/img/Cats (23).png" class="nav__menu-img2"  alt="">
+    <img class="work2__img" src="assets/img/Wallpaperalex/photomode_25012021_193426.png" alt="">
+    <img class="work2__img" src="assets/img/Wallpaperalex/photomode_03022021_030024.png" alt="">
+    <img class="work2__img" src="assets/img/-C77-Capture d’écran (41).png" class="nav__menu-img2"  alt="">
+    <img class="work2__img" src="assets/img/-C77-Capture d’écran (43).png" alt="">
+    
+    
+    <img class="work2__img" src="assets/img/-C77-Capture d’écran (32).png" alt="">
+    <img class="work2__img" src="assets/img/-C77-Capture d’écran (30).png" class="nav__menu-img2"  alt="">
+    <img class="work2__img" src="assets/img/-C77-Capture d’écran (31).png" alt="">
+    <img class="work2__img" src="assets/img/-C77-Capture d’écran (33).png" alt="">
+    <img class="work2__img" src="assets/img/-C77-Capture d’écran (40).png"  class="nav__menu-img2" alt="">    
+    <img class="work2__img" src="assets/img/Wallpaperalex/photomode_03022021_203215.png" alt="">
+    <img class="work2__img" src="assets/img/-C77-Capture d’écran (18).png" alt="">
+    <img class="work2__img" src="assets/img/-C77-Capture d’écran (10).png" class="nav__menu-img2" alt="">
+    <img class="work2__img" src="assets/img/-C77-Capture d’écran (56).png" alt="">
+    
+    </div></div>
 
 
 <div class="work__card mix design">
-<div class="image-gallery" class="image-gallery" loading="lazy">
-<img src="assets/img/-C77-Capture d’écran (4).png" alt="">
-<img src="assets/img/subscription-banner.png"  class="nav__menu-img2"  alt="">
-<img src="assets/img/Wallpaperalex/photomode_19012021_015717.png" alt="">
-<img src="assets/img/-C77-Capture d’écran (38).png" alt="">
-<img src="assets/img/Cats (23).png" class="nav__menu-img2"  alt="">
-<img src="assets/img/Wallpaperalex/photomode_25012021_193426.png" alt="">
-<img src="assets/img/Wallpaperalex/photomode_03022021_030024.png" alt="">
-<img src="assets/img/-C77-Capture d’écran (41).png" class="nav__menu-img2"  alt="">
-<img src="assets/img/-C77-Capture d’écran (43).png" alt="">
-<img src="assets/img/-C77-Capture d’écran (32).png" alt="">
-<img src="assets/img/-C77-Capture d’écran (30).png" class="nav__menu-img2"  alt="">
-<img src="assets/img/-C77-Capture d’écran (31).png" alt="">
-<img src="assets/img/-C77-Capture d’écran (33).png" alt="">
-<img src="assets/img/-C77-Capture d’écran (40).png"  class="nav__menu-img2" alt="">    
-<img src="assets/img/Wallpaperalex/photomode_03022021_203215.png" alt="">
-<img src="assets/img/-C77-Capture d’écran (18).png" alt="">
-<img src="assets/img/-C77-Capture d’écran (10).png" class="nav__menu-img2" alt="">
-<img src="assets/img/-C77-Capture d’écran (56).png" alt="">
-</div>
 
-</div> -->
 
-<div class="work__card mix design">
 
 <h3 class="work__title">Test Liste Bis</h3>
+<br>Envoi vers  
+<a href="liste.html" class="work__button">
 
-<img width="20%" class="work2__img" src="assets/img/flechesvertical.gif" alt=""> 
-<p>
+<h6 class="button button--ghost">Liste fr<img class="work__img" src="assets/img/-C77-Capture d’écran (3).png" loading="lazy" alt="" ></h6>
 
-         <br>
-    Tout d'abord,<br>
-    il me reste à adapter au mieux ce 1er essai ici, 
-    régler 1 maximum de bugs déjà puis, par exemple :
-     <br><br>
-     * Relier mes 1ers essais semi-pro en aidant l'association l'Êttre, à développer 1 image web.
-     <br><br>Dans les idées plus personnelles d'essais <br>entre amateur & pro<br>
-      <br>* Relier en arrière-fond (ou en aside) <br>1 carte interactive situant l'ensemble des photos concernant le Vietnam 
-     (chacune dans un slide agréable), ville par ville etc. dans 1 format appli portable / web.
-     <br>
-     <br>* Différencier mes portfolios dessins puis peintures, puis photos, etc, 
-     <br>dans des catégories distinctes et fonctionnelles.
-     <br>Par mots clés, tags & différentes structurations.<br><br>
-    </p>
+</a>   
+
+<img class="work2__img" width="20%" class="about2__img" src="assets/img/flechesvertical.gif" alt="">
 
 <a href="index.html" class="work__button">
-<img src="assets/img/Wave-PNG-HD0000.png" alt="" class="work2__img">
+<img class="work2__img" src="assets/img/Wave-PNG-HD0000.png" alt="" class="work2__img">
 
 <i class="bx bx-right-arrow-circle work__icon">°</i>Reset 01-Page
-<img src="assets/img/Wave-PNG-HD000.png" alt="" class="work2__img">
+<img class="work2__img" src="assets/img/Wave-PNG-HD000.png" alt="" class="work2__img">
 </a>
+</div>
  
 
-</div> 
 
-<div class="work__card mix Web">
 </div>
-</div>                    
-</div> 
- </section>
 
+</div>  
 
-
-</main>
-<section class="testimonial section" id="testimonial">
-<div class="boox">
-                <span style="--i:9;"><img src="assets/img/-C77-Capture d’écran (19).png" alt=""></span> 
-                                        <span style="--i:10;"><img src="assets/img/-C77-Capture d’écran (26).png" alt=""> </span>             
-                                            <span style="--i:11;"><img src="assets/img/-C77-Capture d’écran (6).png"  class="nav__menu-img2" alt=""></span> 
-                                                <span style="--i:12;"><img src="assets/img/-C77-Capture d’écran (16).png" alt="">    </span>       
-                                                <span style="--i:13;"><img src="assets/img/-C77-Capture d’écran (15).png" alt=""></span>
-                                                <span style="--i:14;"><img src="assets/img/-C77-Capture d’écran (13).png" class="nav__menu-img2" alt=""></span>
-                                                <span style="--i:15;"> <img src="assets/img/-C77-Capture d’écran (25).png" alt=""></span>
-                                                <span style="--i:16;"><img src="assets/img/-C77-Capture d’écran (21).png" alt=""></span></div>
-
+</div>
+       
 </section>
+  
+</article>  
+</main>
+    
+
+
 <!--=============== FOOTER ===============-->
 
-<footer class="footer--ghost" id="work" title="footer">
+                    <footer class="footer" id="footer">
 
-    <div class="footer__buttons">
+                        <div class="work__container container">
+                        <buttons class="button--ghost">
+                        <a href="liste.html" class="button">
+                            liste fr
+                        </a>
+                        
+                        <a href="index.html" class="button">
+                        Retour vers
+                        <i class="bx bx-right-arrow-circle work2__icon">°</i>
+                         01-Page CV</a>
+                    </buttons>
+                </div>
 
-    </div>
-    <section class="footer" id="footer" title="footer">
-    <div  class="footer__container container">
+                    <div class="footer__container container">
+                            <h1 class="footer__title">Alex.</h1>
+                            <ul class="footer__list">
+                                <li>
+                                    <a href="#about" class="footer__link">A propos</a>
+                                </li>
+                                <li>
+                                    <a href="#work" class="footer__link">Projets</a>
+                                </li>
+                                <li>
+                                    <a href="#testimonial" class="footer__link">Avis clients</a>
+                                </li>
+                            </ul>
+                
+                            <ul class="footer__social">
+                                <li>
+                                <a href="https://www.facebook.com" rel="noopener" title="facebook" target="__blank" class="footer__social-link">
+                                    <i class="bx bxl-facebook"></i>
+                                </a>
+                                <a href="https://www.instagram.com" rel="noopener" title="instagram" target="__blank" class="footer__social-link">
+                                    <i class="bx bxl-instagram"></i>
+                                </a>
+                                <a href="https://www.twitter.com" rel="noopener" title="twitter" target="_blank" class="footer__social-link">
+                                    <i class="bx bxl-twitter"></i>
+                                </a>
+                            </li>
+                            </ul>
+                        
+                        
+                            <span class="footer__copy">
+                                <h4>&#169; Alex. "All rights reserved"© .
+                                Inspirations (& Thanks to)
+                                <br>Bedimcode & Online Tutorials, Fr.french's.YT&Cie-friends.
+                            </h4>
+                            </span>
+                        </div>
+                        </footer>
+
+                        <script src="assets/js/scrollreveal.min.js"></script>
  
-    <buttons class="footer__buttons">
-    <a href="liste.html" class="button">
-    ° Vers liste fr
-    </a>
-        <a href="C77 Test.html" class="button">C77 Test</a>
-    <a href="index.html" class="button">
-    vers
-    <i class="bx bx-right-arrow-circle work2__icon"></i>
-    CV</a>
-    </buttons>
-    </div>  
+                        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+                                <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+                                <!--=============== SWIPER JS ===============-->
+                                <script src="assets/js/swipper-bundle.min.js"></script>
+                                <script src="assets/js/swiper-bundle.min.js.map"></script>
+                                <!--=============== MIXITUP FILTER ===============-->
+                         
+                                <script src="assets/js/mixitup.min.js"></script>
+                           
+                                <!--=============== MAIN JS ===============-->
+                        <script src="assets/js/main.js"></script>
+                        
+                                            <script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/typed.min.js"></script>              
 
-    <h1 class="footer__title">Alex.</h1>
-    <ul class="footer__list">
-    <li>
-    <a href="#about" class="footer__link">A propos</a>
-    </li>
-    <li>
-    <a href="#work" class="footer__link">Projets</a>
-    </li>
-    <li>
-    <a href="#testimonial" class="footer__link">Avis clients</a>
-    </li>
-    </ul>
-    
-    <ul class="footer__social">
-    <li>
-    <a href="https://www.facebook.com" rel="noopener" title="facebook" target="__blank" class="footer__social-link">
-    <i class="bx bxl-facebook"></i>
-    </a>
-    <a href="https://www.instagram.com" rel="noopener" title="instagram" target="__blank" class="footer__social-link">
-    <i class="bx bxl-instagram"></i>
-    </a>
-    <a href="https://www.twitter.com" rel="noopener" title="twitter" target="_blank" class="footer__social-link">
-    <i class="bx bxl-twitter"></i>
-    </a>
-    </ul>
-    </li>
-    
-    <span class="footer__copy">
-    <h4>&#169; Alex. "All rights reserved"© <br>.<br><img src="assets/img/SmashinpunksHead.png" class="work__img" alt=""></br>
-    Inspirations (& Thanks to)
-    <br>Bedimcode & Online Tutorials, Fr.french's.YT&Cie-friends.
-    </h4>
-    </span>
-    </div>
-    </section>
-
-    </footer>
-
-<!--=============== SCROLLREVEAL ===============-->
-<script src="assets/js/scrollreveal.min.js"defer></script>
-
-<!--=============== SWIPER JS ===============-->
-<script src="assets/js/swipper-bundle.min.js"defer></script>
-
-<!--=============== MIXITUP FILTER ===============-->
-
-<script src="assets/js/mixitup.min.js"defer></script>
-
-<!--=============== MAIN JS ===============-->
-<script src="assets/js/main.js"defer></script>
 </body>
 </html>
+
