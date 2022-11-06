@@ -1,21 +1,3 @@
-// image
-
-document.querySelectorAll("img").forEach((item) => {
-    item.addEventListener("click", (event) => {
-      const image = event.target.getAttribute("data-src");
-      event.target.setAttribute("src", image)
-    })
-  })
-
-// change theme
-
-const setTheme = theme => document.documentElement.className = theme;
-
-document.getElementById('theme-select').addEventListener('change', function() {
-  setTheme(this.value)
-})
-
-
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
@@ -54,8 +36,53 @@ const scrollHeader = () =>{
     this.scrollY >= 50 ? header.classList.add('scroll-header') 
                        : header.classList.remove('scroll-header')
 }
-window.addEventListener('header', scrollHeader)
+window.addEventListener('scroll', scrollHeader)
+'use strict';
 
+/**
+ * element toggle function
+ */
+
+const elemToggleFunc = function (elem) { elem.classList.toggle("active"); }
+
+
+
+/**
+ * header sticky & go to top
+ */
+
+const header = document.querySelector("[data-header]");
+const goTopBtn = document.querySelector("[data-go-top]");
+
+window.addEventListener("scroll", function () {
+
+  if (window.scrollY >= 10) {
+    header.classList.add("active");
+    goTopBtn.classList.add("active");
+  } else {
+    header.classList.remove("active");
+    goTopBtn.classList.remove("active");
+  }
+
+});
+
+ /**
+  * skills toggle
+  */
+ 
+ const toggleBtnBox = document.querySelector("[data-toggle-box]");
+ const toggleBtns = document.querySelectorAll("[data-toggle-btn]");
+ const skillsBox = document.querySelector("[data-skills-box]");
+ 
+ for (let i = 0; i < toggleBtns.length; i++) {
+   toggleBtns[i].addEventListener("click", function () {
+ 
+     elemToggleFunc(toggleBtnBox);
+     for (let i = 0; i < toggleBtns.length; i++) { elemToggleFunc(toggleBtns[i]); }
+     elemToggleFunc(skillsBox);
+ 
+   });
+ }
 /*=============== SWIPER TESTIMONIAL ===============*/
 let swiperTestimonial = new Swiper(".testimonial__container", {
     spaceBetween: 24, loop:true, grabCursor:true, pagination: {
@@ -82,7 +109,7 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
         spaceBetween: 48,
         },
     },
-})
+});
 
 /*=============== TESTIMONIAL SWIPER ===============*/
 let testimonialSwiper = new Swiper(".testimonial-swiper", {
@@ -93,7 +120,7 @@ let testimonialSwiper = new Swiper(".testimonial-swiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-})
+});
 
 /*=============== NEW SWIPER ===============*/
 let newSwiper = new Swiper(".new-swiper", {
@@ -111,7 +138,7 @@ let newSwiper = new Swiper(".new-swiper", {
           slidesPerView: 4,
         },
     },
-})
+});
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll('section[id]')
@@ -146,7 +173,7 @@ const scrollUp = () =>{
 	this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
 						: scrollUp.classList.remove('show-scroll')
 }
-window.addEventListener('scroll-up', scrollUp)
+window.addEventListener('scroll', scrollUp)
 
 /*=============== SHOW CART ===============*/
 const cart = document.getElementById('cart'),
@@ -200,7 +227,7 @@ let mixerPortfolio = mixitup('.work__container', {
     animation: {
     duration: 300
     }
-})
+});
 
 /* Link active work */ 
 const linkWork = document.querySelectorAll('.work__item')
@@ -257,5 +284,15 @@ sr.reveal('.home__social, .home__scroll',{delay:900,origin:'bottom'})
 
 
 
+
+ 
+ 
+// change theme
+
+const setTheme = theme => document.documentElement.className = theme;
+
+document.getElementById('theme-select').addEventListener('change', function() {
+  setTheme(this.value);
+});
 
 
