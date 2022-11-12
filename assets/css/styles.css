@@ -1115,7 +1115,7 @@ border-radius: 100%;
   animation: animateBgColor 5s linear infinite; 
 }
 .about2__img{
-  display: flex;
+  display: inline-block;
   max-width: 45%;
   justify-self: center;
   justify-content: center;
@@ -1171,7 +1171,7 @@ text-shadow: var(--first-color);
 
 .skills__container{
   row-gap: 2rem;
-  padding-top: 1rem;
+  padding-top: 1rem;  z-index: var(--z-tooltip);
 }
 .skills__content{
   background-color: var(--container-color);
@@ -1501,9 +1501,9 @@ text-shadow: var(--first-color);
   animation: animateBgColor 5s linear infinite;
 }
 .work2__img{
-  object-fit:contain;    
+  display: inline-block;
+  object-fit:cover;    
   justify-content: space-evenly;
-  display: block;
 
   width: 6em;
   border-radius: 1rem;
@@ -1512,6 +1512,8 @@ text-shadow: var(--first-color);
   border: .1rem double var(--first-color); 
   border: .1rem dashed var(--first-color-alt);
   box-shadow: 0px 0px 25px 2px var(--first-color-alt);
+
+
 }
 
 .work__title{

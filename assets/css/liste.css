@@ -318,7 +318,7 @@ body.light-theme{
 }
 
 .section__subtitle {
-  display: block;
+  display: grid;
   font-size: var(--smaller-font-size);
   color: var(--text-color-light);
 }
@@ -618,14 +618,14 @@ border-radius: 100%;
 }
 .about2__img{
   display: flex;
-  max-width: 65%;
+  max-width: 45%;
 border-radius: 100%;
   justify-self: center;
   justify-content: center;
   background-color: var(--body-color);
   border: .5rem double var(--first-color); 
   box-shadow: 0px 0px 12px 2px var(--first-color-alt);
-  animation: animateBgColor 2s linear infinite, animate 4s infinite,textTyping 30s steps(360) infinite; 
+  animation: animateBgColor 2s linear infinite, animate 4s infinite; 
 }
 .about__data{
   text-align: center; 
